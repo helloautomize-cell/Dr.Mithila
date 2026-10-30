@@ -1,0 +1,107 @@
+{
+  "dr-mithila-desai/portrait": {
+    "src": "resources/images/dr-mithila-desai/portrait.jpg",
+    "alt": "Dr. Mithila Desai, smiling, seated at a table",
+    "focus": "50% 30%"
+  },
+  "dr-mithila-desai/elle-2026": {
+    "src": "resources/images/dr-mithila-desai/elle-2026.jpg",
+    "alt": "Dr. Desai at the ELLE India awards, 2026",
+    "focus": "50% 20%"
+  },
+  "dr-mithila-desai/award-2023": {
+    "src": "resources/images/dr-mithila-desai/award-2023.jpg",
+    "alt": "Dr. Desai with her 2023 award",
+    "focus": "35% 25%"
+  },
+  "team/team-sujay-prabhugaonkar": {
+    "src": "resources/images/team/team-sujay-prabhugaonkar.jpg",
+    "alt": "Dr. Sujay Prabhugaonkar",
+    "focus": "50% 0%"
+  },
+  "team/team-neha-pansare": {
+    "src": "resources/images/team/team-neha-pansare.jpg",
+    "alt": "Dr. Neha Pansare",
+    "focus": "50% 0%"
+  },
+  "team/team-ashmi-shah": {
+    "src": "resources/images/team/team-ashmi-shah.jpg",
+    "alt": "Ms. Ashmi R. Shah",
+    "focus": "50% 0%"
+  },
+  "team/team-ashika-shah": {
+    "src": "resources/images/team/team-ashika-shah.jpg",
+    "alt": "Ms. Ashika Shah",
+    "focus": "50% 0%"
+  },
+  "team/team-vishwa-shah": {
+    "src": "resources/images/team/team-vishwa-shah.jpg",
+    "alt": "Ms. Vishwa Shah",
+    "focus": "50% 0%"
+  },
+  "clinic/clinic-room": {
+    "src": "resources/images/clinic/clinic-room.jpg",
+    "alt": "Dr. Desai's consultation room with a wooden desk, leather chair and window",
+    "focus": "50% 50%"
+  },
+  "clinic/clinic-nook": {
+    "src": "resources/images/clinic/clinic-nook.jpg",
+    "alt": "A green couch with a leaf cushion and botanical art in warm light",
+    "focus": "50% 50%"
+  },
+  "clinic/clinic-waiting": {
+    "src": "resources/images/clinic/clinic-waiting.jpg",
+    "alt": "The waiting area with a sofa, leaf art and reception desk",
+    "focus": "50% 50%"
+  },
+  "clinic/clinic-entrance": {
+    "src": "resources/images/clinic/clinic-entrance.jpg",
+    "alt": "Glass entrance doors of the clinic building",
+    "focus": "50% 50%"
+  },
+  "dr-mithila-desai/dr-armchair": {
+    "src": "resources/images/doctor/dr-armchair.jpg",
+    "alt": "Dr. Mithila Desai seated in her consulting armchair",
+    "focus": "50% 25%"
+  },
+  "dr-mithila-desai/dr-desk": {
+    "src": "resources/images/doctor/dr-desk.jpg",
+    "alt": "Dr. Mithila Desai at her desk",
+    "focus": "50% 30%"
+  },
+  "dr-mithila-desai/dr-door": {
+    "src": "resources/images/doctor/dr-door.jpg",
+    "alt": "Dr. Mithila Desai at the clinic door",
+    "focus": "50% 30%"
+  },
+  "dr-mithila-desai/dr-online": {
+    "src": "resources/images/doctor/dr-online.jpg",
+    "alt": "Dr. Mithila Desai on a video call with a client",
+    "focus": "50% 40%"
+  },
+  "dr-mithila-desai/dr-talk-2026": {
+    "src": "resources/images/doctor/dr-talk-2026.jpg",
+    "alt": "Dr. Mithila Desai speaking at the Resilient Living Conference, 2026",
+    "focus": "50% 30%"
+  },
+  "scenes/svc-child-teen": {
+    "src": "resources/images/scenes/svc-child-teen.jpg",
+    "alt": "A child and parent talking with a psychologist",
+    "focus": "50% 40%"
+  },
+  "scenes/svc-couples": {
+    "src": "resources/images/scenes/svc-couples.jpg",
+    "alt": "A couple in a counselling session",
+    "focus": "50% 40%"
+  },
+  "scenes/svc-family": {
+    "src": "resources/images/scenes/svc-family.jpg",
+    "alt": "A family in a counselling session",
+    "focus": "50% 40%"
+  },
+  "scenes/svc-assessment": {
+    "src": "resources/images/scenes/svc-assessment.jpg",
+    "alt": "Psychological assessment materials on a desk",
+    "focus": "50% 50%"
+  }
+}

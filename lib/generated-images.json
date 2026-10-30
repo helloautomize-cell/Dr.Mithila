@@ -1,0 +1,271 @@
+{
+  "dr-mithila-desai/portrait": {
+    "widths": [
+      640,
+      960,
+      1016
+    ],
+    "intrinsic": [
+      1016,
+      1548
+    ],
+    "alt": "Dr. Mithila Desai, smiling, seated at a table",
+    "focus": "50% 30%"
+  },
+  "dr-mithila-desai/elle-2026": {
+    "widths": [
+      640,
+      960,
+      993
+    ],
+    "intrinsic": [
+      993,
+      1400
+    ],
+    "alt": "Dr. Desai at the ELLE India awards, 2026",
+    "focus": "50% 20%"
+  },
+  "dr-mithila-desai/award-2023": {
+    "widths": [
+      640,
+      960,
+      1125
+    ],
+    "intrinsic": [
+      1125,
+      1398
+    ],
+    "alt": "Dr. Desai with her 2023 award",
+    "focus": "35% 25%"
+  },
+  "team/team-sujay-prabhugaonkar": {
+    "widths": [
+      640,
+      960,
+      1122
+    ],
+    "intrinsic": [
+      1122,
+      1402
+    ],
+    "alt": "Dr. Sujay Prabhugaonkar",
+    "focus": "50% 0%"
+  },
+  "team/team-neha-pansare": {
+    "widths": [
+      640,
+      960,
+      1122
+    ],
+    "intrinsic": [
+      1122,
+      1402
+    ],
+    "alt": "Dr. Neha Pansare",
+    "focus": "50% 0%"
+  },
+  "team/team-ashmi-shah": {
+    "widths": [
+      640,
+      960,
+      1122
+    ],
+    "intrinsic": [
+      1122,
+      1402
+    ],
+    "alt": "Ms. Ashmi R. Shah",
+    "focus": "50% 0%"
+  },
+  "team/team-ashika-shah": {
+    "widths": [
+      640,
+      960,
+      1122
+    ],
+    "intrinsic": [
+      1122,
+      1402
+    ],
+    "alt": "Ms. Ashika Shah",
+    "focus": "50% 0%"
+  },
+  "team/team-vishwa-shah": {
+    "widths": [
+      640,
+      960,
+      1122
+    ],
+    "intrinsic": [
+      1122,
+      1402
+    ],
+    "alt": "Ms. Vishwa Shah",
+    "focus": "50% 0%"
+  },
+  "clinic/clinic-room": {
+    "widths": [
+      640,
+      893
+    ],
+    "intrinsic": [
+      893,
+      1600
+    ],
+    "alt": "Dr. Desai's consultation room with a wooden desk, leather chair and window",
+    "focus": "50% 50%"
+  },
+  "clinic/clinic-nook": {
+    "widths": [
+      640,
+      893
+    ],
+    "intrinsic": [
+      893,
+      1600
+    ],
+    "alt": "A green couch with a leaf cushion and botanical art in warm light",
+    "focus": "50% 50%"
+  },
+  "clinic/clinic-waiting": {
+    "widths": [
+      640,
+      893
+    ],
+    "intrinsic": [
+      893,
+      1600
+    ],
+    "alt": "The waiting area with a sofa, leaf art and reception desk",
+    "focus": "50% 50%"
+  },
+  "clinic/clinic-entrance": {
+    "widths": [
+      640,
+      893
+    ],
+    "intrinsic": [
+      893,
+      1600
+    ],
+    "alt": "Glass entrance doors of the clinic building",
+    "focus": "50% 50%"
+  },
+  "dr-mithila-desai/dr-armchair": {
+    "widths": [
+      640,
+      960,
+      1254
+    ],
+    "intrinsic": [
+      1254,
+      1254
+    ],
+    "alt": "Dr. Mithila Desai seated in her consulting armchair",
+    "focus": "50% 25%"
+  },
+  "dr-mithila-desai/dr-desk": {
+    "widths": [
+      640,
+      960,
+      1254
+    ],
+    "intrinsic": [
+      1254,
+      1254
+    ],
+    "alt": "Dr. Mithila Desai at her desk",
+    "focus": "50% 30%"
+  },
+  "dr-mithila-desai/dr-door": {
+    "widths": [
+      640,
+      960,
+      1024
+    ],
+    "intrinsic": [
+      1024,
+      1536
+    ],
+    "alt": "Dr. Mithila Desai at the clinic door",
+    "focus": "50% 30%"
+  },
+  "dr-mithila-desai/dr-online": {
+    "widths": [
+      640,
+      960,
+      1016
+    ],
+    "intrinsic": [
+      1016,
+      1548
+    ],
+    "alt": "Dr. Mithila Desai on a video call with a client",
+    "focus": "50% 40%"
+  },
+  "dr-mithila-desai/dr-talk-2026": {
+    "widths": [
+      640,
+      745
+    ],
+    "intrinsic": [
+      745,
+      500
+    ],
+    "alt": "Dr. Mithila Desai speaking at the Resilient Living Conference, 2026",
+    "focus": "50% 30%"
+  },
+  "scenes/svc-child-teen": {
+    "widths": [
+      640,
+      960,
+      1120
+    ],
+    "intrinsic": [
+      1120,
+      1400
+    ],
+    "alt": "A child and parent talking with a psychologist",
+    "focus": "50% 40%"
+  },
+  "scenes/svc-couples": {
+    "widths": [
+      640,
+      960,
+      1120
+    ],
+    "intrinsic": [
+      1120,
+      1400
+    ],
+    "alt": "A couple in a counselling session",
+    "focus": "50% 40%"
+  },
+  "scenes/svc-family": {
+    "widths": [
+      640,
+      960,
+      1120
+    ],
+    "intrinsic": [
+      1120,
+      1400
+    ],
+    "alt": "A family in a counselling session",
+    "focus": "50% 40%"
+  },
+  "scenes/svc-assessment": {
+    "widths": [
+      640,
+      960,
+      1280,
+      1400
+    ],
+    "intrinsic": [
+      1400,
+      876
+    ],
+    "alt": "Psychological assessment materials on a desk",
+    "focus": "50% 50%"
+  }
+}
