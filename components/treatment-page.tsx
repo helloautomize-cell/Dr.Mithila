@@ -170,8 +170,8 @@ export function TreatmentPage({ d }: { d: TreatmentData }) {
             text={d.end.text}
             img={d.end.img}
             imgAlt={d.end.imgAlt}
-            primary={{ href: "/contact/#book", label: "Book a session" }}
-            ghost={{ href: "/plan-your-visit/", label: "Plan your first session" }}
+            primary={{ href: "/contact/#book", label: "Book a Session" }}
+            ghost={{ href: "/plan-your-visit/", label: "Plan Your First Session" }}
             showCrisis
           />
         </div>

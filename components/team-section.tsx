@@ -11,13 +11,13 @@ import { site } from "@/lib/site-config";
    divider + five member cards whose details expand on hover or focus.
    Used on Home and /our-team/. */
 const FLOW: [IconName, string, string][] = [
-  ["PERSON", "You meet her first", "Every client starts with Dr. Desai."],
+  ["PERSON", "You Meet Her First", "Every client starts with Dr. Desai."],
   [
     "CHILD",
-    "The right colleague joins",
+    "The Right Colleague Joins",
     "A psychiatrist or psychologist, only if it helps.",
   ],
-  ["COMPASS", "One shared plan", "Everyone works from the same plan."],
+  ["COMPASS", "One Shared Plan", "Everyone works from the same plan."],
 ];
 
 const MEMBER_ICON: Record<string, IconName> = {

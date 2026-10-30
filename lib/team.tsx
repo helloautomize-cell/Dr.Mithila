@@ -15,7 +15,7 @@ export interface TeamMember {
 
 export const TEAM: TeamMember[] = [
   {
-    role: "Founder · Lead clinical psychologist",
+    role: "Founder · Lead Clinical Psychologist",
     name: "Dr. Mithila Desai, PhD",
     photo: "dr-mithila-desai/portrait",
     photoConsent: true,
@@ -25,10 +25,10 @@ export const TEAM: TeamMember[] = [
         <Confirm>no.</Confirm>
       </>
     ),
-    link: { href: "/dr-mithila-desai/", label: "View profile" },
+    link: { href: "/dr-mithila-desai/", label: "View Profile" },
   },
   {
-    role: "Consultant psychiatrist",
+    role: "Consultant Psychiatrist",
     name: "Dr. Sujay Prabhugaonkar",
     initials: "SP",
     photo: "team/team-sujay-prabhugaonkar",
@@ -41,7 +41,7 @@ export const TEAM: TeamMember[] = [
     ),
   },
   {
-    role: "Role to confirm",
+    role: "Role to Confirm",
     name: "Dr. Neha Pansare",
     initials: "NP",
     photo: "team/team-neha-pansare",

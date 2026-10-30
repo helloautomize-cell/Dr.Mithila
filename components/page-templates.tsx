@@ -87,7 +87,7 @@ const FINDING_STEPS: { img: ImageName; alt: string; title: string; text: string 
   {
     img: "clinic/clinic-waiting",
     alt: "Reception and waiting area",
-    title: "Check in at reception",
+    title: "Check in at Reception",
     text: "Tell the front desk you're here to see Dr. Mithila Desai, then take a seat in the waiting area.",
   },
   {
@@ -99,7 +99,7 @@ const FINDING_STEPS: { img: ImageName; alt: string; title: string; text: string 
   {
     img: "clinic/clinic-nook",
     alt: "A calm corner of the therapy room",
-    title: "Settle in",
+    title: "Settle In",
     text: "Take a moment before you begin. There's no rush, and you share only what you're ready to.",
   },
 ];
@@ -114,25 +114,25 @@ const SESSION_STEPS = [
   {
     icon: "CHAT" as const,
     n: "02",
-    title: "Your story",
+    title: "Your Story",
     text: "What brings you in now, how long it has been going on, what you've tried, and what you'd like to be different.",
   },
   {
     icon: "LEAF" as const,
     n: "03",
-    title: "Some background",
+    title: "Some Background",
     text: "Sleep, work or study, family, health and any medicine you take, so she sees the whole picture.",
   },
   {
     icon: "EAR" as const,
     n: "04",
-    title: "Questions for her",
+    title: "Questions for Her",
     text: "Ask anything: how she works, how long therapy may take, what happens next.",
   },
   {
     icon: "COMPASS" as const,
     n: "05",
-    title: "A plan",
+    title: "A Plan",
     text: "You agree whether to meet again, how often, and what to focus on first.",
   },
 ];

@@ -97,7 +97,7 @@ export const TREATMENT_DATA: Record<string, TreatmentData> = {
         Anxiety and panic
       </>
     ),
-    tag: { icon: "MIND", label: "Concern · Anxiety and panic" },
+    tag: { icon: "MIND", label: "Concern · Anxiety and Panic" },
     title: (
       <>
         Help for anxiety and <em>panic</em>.
@@ -116,8 +116,8 @@ export const TREATMENT_DATA: Record<string, TreatmentData> = {
     linkLabel: "Is this anxiety?",
     trust: [
       { icon: "PIN", label: "Borivali West" },
-      { icon: "GLOBE", label: "Online, in India or abroad" },
-      { icon: "FAMILY", label: "Adults, teens and children" },
+      { icon: "GLOBE", label: "Online, in India or Abroad" },
+      { icon: "FAMILY", label: "Adults, Teens and Children" },
     ],
     photo: {
       img: "clinic/clinic-nook",
@@ -129,7 +129,7 @@ export const TREATMENT_DATA: Record<string, TreatmentData> = {
         pos: "a",
         img: "dr-mithila-desai/dr-desk",
         title: "Dr. Mithila Desai, PhD",
-        sub: "Clinical psychologist",
+        sub: "Clinical Psychologist",
       },
       {
         pos: "b",
@@ -145,22 +145,22 @@ export const TREATMENT_DATA: Record<string, TreatmentData> = {
     glance: [
       {
         icon: "MIND",
-        label: "What it is",
+        label: "What It Is",
         text: "Worry, fear or panic that is hard to control and affects daily life",
       },
       {
         icon: "FAMILY",
-        label: "How common",
+        label: "How Common",
         text: "Among the most common mental health conditions in India and worldwide",
       },
       {
         icon: "LOOP",
-        label: "Common types",
+        label: "Common Types",
         text: "Generalised, panic, social, health anxiety, specific fears",
       },
       {
         icon: "COMPASS",
-        label: "How therapy helps",
+        label: "How Therapy Helps",
         text: "Understanding the cycle and practising new responses",
       },
       {
@@ -171,9 +171,9 @@ export const TREATMENT_DATA: Record<string, TreatmentData> = {
     ],
     nav: [
       { id: "x-signs", icon: "CLIP", label: "Signs" },
-      { id: "x-panic", icon: "HEART", label: "Panic attacks" },
-      { id: "x-help", icon: "COMPASS", label: "How therapy helps" },
-      { id: "x-try", icon: "LEAF", label: "Try today" },
+      { id: "x-panic", icon: "HEART", label: "Panic Attacks" },
+      { id: "x-help", icon: "COMPASS", label: "How Therapy Helps" },
+      { id: "x-try", icon: "LEAF", label: "Try Today" },
       { id: "x-faq", icon: "CHAT", label: "Questions" },
     ],
     signs: {
@@ -186,7 +186,7 @@ export const TREATMENT_DATA: Record<string, TreatmentData> = {
       lead: "Anxiety shows up in the mind, the body and in what you do. A few of these on most days, for weeks, is worth talking about.",
       big: {
         icon: "MIND",
-        title: "In your mind",
+        title: "In Your Mind",
         k: "Thoughts that won't settle",
         items: [
           "Worrying most days about many things, and finding it hard to stop",
@@ -199,7 +199,7 @@ export const TREATMENT_DATA: Record<string, TreatmentData> = {
       cards: [
         {
           icon: "HEART",
-          title: "In your body",
+          title: "In Your Body",
           k: "The alarm system switched on",
           items: [
             "Feeling restless, tense or on edge",
@@ -208,7 +208,7 @@ export const TREATMENT_DATA: Record<string, TreatmentData> = {
         },
         {
           icon: "DOOR",
-          title: "In what you do",
+          title: "In What You Do",
           k: "Life getting smaller",
           items: [
             "Avoiding places, people or situations because of fear",
@@ -217,7 +217,7 @@ export const TREATMENT_DATA: Record<string, TreatmentData> = {
       ],
       wide: {
         icon: "FLAME",
-        title: "Sudden waves of intense fear that peak within minutes",
+        title: "Sudden Waves of Intense Fear That Peak Within Minutes",
         text: "This can be a panic attack. Read what happens, and why it is frightening but not dangerous in itself.",
       },
     },
@@ -256,31 +256,31 @@ export const TREATMENT_DATA: Record<string, TreatmentData> = {
         {
           icon: "MIND",
           n: "01",
-          title: "Understanding your anxiety",
+          title: "Understanding Your Anxiety",
           text: "What sets it off, what you feel, what you do, and what keeps it going.",
         },
         {
           icon: "HEART",
           n: "02",
-          title: "Calming the body",
+          title: "Calming the Body",
           text: "Breathing, relaxation and grounding skills you can use anywhere.",
         },
         {
           icon: "CHAT",
           n: "03",
-          title: "Working with worried thoughts",
+          title: "Working with Worried Thoughts",
           text: "Noticing them, questioning them, and letting some of them pass.",
         },
         {
           icon: "SPROUT",
           n: "04",
-          title: "Facing fears gradually",
+          title: "Facing Fears Gradually",
           text: "Small, planned steps back into situations you've been avoiding, at a pace you agree to.",
         },
         {
           icon: "SHIELD",
           n: "05",
-          title: "Preventing setbacks",
+          title: "Preventing Setbacks",
           text: "A plan for what to do if anxiety returns.",
         },
       ],
@@ -316,7 +316,7 @@ export const TREATMENT_DATA: Record<string, TreatmentData> = {
       card: {
         img: "dr-mithila-desai/dr-online",
         alt: "Dr. Desai in an online session",
-        title: "In person or online",
+        title: "In Person or Online",
         text: "Meet in Borivali West, or join by video from home, in India or abroad.",
         bookLabel: "Book a session",
       },
@@ -354,7 +354,7 @@ export const TREATMENT_DATA: Record<string, TreatmentData> = {
       cards: [
         {
           icon: "PERSON",
-          title: "Individual therapy",
+          title: "Individual Therapy",
           text: "One-to-one sessions for adults.",
           href: "/individual-therapy/",
         },
@@ -366,13 +366,13 @@ export const TREATMENT_DATA: Record<string, TreatmentData> = {
         },
         {
           icon: "FLAME",
-          title: "Stress and burnout",
+          title: "Stress and Burnout",
           text: "When pressure spills into sleep, temper and health.",
           href: "/stress-and-burnout/",
         },
         {
           icon: "MOON",
-          title: "Sleep problems",
+          title: "Sleep Problems",
           text: "Trouble falling or staying asleep.",
           href: "/sleep-problems/",
         },
@@ -440,9 +440,9 @@ export function makeTreatment(s: TreatmentSpec): TreatmentData {
           },
         ]
       : []),
-    { id: "x-help", icon: "COMPASS" as IconName, label: "How therapy helps" },
+    { id: "x-help", icon: "COMPASS" as IconName, label: "How Therapy Helps" },
     ...(s.tryTools
-      ? [{ id: "x-try", icon: "LEAF" as IconName, label: "Try today" }]
+      ? [{ id: "x-try", icon: "LEAF" as IconName, label: "Try Today" }]
       : []),
     { id: "x-faq", icon: "CHAT" as IconName, label: "Questions" },
   ];
@@ -471,8 +471,8 @@ export function makeTreatment(s: TreatmentSpec): TreatmentData {
     linkLabel: `Is this ${s.tagLabel.split(" · ").pop()?.toLowerCase()}?`,
     trust: [
       { icon: "PIN", label: "Borivali West" },
-      { icon: "GLOBE", label: "Online, in India or abroad" },
-      { icon: "FAMILY", label: "Adults, teens and children" },
+      { icon: "GLOBE", label: "Online, in India or Abroad" },
+      { icon: "FAMILY", label: "Adults, Teens and Children" },
     ],
     photo: {
       img: "clinic/clinic-nook",
@@ -484,7 +484,7 @@ export function makeTreatment(s: TreatmentSpec): TreatmentData {
         pos: "a",
         img: "dr-mithila-desai/dr-desk",
         title: "Dr. Mithila Desai, PhD",
-        sub: "Clinical psychologist",
+        sub: "Clinical Psychologist",
       },
       {
         pos: "b",
@@ -505,7 +505,7 @@ export function makeTreatment(s: TreatmentSpec): TreatmentData {
       lead: s.signsLead,
       big: {
         icon: "MIND",
-        title: "In your mind",
+        title: "In Your Mind",
         k: "Thoughts that won't settle",
         items: s.mind,
         img: "clinic/clinic-room",
@@ -514,20 +514,20 @@ export function makeTreatment(s: TreatmentSpec): TreatmentData {
       cards: [
         {
           icon: "HEART",
-          title: "In your body",
+          title: "In Your Body",
           k: "The alarm system switched on",
           items: s.body,
         },
         {
           icon: "DOOR",
-          title: "In what you do",
+          title: "In What You Do",
           k: "Life getting smaller",
           items: s.behaviour,
         },
       ],
       wide: s.wide ?? {
         icon: "FLAME",
-        title: "A few of these on most days, for weeks",
+        title: "A Few of These on Most Days, for Weeks",
         text: "That is worth talking about, even if it does not feel severe.",
       },
     },
@@ -567,7 +567,7 @@ export function makeTreatment(s: TreatmentSpec): TreatmentData {
       card: {
         img: "dr-mithila-desai/dr-online",
         alt: "Dr. Desai in an online session",
-        title: "In person or online",
+        title: "In Person or Online",
         text: "Meet in Borivali West, or join by video from home, in India or abroad.",
         bookLabel: "Book a session",
       },

@@ -3,7 +3,7 @@ export const site = {
   formerName: "Power of Mind",
   doctor: "Dr. Mithila Desai, PhD",
   doctorShort: "Dr. Desai",
-  role: "Clinical psychologist",
+  role: "Clinical Psychologist",
   area: "Borivali West, Mumbai",
   phoneDisplay: "87796 51309",
   phoneTel: "+918779651309",

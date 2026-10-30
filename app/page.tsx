@@ -25,7 +25,7 @@ import { site } from "@/lib/site-config";
 const MILESTONES = [
   {
     era: "1980s",
-    title: "Choosing psychology",
+    title: "Choosing Psychology",
     children: (
       <>
         At a time when mental health was rarely spoken about at home, she
@@ -35,7 +35,7 @@ const MILESTONES = [
   },
   {
     era: "1989",
-    title: "Opening a practice",
+    title: "Opening a Practice",
     children: (
       <>
         She began seeing clients in Mumbai, with one belief that still shapes
@@ -45,7 +45,7 @@ const MILESTONES = [
   },
   {
     era: "Over the years",
-    title: "Schools, families and workplaces",
+    title: "Schools, Families and Workplaces",
     children:
       "Work with students, parents and teachers in schools, counselling for employees through workplace programmes, and training the next generation of psychology students.",
   },
@@ -209,7 +209,7 @@ export default function Home() {
                 <i className="dot" aria-hidden="true" />
                 <b>Dr. Mithila Desai, PhD</b>
               </span>
-              <span className="muted">Clinical psychologist</span>
+              <span className="muted">Clinical Psychologist</span>
             </div>
             <div className="float f2">
               <b>ELLE India 2026</b>

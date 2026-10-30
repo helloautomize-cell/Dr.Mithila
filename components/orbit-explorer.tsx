@@ -12,37 +12,37 @@ export interface OrbitItem {
 
 const ITEMS: OrbitItem[] = [
   {
-    title: "Anxiety and overthinking",
+    title: "Anxiety and Overthinking",
     text: "Worry that won't switch off, panic, and the 3am what-ifs. Practical ways to calm the body and loosen anxious thoughts.",
     icon: "MIND",
     href: "#anxiety",
   },
   {
-    title: "Low mood",
+    title: "Low Mood",
     text: "When everything feels heavy or flat. Gentle, structured support to find energy and meaning again.",
     icon: "CLOUD",
     href: "#",
   },
   {
-    title: "Stress and burnout",
+    title: "Stress and Burnout",
     text: "Work pressure, exams and caring for others, spilling into sleep and temper.",
     icon: "FLAME",
     href: "#",
   },
   {
-    title: "Couples and marriage",
+    title: "Couples and Marriage",
     text: "Communication gaps, trust, conflict, and questions before marriage.",
     icon: "RINGS",
     href: "#",
   },
   {
-    title: "Children and teens",
+    title: "Children and Teens",
     text: "Big feelings, school worries and behaviour, with parents involved at the right moments.",
     icon: "SPROUT",
     href: "#",
   },
   {
-    title: "Assessment and clarity",
+    title: "Assessment and Clarity",
     text: "Attention, learning, personality and career aptitude, explained in plain words.",
     icon: "COMPASS",
     href: "#",

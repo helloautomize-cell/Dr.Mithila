@@ -18,7 +18,7 @@
   --sans:"Figtree",ui-sans-serif,system-ui,sans-serif;
   --serif:"Instrument Serif",Georgia,serif;
   --ease:cubic-bezier(.22,1,.36,1);
-  --logo:url("assets/tmh-logo.png"); --tree:url("assets/tmh-tree.png");
+  --logo:url("tmh-logo.png"); --tree:url("tmh-tree.png");
   color-scheme:light;
 }
 *{box-sizing:border-box}
@@ -654,10 +654,468 @@ select{width:100%;font:400 16.5px var(--sans);padding:15px 16px;border:1px solid
 .lp{position:relative;padding-left:64px}
 .lp .lpi{position:absolute;left:0;top:2px;width:44px;height:44px;border-radius:50%;background:var(--walnut);color:#fff;display:grid;place-items:center;box-shadow:0 0 0 8px rgba(114,62,34,.1)}
 .lp::before{content:"";position:absolute;left:21px;top:56px;bottom:-6px;width:2px;background:linear-gradient(var(--honey),transparent)}
+
+/* ===== v8 gallery + finding us ===== */
+.sec.insp{padding-bottom:clamp(24px,4vw,56px)}
+.gl{display:grid;grid-template-columns:1.25fr 1fr 1fr 1fr;gap:16px;margin-top:56px;align-items:start}
+.gi{margin:0;position:relative;border-radius:28px;overflow:hidden;aspect-ratio:9/14;box-shadow:var(--shadow);will-change:transform}
+.gi:nth-child(1){aspect-ratio:9/15}.gi:nth-child(2){margin-top:60px}.gi:nth-child(3){margin-top:20px}.gi:nth-child(4){margin-top:90px}
+.gi img{width:100%;height:115%;object-fit:cover;transition:transform 1.4s var(--ease);transform:translateY(var(--py,0))}
+.gi:hover img{transform:translateY(var(--py,0)) scale(1.05)}
+.gi::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 55%,rgba(26,18,14,.6))}
+.gi figcaption{position:absolute;left:16px;right:16px;bottom:16px;z-index:1;display:flex;align-items:center;gap:10px;color:#fff;font-weight:600;font-size:15px}
+.gi figcaption span{width:36px;height:36px;border-radius:12px;background:rgba(255,255,255,.2);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);display:grid;place-items:center;flex:none}
+.gi figcaption svg{width:18px;height:18px}
+@media(max-width:900px){.gl{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:12px;padding-bottom:8px}.gi{flex:0 0 72%;scroll-snap-align:start;margin-top:0!important}}
+.fsteps{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:50px;counter-reset:f}
+.fsteps article{position:relative}
+.fsteps .fp{position:relative;border-radius:24px;overflow:hidden;aspect-ratio:4/5;margin-bottom:20px}
+.fsteps .fp img{width:100%;height:100%;object-fit:cover;transition:transform 1.2s var(--ease)}
+.fsteps article:hover .fp img{transform:scale(1.05)}
+.fsteps .fp b{position:absolute;left:14px;top:14px;width:46px;height:46px;border-radius:50%;background:var(--walnut);color:#fff;display:grid;place-items:center;font-family:var(--serif);font-style:italic;font-weight:400;font-size:20px;box-shadow:0 0 0 6px rgba(255,255,255,.35)}
+.fsteps article:not(:last-child)::after{content:"";position:absolute;top:37px;left:calc(14px + 46px);right:-18px;height:2px;background:repeating-linear-gradient(90deg,#fff 0 6px,transparent 6px 12px);z-index:1;opacity:.9;display:none}
+.fsteps h3{font-size:21px;font-weight:600;letter-spacing:-.015em;margin-bottom:6px}
+.fsteps p{color:var(--ink-2);font-size:15.5px}
+@media(max-width:900px){.fsteps{grid-template-columns:1fr 1fr}}@media(max-width:520px){.fsteps{grid-template-columns:1fr}.fsteps .fp{aspect-ratio:16/11}}
+.tb .ld{margin-top:56px;display:grid;grid-template-columns:420px 1fr;background:#fff;border:1px solid var(--line);border-radius:32px;overflow:hidden;box-shadow:var(--shadow)}
+.tb .ld .ph{position:relative;aspect-ratio:4/5;overflow:hidden;background:var(--clay)}
+.tb .ld .ph img{width:100%;height:100%;object-fit:cover;object-position:52% 20%;transition:transform 1.2s var(--ease)}
+.tb .ld:hover .ph img{transform:scale(1.04)}
+.tb .seal{position:absolute;left:20px;bottom:20px;display:flex;align-items:center;gap:10px;padding:8px 14px 8px 8px;border-radius:999px;background:rgba(255,255,255,.72);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);font-size:13px;font-weight:600;color:var(--espresso)}
+.tb .seal span{width:30px;height:30px;border-radius:50%;background:var(--walnut);color:#fff;display:grid;place-items:center}
+.tb .seal svg{width:16px;height:16px}
+.tb .ld .bd{padding:clamp(28px,4vw,56px);display:flex;flex-direction:column;position:relative}
+.tb .ld .bd:after{content:"";position:absolute;right:-60px;top:-60px;width:260px;height:260px;border-radius:50%;background:radial-gradient(circle,rgba(217,174,132,.28),transparent 70%)}
+.tb .role{font:600 12px/1.4 var(--sans);letter-spacing:.16em;text-transform:uppercase;color:var(--walnut)}
+.tb .ld h3{font:400 clamp(30px,3.6vw,46px)/1.05 var(--sans);letter-spacing:-.03em;margin-top:14px}
+.tb .ld p.d{color:var(--ink-2);margin-top:16px;max-width:52ch}
+.tb .stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:auto;padding-top:32px}
+.tb .st{border:1px solid var(--line);border-radius:20px;padding:16px;background:var(--paper)}
+.tb .st .ic{width:40px;height:40px;border-radius:12px;background:linear-gradient(145deg,var(--clay),#EADBCB);color:var(--walnut);display:grid;place-items:center}
+.tb .st .ic svg{width:20px;height:20px}
+.tb .st b{display:block;font:400 26px/1.1 var(--serif);font-style:italic;color:var(--walnut);margin-top:12px}
+.tb .st small{font-size:13.5px;color:var(--ink-2);line-height:1.4;display:block;margin-top:2px}
+.tb .flow{display:grid;grid-template-columns:repeat(3,1fr);gap:0;margin-top:auto;padding-top:34px;position:relative}
+.tb .flow:before{content:"";position:absolute;left:20px;right:calc(33.3% - 20px);top:54px;height:1px;background:repeating-linear-gradient(90deg,var(--honey) 0 6px,transparent 6px 12px)}
+.tb .fs{position:relative;padding-right:18px}
+.tb .fs .ic{width:40px;height:40px;border-radius:50%;background:var(--walnut);color:#fff;display:grid;place-items:center;box-shadow:0 0 0 6px #fff,0 0 0 7px var(--line);position:relative}
+.tb .fs .ic svg{width:19px;height:19px}
+.tb .fs b{display:block;font:500 17px/1.3 var(--sans);margin-top:18px}
+.tb .fs small{display:block;font-size:14px;line-height:1.45;color:var(--ink-2);margin-top:4px}
+.tb .acts{display:flex;gap:22px;align-items:center;margin-top:26px;flex-wrap:wrap}
+.tb .btn{display:inline-flex;align-items:center;border-radius:999px;overflow:hidden;text-decoration:none;color:#fff;font-weight:600;font-size:15px;transition:transform .4s var(--ease)}
+.tb .btn i{width:46px;height:46px;background:var(--walnut);display:grid;place-items:center;transition:width .4s var(--ease)}
+.tb .btn i svg{width:18px;height:18px}
+.tb .btn span{background:var(--espresso);padding:0 22px;height:46px;display:flex;align-items:center}
+.tb .btn:hover{transform:translateY(-2px)}
+.tb .btn:hover i{width:54px}
+.tb .mh{display:flex;align-items:center;gap:14px;margin:48px 0 20px;color:var(--ink-2);font-size:15px}
+.tb .mh:after{content:"";flex:1;height:1px;background:var(--line)}
+.tb .mh .ic{width:34px;height:34px;border-radius:10px;background:var(--clay);color:var(--walnut);display:grid;place-items:center}
+.tb .mh svg{width:18px;height:18px}
+.tb .mem{display:grid;grid-template-columns:repeat(5,1fr);gap:16px}
+.tb .m{position:relative;border-radius:24px;overflow:hidden;aspect-ratio:3/4.3;background:var(--clay);box-shadow:var(--shadow);isolation:isolate}
+.tb .m img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 18%;transition:transform 1s var(--ease)}
+.tb .m:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 45%,rgba(42,29,23,.55) 68%,rgba(42,29,23,.95));z-index:0}
+.tb .m:before{content:"";position:absolute;inset:0;background:rgba(42,29,23,.35);z-index:0;opacity:0;transition:opacity .5s}
+.tb .m .tag{position:absolute;top:14px;left:14px;z-index:2;width:38px;height:38px;border-radius:12px;background:rgba(255,255,255,.75);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);color:var(--walnut);display:grid;place-items:center;transition:transform .5s var(--ease)}
+.tb .m .tag svg{width:19px;height:19px}
+.tb .m .cap{position:absolute;left:0;right:0;bottom:0;z-index:1;padding:18px;color:#fff}
+.tb .m .cap .r{font:600 10.5px/1.3 var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--honey);text-shadow:0 1px 8px rgba(0,0,0,.4)}
+.tb .m .cap h4{font:500 17px/1.25 var(--sans);margin-top:6px}
+.tb .m .more{display:grid;grid-template-rows:0fr;transition:grid-template-rows .6s var(--ease)}
+.tb .m .more>div{overflow:hidden}
+.tb .m .cap p{font-size:13.5px;line-height:1.5;color:#E9DCD1;padding-top:10px}
+.tb .m .cap .cf{margin-top:8px}
+.tb .m:hover img,.tb .m:focus-within img{transform:scale(1.06)}
+.tb .m:hover:before,.tb .m:focus-within:before{opacity:1}
+.tb .m:hover .more,.tb .m:focus-within .more{grid-template-rows:1fr}
+.tb .m:hover .tag{transform:rotate(-8deg)}
+.tb .m:nth-child(even){margin-top:28px}
+@media(max-width:1080px){.tb .ld{grid-template-columns:340px 1fr}
+.tb .mem{grid-template-columns:repeat(3,1fr)}
+.tb .m:nth-child(even){margin-top:0}}
+
+@media(max-width:820px){.tb .wrap{padding:0 16px}
+.tb .top{grid-template-columns:1fr;gap:16px}
+.tb .ld{grid-template-columns:1fr}
+.tb .ld .ph{aspect-ratio:1/1}
+.tb .flow{grid-template-columns:1fr;gap:18px}
+.tb .flow:before{left:20px;right:auto;top:54px;bottom:40px;width:1px;height:auto;background:repeating-linear-gradient(180deg,var(--honey) 0 6px,transparent 6px 12px)}
+.tb .fs{display:grid;grid-template-columns:40px 1fr;column-gap:16px}
+.tb .fs .ic{grid-row:span 2}
+.tb .fs b{margin-top:0}
+.tb .mem{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:12px;margin:0 -16px;padding:0 16px 10px;scrollbar-width:none}
+.tb .m{flex:0 0 68%;scroll-snap-align:start}
+.tb .m .more{grid-template-rows:1fr}
+.tb .mem{scroll-padding-left:16px}
+.tb .m:after{background:linear-gradient(180deg,transparent 30%,rgba(42,29,23,.7) 55%,rgba(42,29,23,.96))}}
+
+.tb .ld h3,.tb .fs b,.tb .m h4{font-family:var(--sans)}
+.tb .ld{margin-top:56px}
+
+.vhero{display:grid;grid-template-columns:1.2fr .8fr;gap:56px;align-items:center}
+.vph{margin:0;position:relative;border-radius:999px 999px 28px 28px;overflow:hidden;aspect-ratio:4/5;box-shadow:var(--shadow);max-width:420px;justify-self:end;width:100%}
+.vph img{width:100%;height:100%;object-fit:cover;object-position:50% 15%}
+.vph figcaption,.onl figcaption{position:absolute;left:16px;bottom:16px;display:flex;align-items:center;gap:10px;padding:8px 14px 8px 8px;border-radius:999px;background:rgba(255,255,255,.78);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);font-size:13.5px;font-weight:600;color:var(--espresso)}
+.vph figcaption span,.onl figcaption span{width:30px;height:30px;border-radius:50%;background:var(--walnut);color:#fff;display:grid;place-items:center}
+.vph figcaption svg,.onl figcaption svg{width:16px;height:16px}
+.onl{margin:22px 0 6px;position:relative;border-radius:24px;overflow:hidden;aspect-ratio:16/10;box-shadow:var(--shadow)}
+.onl img{width:100%;height:100%;object-fit:cover;object-position:50% 30%}
+@media(max-width:900px){.vhero{grid-template-columns:1fr;gap:28px}.vph{justify-self:start;max-width:340px}}
+.list li>.cf{grid-column:2;justify-self:start;margin-top:-8px}
+.tb svg.i{fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.tb .link{white-space:nowrap}.tb .link svg{width:16px;height:16px}
+/* ===== v10 inner pages ===== */
+.xhero{position:relative;overflow:hidden;padding-top:clamp(36px,5vw,70px);padding-bottom:clamp(60px,8vw,110px)}
+.xhero .tree{color:rgba(114,62,34,.055);width:620px;height:620px;left:-180px;top:-80px}
+.xhero .wrap{display:grid;grid-template-columns:1.08fr .92fr;gap:clamp(32px,6vw,90px);align-items:center;position:relative}
+.xhero h1{font-size:clamp(46px,6.6vw,96px);line-height:.97;letter-spacing:-.045em;margin:22px 0 24px;max-width:13ch}
+.xhero h1 em{color:var(--walnut)}
+.xtag{display:inline-flex;align-items:center;gap:10px;padding:6px 16px 6px 6px;border-radius:999px;background:#fff;border:1px solid var(--line);font-size:13.5px;font-weight:600;color:var(--walnut);margin-top:18px}
+.xtag span{width:30px;height:30px;border-radius:50%;display:grid;place-items:center;background:var(--clay-100)}
+.xtag svg{width:16px;height:16px}
+.xhero .cta{display:flex;flex-wrap:wrap;gap:14px;align-items:center;margin-top:30px}
+.xtrust{display:flex;flex-wrap:wrap;gap:10px 22px;margin-top:30px;font-size:14.5px;color:var(--ink-2)}
+.xtrust span{display:inline-flex;align-items:center;gap:8px}
+.xtrust svg{width:18px;height:18px;color:var(--walnut)}
+.xph{position:relative;justify-self:end;width:100%;max-width:500px}
+.xph .fr{border-radius:999px 999px 32px 32px;overflow:hidden;aspect-ratio:4/5;box-shadow:var(--shadow);background:var(--clay-100)}
+.xph .fr img{width:100%;height:100%;object-fit:cover;transform:scale(1.04);transition:transform 1.6s var(--ease)}
+.page.on .xph .fr img{transform:none}
+.xfl{position:absolute;display:flex;align-items:center;gap:12px;padding:12px 18px 12px 12px;border-radius:20px;background:rgba(255,255,255,.72);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border:1px solid rgba(255,255,255,.7);box-shadow:var(--shadow);font-size:13.5px;line-height:1.35;animation:xfloat 6s ease-in-out infinite}
+.xfl b{display:block;font-size:14.5px}
+.xfl small{color:var(--ink-2)}
+.xfl img{width:42px;height:42px;border-radius:50%;object-fit:cover;object-position:55% 15%}
+.xfl .xi{width:42px;height:42px;border-radius:14px}
+.xfl.a{left:-40px;bottom:70px}.xfl.b{right:-20px;top:60px;animation-delay:-3s}
+@keyframes xfloat{50%{transform:translateY(-8px)}}
+.xi{width:52px;height:52px;border-radius:16px;display:grid;place-items:center;background:linear-gradient(145deg,#fff,var(--clay-100));border:1px solid var(--line);color:var(--walnut);flex:none;position:relative;transition:transform .5s var(--ease),background .4s,color .4s}
+.xi svg{width:24px;height:24px}
+.xi.dot::after{content:"";position:absolute;right:-4px;top:-4px;width:11px;height:11px;border-radius:50%;background:var(--honey)}
+.dark .xi{background:rgba(250,247,242,.06);border-color:var(--dark-line);color:var(--honey)}
+
+/* at a glance */
+.xgl{display:grid;grid-template-columns:repeat(5,1fr);background:#fff;border:1px solid var(--line);border-radius:28px;box-shadow:var(--shadow);margin-top:-30px;position:relative;z-index:2}
+.xgl>div{padding:26px 24px;border-left:1px solid var(--line);display:grid;gap:12px;align-content:start}
+.xgl>div:first-child{border-left:0}
+.xgl small{font:600 11.5px/1.3 var(--sans);letter-spacing:.16em;text-transform:uppercase;color:var(--walnut)}
+.xgl p{font-size:15px;line-height:1.5;color:var(--ink)}
+.xgl .xi{width:44px;height:44px;border-radius:14px}.xgl .xi svg{width:21px;height:21px}
+
+/* sticky in-page nav */
+.xnav{position:sticky;top:78px;z-index:20;background:rgba(250,247,242,.86);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid var(--line);margin-top:56px}
+.xnav .wrap{display:flex;gap:8px;overflow-x:auto;padding-top:12px;padding-bottom:12px;scrollbar-width:none}
+.xnav a{flex:none;display:inline-flex;align-items:center;gap:8px;padding:9px 16px;border-radius:999px;font-size:14px;font-weight:500;color:var(--ink-2);border:1px solid transparent;transition:all .3s}
+.xnav a svg{width:16px;height:16px}
+.xnav a:hover{color:var(--walnut)}
+.xnav a.on{background:#fff;border-color:var(--line);color:var(--walnut);box-shadow:0 6px 18px -10px rgba(42,29,23,.3)}
+.xsec{padding-top:clamp(70px,9vw,120px);scroll-margin-top:140px}
+.xh{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:end;margin-bottom:48px}
+.xh h2{margin-top:22px}
+
+/* signs bento */
+.xsg{display:grid;grid-template-columns:1.15fr 1fr 1fr;gap:16px}
+.xsg article{background:#fff;border:1px solid var(--line);border-radius:28px;padding:30px;transition:transform .5s var(--ease),box-shadow .5s}
+.xsg article:hover{transform:translateY(-4px);box-shadow:var(--shadow)}
+.xsg article:hover .xi{transform:rotate(-8deg);background:var(--walnut);color:#fff}
+.xsg h3{font-size:22px;font-weight:500;letter-spacing:-.02em;margin:22px 0 4px}
+.xsg .k{font-size:14px;color:var(--ink-2)}
+.xsg ul{list-style:none;padding:0;margin:20px 0 0;display:grid;gap:12px}
+.xsg li{display:grid;grid-template-columns:22px 1fr;gap:12px;font-size:15.5px;line-height:1.5}
+.xsg li::before{content:"";width:20px;height:20px;border-radius:50%;margin-top:2px;background:var(--clay-100) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23723E22' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M6 12.5l4 4 8-9'/%3E%3C/svg%3E") center/12px no-repeat}
+.xsg article.big{grid-row:span 2;background:linear-gradient(160deg,#fff 30%,var(--clay-100));display:flex;flex-direction:column}
+.xsg article.big .ph{margin-top:auto;padding-top:24px}
+.xsg article.big .ph img{width:100%;aspect-ratio:16/10;object-fit:cover;border-radius:20px}
+.xsg article.wide{grid-column:span 2;display:grid;grid-template-columns:auto 1fr;gap:24px;align-items:center;background:var(--espresso);color:var(--on-dark);border-color:var(--espresso)}
+.xsg article.wide h3{margin-top:0;color:#fff}.xsg article.wide p{color:var(--on-dark-2);font-size:15.5px;margin-top:6px}
+.xsg article.wide .xi{background:rgba(250,247,242,.08);border-color:var(--dark-line);color:var(--honey)}
+
+/* panic wave */
+.xpw{border-radius:32px;overflow:hidden;position:relative;padding:clamp(30px,5vw,60px)}
+.xpw .tree{color:rgba(217,174,132,.06);width:520px;height:520px;right:-140px;bottom:-160px}
+.xpw .in2{display:grid;grid-template-columns:.9fr 1.1fr;gap:clamp(30px,5vw,70px);align-items:center;position:relative}
+.xpw h2{font-size:clamp(32px,4vw,52px);line-height:1.05;margin-top:20px}
+.xpw p.lead{margin-top:18px}
+.xwave{position:relative;background:rgba(250,247,242,.04);border:1px solid var(--dark-line);border-radius:24px;padding:26px 22px 18px}
+.xwave svg{width:100%;height:auto;display:block;overflow:visible}
+.xwave .cv{fill:none;stroke:var(--honey);stroke-width:2.5;stroke-linecap:round;stroke-dasharray:900;stroke-dashoffset:900;transition:stroke-dashoffset 2.6s var(--ease)}
+.xwave .ar{fill:url(#xwg);opacity:0;transition:opacity 1.2s 1.4s}
+.xwave.in .cv{stroke-dashoffset:0}.xwave.in .ar{opacity:1}
+.xwave .pk{opacity:0;transition:opacity .6s 2.2s}.xwave.in .pk{opacity:1}
+.xwave .lb{display:flex;justify-content:space-between;font-size:13px;color:var(--on-dark-2);margin-top:12px;gap:10px}
+.xwave .lb b{color:var(--on-dark);font-weight:600;display:block;font-size:14px}
+.xnote{display:flex;gap:16px;align-items:flex-start;margin-top:28px;padding:20px 22px;border-radius:20px;background:rgba(179,38,30,.12);border:1px solid rgba(255,140,130,.25);font-size:15px;color:var(--on-dark)}
+.xnote svg{width:22px;height:22px;color:#FF9C92;flex:none;margin-top:2px}
+
+/* therapy path */
+.xpath{display:grid;grid-template-columns:.85fr 1.15fr;gap:clamp(30px,6vw,90px);align-items:start}
+.xpath .xst{position:sticky;top:150px}
+.xpath .xst .fr{border-radius:28px 28px 28px 120px;overflow:hidden;aspect-ratio:4/5;box-shadow:var(--shadow)}
+.xpath .xst .fr img{width:100%;height:100%;object-fit:cover;object-position:50% 20%}
+.xpath .xst .cap{display:flex;align-items:center;gap:12px;margin-top:16px;font-size:14px;color:var(--ink-2)}
+.xpl{position:relative;padding-left:76px}
+.xpl::before{content:"";position:absolute;left:25px;top:10px;bottom:10px;width:2px;background:var(--line);border-radius:2px}
+.xpl .fill{position:absolute;left:25px;top:10px;width:2px;height:calc((100% - 20px) * var(--p,0));background:linear-gradient(180deg,var(--honey),var(--walnut));border-radius:2px;transition:height .2s linear}
+.xpl .s{position:relative;padding:4px 0 46px}
+.xpl .s:last-child{padding-bottom:0}
+.xpl .s .xi{position:absolute;left:-76px;top:0;background:#fff;transition:background .5s,color .5s,transform .5s var(--ease)}
+.xpl .s.on .xi{background:var(--walnut);color:#fff;border-color:var(--walnut);transform:scale(1.06)}
+.xpl .s small{font:italic 400 22px/1 var(--serif);color:var(--walnut)}
+.xpl .s h3{font-size:clamp(21px,2vw,26px);font-weight:500;letter-spacing:-.02em;margin:8px 0 6px;transition:color .4s}
+.xpl .s p{color:var(--ink-2);max-width:46ch}
+.xpl .s:not(.on) h3{color:#A8968A}
+.xpl .s .cf{margin-top:8px}
+
+/* tools */
+.xtools{display:grid;grid-template-columns:1.3fr 1fr 1fr;grid-template-rows:auto auto;gap:16px}
+.xtools article{background:#fff;border:1px solid var(--line);border-radius:26px;padding:26px;display:flex;flex-direction:column;gap:14px;min-height:200px;transition:transform .5s var(--ease),box-shadow .5s}
+.xtools article:hover{transform:translateY(-4px);box-shadow:var(--shadow)}
+.xtools article .n{font:italic 400 28px/1 var(--serif);color:var(--honey);margin-left:auto}
+.xtools article .tp{display:flex;align-items:center}
+.xtools article p{font-size:16.5px;line-height:1.5;margin-top:auto}
+.xtools .br{grid-row:span 2;background:var(--espresso);color:var(--on-dark);border-color:var(--espresso);align-items:center;text-align:center;justify-content:center}
+.xtools .br p{margin-top:0;color:var(--on-dark)}
+.xtools .br small{color:var(--on-dark-2);font-size:14px}
+.xbr{width:190px;height:190px;border-radius:50%;position:relative;display:grid;place-items:center;margin:10px 0 18px}
+.xbr::before,.xbr::after{content:"";position:absolute;inset:0;border-radius:50%;border:1px solid rgba(217,174,132,.35)}
+.xbr::after{inset:-18px;border-color:rgba(217,174,132,.15)}
+.xbr i{width:100%;height:100%;border-radius:50%;background:radial-gradient(circle at 40% 35%,#E8C49E,#B27A4E 60%,#723E22);box-shadow:0 0 60px rgba(217,174,132,.35);animation:xbreath 10s ease-in-out infinite}
+.xbr span{position:absolute;font-size:14px;font-weight:600;color:#fff;letter-spacing:.04em}
+.xbr span.o{opacity:0;animation:xbo 10s infinite}.xbr span.i2{animation:xbi 10s infinite}
+@keyframes xbreath{0%{transform:scale(.55)}40%{transform:scale(1)}100%{transform:scale(.55)}}
+@keyframes xbi{0%,38%{opacity:1}42%,100%{opacity:0}}
+@keyframes xbo{0%,40%{opacity:0}44%,96%{opacity:1}100%{opacity:0}}
+
+/* faq split */
+.xfq{display:grid;grid-template-columns:.8fr 1.2fr;gap:clamp(30px,6vw,90px);align-items:start}
+.xfq .card{position:sticky;top:150px;background:#fff;border:1px solid var(--line);border-radius:28px;overflow:hidden;box-shadow:var(--shadow)}
+.xfq .card img{width:100%;aspect-ratio:5/4;object-fit:cover;object-position:50% 20%}
+.xfq .card div{padding:24px}
+.xfq .card p{color:var(--ink-2);font-size:15.5px;margin:8px 0 18px}
+.xrev{display:flex;gap:16px;align-items:center;margin-top:30px;padding:18px 22px;border-radius:20px;background:var(--clay-100);font-size:14.5px}
+.xrev img{width:52px;height:52px;border-radius:50%;object-fit:cover;object-position:55% 15%;border:2px solid #fff}
+.xrefs{margin-top:18px;font-size:13px;color:var(--ink-2);display:flex;gap:10px;align-items:flex-start}
+.xrefs svg{width:16px;height:16px;flex:none;margin-top:2px;color:var(--walnut)}
+
+/* related + end band */
+.xrel{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.xrel a{display:flex;flex-direction:column;gap:16px;padding:22px;border-radius:24px;background:#fff;border:1px solid var(--line);transition:transform .5s var(--ease),box-shadow .5s,border-color .4s}
+.xrel a:hover{transform:translateY(-4px);box-shadow:var(--shadow);border-color:transparent}
+.xrel a:hover .xi{background:var(--walnut);color:#fff;transform:rotate(-8deg)}
+.xrel b{font-size:18px;font-weight:500;letter-spacing:-.015em}
+.xrel small{color:var(--ink-2);font-size:14.5px;line-height:1.45}
+.xrel .go{margin-top:auto;display:inline-flex;align-items:center;gap:6px;font-size:14px;font-weight:600;color:var(--walnut)}
+.xrel .go svg{width:16px;height:16px}
+.xend{margin-top:clamp(80px,10vw,130px);margin-bottom:clamp(60px,8vw,100px);border-radius:36px;overflow:hidden;display:grid;grid-template-columns:1.1fr .9fr;background:var(--espresso);color:var(--on-dark);position:relative}
+.xend .tx{padding:clamp(32px,5vw,64px);position:relative;z-index:1}
+.xend h2{font-size:clamp(32px,4vw,54px);line-height:1.05;margin-top:20px}
+.xend h2 em{color:var(--honey)}
+.xend p{color:var(--on-dark-2);margin-top:16px;max-width:44ch}
+.xend .cta{display:flex;flex-wrap:wrap;gap:14px;margin-top:30px}
+.xend .im{position:relative;min-height:360px}
+.xend .im img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.xend .im::before{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(90deg,var(--espresso),transparent 40%)}
+.xend .cr{display:flex;align-items:center;gap:10px;margin-top:26px;font-size:14px;color:var(--on-dark-2)}
+.xend .cr b{color:#FF9C92}
+
+/* art placeholder for AI images */
+.xart{position:relative;overflow:hidden;background:radial-gradient(120% 90% at 20% 10%,#FFF8EF,transparent 55%),radial-gradient(90% 90% at 90% 100%,rgba(217,174,132,.55),transparent 60%),linear-gradient(160deg,#F6EDE3,#E9D8C6);display:grid;place-items:center;color:var(--walnut)}
+.xart::before{content:"";position:absolute;width:85%;aspect-ratio:1;right:-25%;bottom:-30%;background:rgba(114,62,34,.07);-webkit-mask:var(--tree) center/contain no-repeat;mask:var(--tree) center/contain no-repeat}
+.xart>svg{width:34%;height:auto;stroke-width:.9;opacity:.85;position:relative}
+.xart .lbl{position:absolute;left:14px;top:14px}
+
+/* services */
+.xways{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+.xway{position:relative;border-radius:30px;overflow:hidden;background:#fff;border:1px solid var(--line);display:grid;grid-template-columns:.95fr 1.05fr;min-height:340px;transition:transform .5s var(--ease),box-shadow .5s}
+.xway:hover{transform:translateY(-5px);box-shadow:var(--shadow)}
+.xway .m{position:relative;overflow:hidden}
+.xway .m img,.xway .m .xart{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform 1.2s var(--ease)}
+.xway:hover .m img{transform:scale(1.05)}
+.xway .b{padding:30px;display:flex;flex-direction:column;gap:12px}
+.xway .b small{font:italic 400 24px/1 var(--serif);color:var(--honey)}
+.xway h3{font-size:clamp(22px,2.2vw,28px);font-weight:500;letter-spacing:-.02em;line-height:1.15}
+.xway p{color:var(--ink-2);font-size:15.5px}
+.xway .go{margin-top:auto;display:inline-flex;align-items:center;gap:8px;font-weight:600;color:var(--walnut);font-size:15px}
+.xway .go svg{width:18px;height:18px;transition:transform .4s var(--ease)}.xway:hover .go svg{transform:translateX(4px)}
+.xcon{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.xcon a{position:relative;display:grid;grid-template-columns:auto 1fr auto;gap:18px;align-items:center;padding:22px;border-radius:24px;background:#fff;border:1px solid var(--line);transition:transform .5s var(--ease),box-shadow .5s,background .4s}
+.xcon a:hover{transform:translateY(-4px);box-shadow:var(--shadow)}
+.xcon a:hover .xi{background:var(--walnut);color:#fff;transform:rotate(-8deg)}
+.xcon b{display:block;font-size:18px;font-weight:500;letter-spacing:-.015em}
+.xcon small{display:block;color:var(--ink-2);font-size:14.5px;line-height:1.45;margin-top:4px}
+.xcon .go{width:38px;height:38px;border-radius:50%;border:1px solid var(--line);display:grid;place-items:center;color:var(--walnut);transition:transform .4s var(--ease),background .4s,color .4s}
+.xcon .go svg{width:16px;height:16px}
+.xcon a:hover .go{background:var(--espresso);color:#fff;transform:rotate(-45deg)}
+.xcon a.ft{grid-column:span 4;align-items:stretch;grid-template-columns:1fr 1fr;padding:0;overflow:hidden;background:var(--espresso);color:var(--on-dark);border-color:var(--espresso);gap:0}
+.xcon a.ft .tt{padding:clamp(28px,4vw,48px)}
+.xcon a.ft .tt small{color:var(--on-dark-2);font-size:16px;max-width:42ch}
+.xcon a.ft b{font-size:clamp(26px,3vw,38px);margin-top:18px;color:#fff}
+.xcon a.ft .im{position:relative;min-height:300px}
+.xcon a.ft .im img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 30%}
+.xcon a.ft .im::before{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(90deg,var(--espresso),transparent 35%)}
+.xcon a.ft .btn{margin-top:26px}
+.xtri{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.xtri article{border-radius:28px;overflow:hidden;background:#fff;border:1px solid var(--line);display:flex;flex-direction:column}
+.xtri .m{aspect-ratio:16/10;position:relative}
+.xtri .m img,.xtri .m .xart{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.xtri .b{padding:26px;display:grid;gap:10px}
+.xtri .b small{font:600 11.5px/1.3 var(--sans);letter-spacing:.16em;text-transform:uppercase;color:var(--walnut)}
+.xtri h3{font-size:22px;font-weight:500;letter-spacing:-.02em}
+.xtri ul{list-style:none;padding:0;margin:6px 0 0;display:grid;gap:10px}
+.xtri li{display:flex;gap:10px;align-items:flex-start;font-size:15px;line-height:1.45}
+.xtri li svg{width:18px;height:18px;flex:none;color:var(--walnut);margin-top:2px}
+.xtri article.no{background:var(--clay-100);border-color:var(--clay-100)}
+.xtri article.no li svg{color:var(--alert)}
+
+/* doctor */
+.xab{display:grid;grid-template-columns:.9fr 1.1fr;gap:clamp(30px,6vw,90px);align-items:start}
+.xab .col{position:relative}
+.xab .col .a{border-radius:28px;overflow:hidden;aspect-ratio:4/5;box-shadow:var(--shadow);width:78%}
+.xab .col .a img{width:100%;height:100%;object-fit:cover;object-position:50% 20%}
+.xab .col .q{position:absolute;right:0;bottom:-30px;width:62%;background:var(--espresso);color:var(--on-dark);border-radius:24px;padding:24px;box-shadow:var(--shadow)}
+.xab .col .q p{font:italic 400 clamp(20px,2vw,26px)/1.25 var(--serif)}
+.xab .col .q small{display:block;margin-top:10px;color:var(--on-dark-2);font-size:13px}
+.xab .tx{display:grid;gap:18px}
+.xpsy{display:flex;gap:18px;align-items:flex-start;padding:22px 24px;border-radius:22px;background:#fff;border:1px solid var(--line);margin-top:8px}
+.xpsy b{display:block;font-size:17px;margin-bottom:4px}
+.xpsy p{font-size:15.5px;color:var(--ink-2)}
+.xbey{display:grid;grid-template-columns:1.2fr 1fr;gap:16px}
+.xbey .ph{position:relative;border-radius:30px;overflow:hidden;min-height:420px}
+.xbey .ph img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:30% 30%}
+.xbey .ph::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 45%,rgba(26,18,14,.85))}
+.xbey .ph div{position:absolute;left:0;right:0;bottom:0;z-index:1;padding:28px;color:#fff}
+.xbey .ph small{font:600 11.5px/1.3 var(--sans);letter-spacing:.16em;text-transform:uppercase;color:var(--honey)}
+.xbey .ph h3{font-size:clamp(22px,2.4vw,30px);font-weight:500;letter-spacing:-.02em;margin-top:8px;line-height:1.2}
+.xbey .ls{display:grid;gap:14px}
+.xbey .ls article{display:flex;gap:18px;align-items:flex-start;padding:24px;border-radius:24px;background:#fff;border:1px solid var(--line)}
+.xbey .ls h3{font-size:19px;font-weight:500;margin-bottom:4px}
+.xbey .ls p{font-size:15px;color:var(--ink-2)}
+.xaw{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.xaw .awc{min-height:460px}
+
+/* team */
+.xmos{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;justify-self:end;width:100%;max-width:520px}
+.xmos figure{margin:0;border-radius:22px;overflow:hidden;aspect-ratio:3/4;box-shadow:var(--shadow);background:var(--clay-100)}
+.xmos figure img{width:100%;height:100%;object-fit:cover;object-position:50% 18%;transition:transform 1s var(--ease)}
+.xmos figure:hover img{transform:scale(1.06)}
+.xmos figure:nth-child(3n+2){transform:translateY(36px)}
+.xmos figure:first-child{border-radius:999px 999px 22px 22px}
+.xroles{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.xroles article{background:#fff;border:1px solid var(--line);border-radius:28px;padding:30px;display:flex;flex-direction:column;gap:14px}
+.xroles article.on{background:linear-gradient(160deg,#fff 30%,var(--clay-100))}
+.xroles h3{font-size:24px;font-weight:500;letter-spacing:-.02em}
+.xroles .who{display:flex;align-items:center;gap:10px}
+.xroles .who img{width:36px;height:36px;border-radius:50%;object-fit:cover;object-position:50% 18%;border:2px solid #fff;margin-left:-10px;box-shadow:0 2px 6px rgba(0,0,0,.12)}
+.xroles .who img:first-child{margin-left:0}
+.xroles .who span{font-size:13.5px;color:var(--ink-2);margin-left:4px}
+.xroles dl{margin:4px 0 0;display:grid;gap:14px}
+.xroles dt{font:600 11.5px/1.3 var(--sans);letter-spacing:.16em;text-transform:uppercase;color:var(--walnut)}
+.xroles dd{margin:4px 0 0;font-size:15.5px;color:var(--ink);line-height:1.5}
+.xflow4{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;position:relative}
+.xflow4::before{content:"";position:absolute;left:8%;right:8%;top:34px;height:1px;background:repeating-linear-gradient(90deg,var(--honey) 0 6px,transparent 6px 12px)}
+.xflow4 article{position:relative;text-align:center;padding:0 10px}
+.xflow4 .xi{margin:0 auto;width:68px;height:68px;border-radius:50%;background:#fff;box-shadow:0 0 0 8px var(--paper)}
+.xflow4 article:hover .xi{background:var(--walnut);color:#fff}
+.xflow4 small{display:block;font:italic 400 22px/1 var(--serif);color:var(--walnut);margin-top:20px}
+.xflow4 h3{font-size:19px;font-weight:500;margin:8px 0 6px}
+.xflow4 p{font-size:15px;color:var(--ink-2)}
+.xconf{border-radius:36px;padding:clamp(32px,5vw,64px);position:relative;overflow:hidden}
+.xconf .tree{color:rgba(217,174,132,.06);width:520px;height:520px;right:-120px;top:-120px}
+.xconf .in2{display:grid;grid-template-columns:1fr 1fr;gap:clamp(30px,5vw,70px);align-items:center;position:relative}
+.xconf .pts{display:grid;gap:14px}
+.xconf .pts div{display:flex;gap:16px;align-items:flex-start;padding:20px;border-radius:20px;border:1px solid var(--dark-line);background:rgba(250,247,242,.04)}
+.xconf .pts b{display:block;color:#fff;font-size:17px}
+.xconf .pts p{color:var(--on-dark-2);font-size:15px;margin-top:2px}
+.xduo{display:grid;grid-template-columns:1.3fr 1fr;gap:16px}
+.xduo figure{margin:0;position:relative;border-radius:28px;overflow:hidden;min-height:380px}
+.xduo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.xduo figcaption{position:absolute;left:16px;bottom:16px;z-index:1;display:flex;align-items:center;gap:10px;padding:8px 14px 8px 8px;border-radius:999px;background:rgba(255,255,255,.78);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);font-size:13.5px;font-weight:600;color:var(--espresso)}
+.xduo figcaption span{width:30px;height:30px;border-radius:50%;background:var(--walnut);color:#fff;display:grid;place-items:center}
+.xduo figcaption svg{width:16px;height:16px}
+
+@media(max-width:1080px){
+ .xgl{grid-template-columns:repeat(3,1fr)}.xgl>div:nth-child(4){border-left:0}.xgl>div:nth-child(n+4){border-top:1px solid var(--line)}
+ .xrel{grid-template-columns:repeat(2,1fr)}.xcon{grid-template-columns:repeat(2,1fr)}.xcon a.ft{grid-column:span 2}
+ .xway{grid-template-columns:1fr}.xway .m{aspect-ratio:16/9}
+}
+@media(max-width:900px){
+ .xhero .wrap,.xh,.xpath,.xfq,.xab,.xbey,.xaw,.xpw .in2,.xconf .in2,.xduo{grid-template-columns:1fr}
+ .xph{justify-self:start;max-width:380px}.xfl.a{left:-6px}.xfl.b{right:-6px}
+ .xsg{grid-template-columns:1fr}.xsg article.big{grid-row:auto}.xsg article.wide{grid-column:auto;grid-template-columns:1fr}
+ .xpath .xst{position:relative;top:0;max-width:380px}
+ .xtools{grid-template-columns:1fr 1fr}.xtools .br{grid-column:span 2;grid-row:auto}
+ .xfq .card{position:relative;top:0}
+ .xend{grid-template-columns:1fr}.xend .im{min-height:260px;order:-1}.xend .im::before{background:linear-gradient(0deg,var(--espresso),transparent 50%)}
+ .xways{grid-template-columns:1fr}
+ .xtri,.xroles{grid-template-columns:1fr}
+ .xflow4{grid-template-columns:1fr 1fr;row-gap:36px}.xflow4::before{display:none}
+ .xab .col .a{width:85%}.xab .col .q{position:relative;width:auto;margin:-60px 0 0 22%;bottom:0}
+ .xmos{justify-self:start}
+ .xnav{top:70px}
+}
+@media(max-width:640px){
+ .xgl{grid-template-columns:1fr 1fr}.xgl>div{border-left:0!important;border-top:1px solid var(--line)}.xgl>div:first-child{grid-column:span 2;border-top:0}
+ .xrel,.xcon{grid-template-columns:1fr}.xcon a.ft{grid-column:auto;grid-template-columns:1fr}.xcon a.ft .im{min-height:220px;order:-1}.xcon a.ft .im::before{background:linear-gradient(0deg,var(--espresso),transparent 50%)}
+ .xtools{grid-template-columns:1fr}.xtools .br{grid-column:auto}
+ .xflow4{grid-template-columns:1fr}
+ .xpl{padding-left:66px}.xpl .s .xi{left:-66px;width:46px;height:46px}.xpl::before,.xpl .fill{left:22px}
+ .xaw .awc{min-height:380px}
+}
+@media(prefers-reduced-motion:reduce){.xfl,.xbr i,.xbr span{animation:none!important}.xbr span.o{display:none}.xwave .cv{stroke-dashoffset:0}.xwave .ar,.xwave .pk{opacity:1}}
+
+.xend .cr svg{width:18px;height:18px;color:#FF9C92;flex:none}.xrel a .xi,.xcon a .xi{width:48px;height:48px}
+.xtri .no .b{padding-top:30px}
+.why .cf{font:600 11.5px/1.5 var(--sans)!important;display:inline-block!important;margin:0!important;font-style:normal!important;color:var(--confirm-ink)!important}
+.xart svg.ic{width:30%;height:auto;stroke-width:.8;opacity:.8}
+.xend .eyebrow{color:var(--honey)}.xend .ghost{background:transparent;border-color:var(--dark-line);color:var(--on-dark)}.xend .ghost:hover{border-color:var(--honey)}
+.xhero{padding-top:clamp(48px,6vw,90px)}
+.xcon a{grid-template-columns:auto 1fr;}.xcon a .go{display:none}.xcon a:not(.ft){align-content:start;grid-template-columns:1fr;gap:14px}
+.xcon a:not(.ft) .go{display:grid;position:absolute;right:18px;top:18px}
+@media(max-width:1080px){.xcon{grid-template-columns:repeat(2,1fr)}.xcon a.ft{grid-column:span 2}}
+@media(max-width:640px){.xcon a.ft{grid-column:auto}}
+@media(max-width:640px){.xcon{grid-template-columns:1fr}}
+.xpath .xst .fr{width:100%}
+@media(max-width:900px){.xpath .xst{width:100%}}
+.xcare{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.xcare article{position:relative;background:#fff;border:1px solid var(--line);border-radius:28px;padding:26px;overflow:hidden;transition:transform .5s var(--ease),box-shadow .5s}
+.xcare article:hover{transform:translateY(-4px);box-shadow:var(--shadow)}
+.xcare article:hover>.xi,.xcare article:hover .tx>.xi{transform:rotate(-8deg);background:var(--walnut);color:#fff}
+.xcare small{display:block;font:italic 400 22px/1 var(--serif);color:var(--honey);margin-top:18px}
+.xcare h3{font-size:22px;font-weight:500;letter-spacing:-.02em;margin-top:6px}
+.xcare p{color:var(--ink-2);font-size:15px;margin-top:6px}
+.cch{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}
+.cch a{display:inline-flex;align-items:center;gap:0;padding:8px 14px;border-radius:999px;border:1px solid var(--line);background:var(--paper);font-size:14px;color:var(--ink);transition:background .3s,color .3s,border-color .3s,padding .3s}
+.cch a i{display:inline-grid;width:0;overflow:hidden;transition:width .3s var(--ease),margin .3s}
+.cch a i svg{width:14px;height:14px}
+.cch a:hover,.cch a:focus-visible{background:var(--walnut);border-color:var(--walnut);color:#fff}
+.cch a:hover i,.cch a:focus-visible i{width:14px;margin-left:6px}
+.xcare .c-feel{grid-column:span 2;grid-row:span 2;display:grid;grid-template-rows:auto 1fr;padding:0;background:linear-gradient(160deg,#fff 40%,var(--clay-100))}
+.xcare .c-feel .tx{padding:30px}
+.xcare .c-feel h3{font-size:clamp(26px,2.6vw,34px)}
+.xcare .c-feel .ph{margin:0 30px 30px;max-height:340px;border-radius:22px;overflow:hidden;min-height:200px;position:relative}
+.xcare .c-feel .ph img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:40% 60%}
+.xcare .c-think{grid-column:span 2;display:grid;grid-template-columns:auto 1fr;gap:20px;align-items:start}
+.xcare .c-think small{margin-top:0}
+.xcare .c-img{padding:0;display:flex;flex-direction:column}
+.xcare .c-img .ph{height:130px;overflow:hidden}
+.xcare .c-img .ph img{width:100%;height:100%;object-fit:cover;transition:transform 1s var(--ease)}
+.xcare .c-img:hover .ph img{transform:scale(1.06)}
+.xcare .c-img .tx{padding:0 22px 24px;position:relative}
+.xcare .c-img .tx>.xi{margin-top:-26px;background:#fff}
+.xcare .c-start{grid-column:span 2;background:var(--espresso);border-color:var(--espresso);color:var(--on-dark);display:flex;flex-direction:column;justify-content:space-between;gap:22px;padding:30px}
+.xcare .c-start .tree{color:rgba(217,174,132,.07);width:300px;height:300px;right:-70px;bottom:-90px}
+.xcare .c-start .eyebrow{color:var(--honey)}
+.xcare .c-start h3{color:#fff;font-size:clamp(24px,2.4vw,30px);margin-top:14px}
+.xcare .c-start p{color:var(--on-dark-2);max-width:44ch}
+.xcare .c-start .cta{display:flex;flex-wrap:wrap;gap:12px;position:relative}
+.xcare .c-start .ghost{background:transparent;border-color:var(--dark-line);color:var(--on-dark)}
+@media(max-width:1080px){.xcare{grid-template-columns:repeat(2,1fr)}.xcare .c-feel{grid-row:auto}}
+@media(max-width:640px){.xcare{grid-template-columns:1fr}.xcare .c-feel,.xcare .c-think,.xcare .c-start{grid-column:auto}.xcare .c-think{grid-template-columns:1fr}.xcare .c-think small{margin-top:14px}}
 </style>
 <div class="prog" id="prog"></div>
 <div class="site">
-<div class="devnote">Design preview v7 · Yellow <span class="cf">CONFIRM</span> chips mark facts or wording Dr. Desai still has to approve. Pages: <a href="#home"><u>Home</u></a> · <a href="#doctor"><u>Dr. Desai</u></a> · <a href="#services"><u>Services</u></a> · <a href="#anxiety"><u>Anxiety</u></a> · <a href="#team"><u>Team</u></a> · <a href="#visit"><u>First session</u></a> · <a href="#help"><u>Get help now</u></a> · <a href="#book"><u>Book</u></a></div>
+<div class="devnote">Design preview v12 · Yellow <span class="cf">CONFIRM</span> chips mark facts or wording Dr. Desai still has to approve. Pages: <a href="#home"><u>Home</u></a> · <a href="#doctor"><u>Dr. Desai</u></a> · <a href="#services"><u>Services</u></a> · <a href="#anxiety"><u>Anxiety</u></a> · <a href="#team"><u>Team</u></a> · <a href="#visit"><u>First session</u></a> · <a href="#help"><u>Get help now</u></a> · <a href="#book"><u>Book</u></a></div>
 <div class="crisis">Not an emergency service. In danger? Call <b>112</b> or <b>Tele-MANAS 14416</b> (free, 24 hours). <a href="#help">Get help now</a></div>
 
 <header class="nav g" id="nav"><div class="wrap">
@@ -688,7 +1146,7 @@ select{width:100%;font:400 16.5px var(--sans);padding:15px 16px;border:1px solid
     </div>
     <div class="portrait">
       <div class="glow"></div>
-      <div class="arch photo"><img src="assets/dr-portrait.jpg" alt="Dr. Mithila Desai, smiling, seated at a table" style="object-position:50% 30%"><span class="sig">Since 1989 · Mumbai</span></div>
+      <div class="arch photo"><img src="dr-portrait.jpg" alt="Dr. Mithila Desai, smiling, seated at a table" style="object-position:50% 30%"><span class="sig">Since 1989 · Mumbai</span></div>
       <div class="float f1"><span style="display:flex;gap:10px;align-items:center"><i class="dot"></i><b>Dr. Mithila Desai, PhD</b></span><span class="muted">Clinical psychologist</span></div>
       <div class="float f2"><b>ELLE India 2026</b><span class="muted">Mental Health Expert of the Year</span></div>
     </div>
@@ -713,7 +1171,7 @@ select{width:100%;font:400 16.5px var(--sans);padding:15px 16px;border:1px solid
   </div></section>
 
   <section class="sec g" style="padding-top:0"><div class="wrap big35">
-    <div class="col35 rv"><div class="a"><img src="assets/dr-elle-2026.jpg" alt="Dr. Desai at the ELLE India awards, 2026" style="object-position:50% 20%"></div><div class="b"><img src="assets/dr-award-2023.jpg" alt="Dr. Desai with her 2023 award" style="object-position:35% 25%"></div>
+    <div class="col35 rv"><div class="a"><img src="dr-elle-2026.jpg" alt="Dr. Desai at the ELLE India awards, 2026" style="object-position:50% 20%"></div><div class="b"><img src="dr-award-2023.jpg" alt="Dr. Desai with her 2023 award" style="object-position:35% 25%"></div>
       <div class="badge35"><svg viewBox="0 0 100 100"><defs><path id="cp" d="M50 50 m-38 0 a38 38 0 1 1 76 0 a38 38 0 1 1 -76 0"/></defs><text><textPath href="#cp">Years of practice · Mumbai · since 1989 ·</textPath></text></svg><b>35<small>YEARS</small></b></div></div>
     <div class="rv"><span class="eyebrow">Since 1989 <span class="cf">CONFIRM year</span></span><p class="state" style="margin-top:22px">Thirty-five years of sitting with people in <em>Mumbai</em>, through exams, marriages, losses and new beginnings.</p>
       <div class="facts3"><div><span class="fi">IFAMILY</span><b>Children to elders</b><span>Every age, every stage</span></div><div><span class="fi">ICAP</span><b>Schools and workplaces</b><span>Programmes across the city</span></div><div><span class="fi">IAWARD</span><b>Two national awards</b><span>2023 and 2026</span></div></div></div>
@@ -736,7 +1194,7 @@ select{width:100%;font:400 16.5px var(--sans);padding:15px 16px;border:1px solid
     <span class="eyebrow">02 · Her story</span>
     <h2 class="h2 chars" style="margin-top:22px;max-width:18ch">Three and a half decades of <em>listening</em>.</h2>
     <div class="story">
-      <div class="stick"><div class="arch photo"><img src="assets/dr-award-2023.jpg" alt="Dr. Mithila Desai with her 2023 award" style="object-position:40% 30%"></div></div>
+      <div class="stick"><div class="arch photo"><img src="dr-award-2023.jpg" alt="Dr. Mithila Desai with her 2023 award" style="object-position:40% 30%"></div></div>
       <div class="yrs" id="yrs"><i class="flow" id="flow"></i>
         <div class="yr rv"><b>1980s</b><h3>Choosing psychology</h3><p>At a time when mental health was rarely spoken about at home, she trained as a clinical psychologist in Mumbai. <span class="cf">CONFIRM</span></p></div>
         <div class="yr rv"><b>1989</b><h3>Opening a practice</h3><p>She began seeing clients in Mumbai, with one belief that still shapes every session: people heal when they feel heard. <span class="cf">CONFIRM year</span></p></div>
@@ -752,15 +1210,44 @@ select{width:100%;font:400 16.5px var(--sans);padding:15px 16px;border:1px solid
     <div class="two" style="align-items:end"><div><span class="eyebrow">03 · Recognition</span><h2 class="h2" style="margin-top:22px">Recognised for her <em>work</em>.</h2></div>
     <p class="lead">Awards are not a promise of results. They reflect the care she has brought to mental health in Mumbai for over three decades.</p></div>
     <div class="aw">
-      <div class="awc rv"><img src="assets/dr-elle-2026.jpg" alt="Dr. Desai receiving the ELLE India award"><div><small>ELLE India · 2026</small><h3>Mental Health Expert of the Year</h3><p>ELLE India Beauty and Wellness Awards</p></div></div>
-      <div class="awc rv"><img src="assets/dr-award-2023.jpg" alt="Dr. Desai with the Women Entrepreneur Award" style="object-position:30% 20%"><div><small>Women Entrepreneur Awards · 2023</small><h3>Excellence in Mental Health and Wellness</h3><p>For outstanding contribution over the year</p></div></div>
+      <div class="awc rv"><img src="dr-elle-2026.jpg" alt="Dr. Desai receiving the ELLE India award"><div><small>ELLE India · 2026</small><h3>Mental Health Expert of the Year</h3><p>ELLE India Beauty and Wellness Awards</p></div></div>
+      <div class="awc rv"><img src="dr-award-2023.jpg" alt="Dr. Desai with the Women Entrepreneur Award" style="object-position:30% 20%"><div><small>Women Entrepreneur Awards · 2023</small><h3>Excellence in Mental Health and Wellness</h3><p>For outstanding contribution over the year</p></div></div>
     </div>
   </div></section>
 
   <section class="sec g" style="padding-top:0"><div class="wrap">
     <div class="two" style="align-items:end"><div><span class="eyebrow">The people behind the practice</span><h2 class="h2" style="margin-top:22px">A dedicated team, one shared <em>approach</em>.</h2></div>
     <p class="lead">Dr. Desai leads a multidisciplinary team of psychologists, a consultant psychiatrist and a care coordinator, so every client gets the right support at the right time. <a class="link" href="#team">Meet the team IARR</a></p></div>
-    <div class="team"><article class="tm lead rv"><div class="ph"><img src="assets/dr-portrait.jpg" alt="Dr. Mithila Desai"></div><div class="bd"><span class="role">Founder · Lead clinical psychologist</span><h3>Dr. Mithila Desai, PhD</h3><p>Sees every client herself, from the first session to the last. RCI <span class="cf">CONFIRM no.</span></p><p style="margin-top:14px"><a class="link" href="#doctor">View profile IARR</a></p></div></article><article class="tm rv"><div class="ph"><i class="tree"></i><b>SP</b><small>Photo with consent</small></div><div class="bd"><span class="role">Consultant psychiatrist</span><h3>Dr. Sujay Prabhugaonkar</h3><p>MBBS, DPM (Mumbai). A medical doctor who can assess whether medicine may help, and prescribe it. <span class="cf">CONFIRM still on team, MMC no.</span></p></div></article><article class="tm rv"><div class="ph"><i class="tree"></i><b>NP</b><small>Photo with consent</small></div><div class="bd"><span class="role">Role to confirm</span><h3>Dr. Neha Pansare</h3><p>MBBS, MPH <span class="cf">CONFIRM role</span></p></div></article><article class="tm rv"><div class="ph"><i class="tree"></i><b>AS</b><small>Photo with consent</small></div><div class="bd"><span class="role">Psychologist</span><h3>Ms. Ashmi R. Shah</h3><p>Master's in Clinical Psychology <span class="cf">CONFIRM spelling, RCI no.</span></p></div></article><article class="tm rv"><div class="ph"><i class="tree"></i><b>AS</b><small>Photo with consent</small></div><div class="bd"><span class="role">Psychologist</span><h3>Ms. Ashika Shah</h3><p>Qualification to confirm <span class="cf">CONFIRM spelling, RCI no.</span></p></div></article></div>
+    <div class="tb"><article class="ld">
+    <div class="ph"><img src="dr-desk.jpg" alt="Dr. Mithila Desai smiling, seated at her desk"></div>
+    <div class="bd">
+      <span class="role">Founder · Lead clinical psychologist</span>
+      <h3>Dr. Mithila Desai, PhD</h3>
+      <p class="d">Stays with you from the first session to the last, and decides with you who else should be involved. RCI <span class="cf">CONFIRM no.</span></p>
+      <div class="flow">
+        <div class="fs"><span class="ic"><svg class="i" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c1-4 4-6 8-6s7 2 8 6"/></svg></span><b>You meet her first</b><small>Every client starts with Dr. Desai.</small></div>
+        <div class="fs"><span class="ic"><svg class="i" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20c.8-3.5 3.4-5.5 6.5-5.5s5.7 2 6.5 5.5"/><circle cx="17" cy="9" r="2.6"/><path d="M16 14.6c2.6-.2 4.8 1.4 5.5 4.4"/></svg></span><b>The right colleague joins</b><small>A psychiatrist or psychologist, only if it helps.</small></div>
+        <div class="fs"><span class="ic"><svg class="i" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="m15.5 8.5-2 5-5 2 2-5z"/></svg></span><b>One shared plan</b><small>Everyone works from the same plan.</small></div>
+      </div>
+      <div class="acts"><a class="btn" href="#book"><i><svg class="i" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="3"/><path d="M3 10h18M8 3v4M16 3v4"/></svg></i><span>Book with Dr. Desai</span></a><a class="link" href="#doctor">View profile <svg class="i" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
+    </div>
+  </article>
+
+  <div class="mh"><span class="ic"><svg class="i" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20c.8-3.5 3.4-5.5 6.5-5.5s5.7 2 6.5 5.5"/><circle cx="17" cy="9" r="2.6"/><path d="M16 14.6c2.6-.2 4.8 1.4 5.5 4.4"/></svg></span>Working alongside Dr. Desai</div>
+
+  <div class="mem">
+    <article class="m" tabindex="0"><img src="team-sujay-prabhugaonkar.jpg" alt="Dr. Sujay Prabhugaonkar" loading="lazy"><span class="tag"><svg class="i" viewBox="0 0 24 24"><path d="M6 3v6a4 4 0 0 0 8 0V3"/><path d="M10 13v3a5 5 0 0 0 10 0v-2"/><circle cx="20" cy="12" r="2"/></svg></span>
+      <div class="cap"><span class="r">Consultant psychiatrist</span><h4>Dr. Sujay Prabhugaonkar</h4><div class="more"><div><p>MBBS, DPM (Mumbai). Can assess whether medicine may help, and prescribe it.</p><span class="cf">CONFIRM still on team, MMC no.</span></div></div></div></article>
+    <article class="m" tabindex="0"><img src="team-neha-pansare.jpg" alt="Dr. Neha Pansare" loading="lazy"><span class="tag"><svg class="i" viewBox="0 0 24 24"><path d="M12 21s-7-4.5-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 11c0 5.5-7 10-7 10z"/></svg></span>
+      <div class="cap"><span class="r">Role to confirm</span><h4>Dr. Neha Pansare</h4><div class="more"><div><p>MBBS, MPH.</p><span class="cf">CONFIRM role</span></div></div></div></article>
+    <article class="m" tabindex="0"><img src="team-ashmi-shah.jpg" alt="Ms. Ashmi R. Shah" loading="lazy"><span class="tag"><svg class="i" viewBox="0 0 24 24"><path d="M4 5h16v11H9l-5 4z"/></svg></span>
+      <div class="cap"><span class="r">Psychologist</span><h4>Ms. Ashmi R. Shah</h4><div class="more"><div><p>Master's in Clinical Psychology.</p><span class="cf">CONFIRM spelling, RCI no.</span></div></div></div></article>
+    <article class="m" tabindex="0"><img src="team-ashika-shah.jpg" alt="Ms. Ashika Shah" loading="lazy"><span class="tag"><svg class="i" viewBox="0 0 24 24"><path d="M4 5h16v11H9l-5 4z"/></svg></span>
+      <div class="cap"><span class="r">Psychologist</span><h4>Ms. Ashika Shah</h4><div class="more"><div><p>Qualification to confirm.</p><span class="cf">CONFIRM spelling, RCI no.</span></div></div></div></article>
+    <article class="m" tabindex="0"><img src="team-vishwa-shah.jpg" alt="Ms. Vishwa Shah" loading="lazy"><span class="tag"><svg class="i" viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg></span>
+      <div class="cap"><span class="r">Care coordinator</span><h4>Ms. Vishwa Shah</h4><div class="more"><div><p>Appointments and client queries. Usually the first voice you hear.</p></div></div></div></article>
+  </div>
+  </div>
   </div></section>
   <section class="start sec g"><div class="wrap">
     <span class="eyebrow">04 · Where do I start?</span>
@@ -784,21 +1271,32 @@ select{width:100%;font:400 16.5px var(--sans);padding:15px 16px;border:1px solid
     <div class="g"><div class="wrap jhud"><span class="jnum" id="jn">01<small> / 05</small></span><div class="jbar"><i id="jbi"></i><b id="jbb"></b></div><a class="link" href="#visit">Plan your first session IARR</a></div></div>
   </div></section>
 
+  <section class="sec g insp"><div class="wrap">
+    <div class="two" style="align-items:end"><div><span class="eyebrow">Inside the practice</span><h2 class="h2 chars" style="margin-top:22px">A room made for <em>calm</em>.</h2></div>
+    <p class="lead">Soft light, quiet colours and a door that closes. This is where your sessions happen, on Gulmohar Road in Borivali West.</p></div>
+    <div class="gl" id="gl">
+      <figure class="gi" data-s="-.06"><img src="clinic-room.jpg" alt="Dr. Desai's consultation room with a wooden desk, leather chair and window" loading="lazy"><figcaption><span>IPERSON</span>The consultation room</figcaption></figure>
+      <figure class="gi" data-s=".05"><img src="clinic-nook.jpg" alt="A green couch with a leaf cushion and botanical art in warm light" loading="lazy"><figcaption><span>ILEAF</span>A quiet corner to settle</figcaption></figure>
+      <figure class="gi" data-s="-.03"><img src="clinic-waiting.jpg" alt="The waiting area with a sofa, leaf art and reception desk" loading="lazy"><figcaption><span>ICLOCK</span>The waiting area</figcaption></figure>
+      <figure class="gi" data-s=".07"><img src="clinic-entrance.jpg" alt="Glass entrance doors of the clinic building" loading="lazy"><figcaption><span>IPIN</span>The entrance</figcaption></figure>
+    </div>
+  </div></section>
+
   <section class="sec g"><div class="wrap">
     <span class="eyebrow">07 · Visit us</span>
     <h2 class="h2" style="margin-top:22px;max-width:18ch">A quiet room off <em>Gulmohar</em> Road.</h2>
     <div class="vb">
       <div class="map rv" aria-label="Simple map of the practice location">
         <svg viewBox="0 0 600 420" preserveAspectRatio="xMidYMid slice"><g fill="none" stroke="#fff" stroke-linecap="round"><path d="M-20 260 C150 240 300 200 640 210" stroke-width="22"/><path d="M330 -20 C320 120 330 260 300 460" stroke-width="16"/><path d="M-20 90 L640 130" stroke-width="10"/><path d="M120 -20 L180 460" stroke-width="8"/><path d="M460 -20 L520 460" stroke-width="8"/></g><path d="M-20 260 C150 240 300 200 640 210" stroke="#E2D3C4" stroke-width="2" stroke-dasharray="2 8" fill="none"/><circle cx="470" cy="330" r="60" fill="#E1E6D9"/></svg>
-        <small style="left:24px;top:216px">Gulmohar Road</small><small style="right:24px;bottom:20px">Illustration · live map loads on tap</small>
+        <small style="left:24px;top:216px">Gulmohar Road</small><a href="https://maps.app.goo.gl/Eem6wa6ysR3Swfs27" target="_blank" rel="noopener" style="position:absolute;inset:0;z-index:3" aria-label="Open the location in Google Maps"></a><small style="right:24px;bottom:20px">Tap to open in Google Maps</small>
         <div class="pin"><span>The Mental Health</span><i></i></div>
       </div>
       <div class="vcard">
         <div><span class="ico">IPIN</span><p><b>Address</b>17, Shraddha SBI Staff Gulmohar CHS, Gulmohar Road, Shimpoli, Borivali West, Mumbai 400092</p></div>
-        <div><span class="ico">ISTAR</span><p><b>Landmark</b>Opposite Banana Leaf Restaurant</p></div>
+        <div><span class="ico">ISTAR</span><p><b>Landmark</b>Inside Dr. Navalkar's Orthocare &amp; Multi-speciality Clinic building, room C-2. Opposite Banana Leaf Restaurant.</p></div>
         <div><span class="ico">ICLOCK</span><p><b>Hours</b>By appointment <span class="cf">CONFIRM days and hours</span></p></div>
         <div><span class="ico">ITEL</span><p><b>Call</b>87796 51309</p></div>
-        <div style="display:flex;gap:10px;flex-wrap:wrap;grid-template-columns:none"><a class="ghost" href="#">Get directions</a><a class="ghost" href="#visit">Plan your visit</a></div>
+        <div style="display:flex;gap:10px;flex-wrap:wrap;grid-template-columns:none"><a class="ghost" href="https://maps.app.goo.gl/Eem6wa6ysR3Swfs27" target="_blank" rel="noopener">IPIN Get directions</a><a class="ghost" href="#visit">Plan your visit</a></div>
       </div>
     </div>
   </div></section>
@@ -808,9 +1306,9 @@ select{width:100%;font:400 16.5px var(--sans);padding:15px 16px;border:1px solid
     <p class="lead">Short notes on feelings, families and everyday mental health, shared with 14,700 followers. <a class="link" href="https://www.instagram.com/dr.mithiladesai/">@dr.mithiladesai</a></p></div>
     <div class="ig">
       <div class="qt"><p>"Beauty has always been more than skin deep; it begins in the mind."</p><small>On receiving the ELLE India award, 2026</small></div>
-      <a href="https://www.instagram.com/dr.mithiladesai/"><img src="assets/dr-elle-2026.jpg" alt="Dr. Desai at the ELLE India awards"></a>
+      <a href="https://www.instagram.com/dr.mithiladesai/"><img src="dr-elle-2026.jpg" alt="Dr. Desai at the ELLE India awards"></a>
       <div class="qt d"><p>"Healing is the most beautiful journey."</p><small>Instagram, 2026</small></div>
-      <a href="https://www.instagram.com/dr.mithiladesai/"><img src="assets/dr-award-2023.jpg" alt="Dr. Desai with her 2023 award" style="object-position:30% 20%"></a>
+      <a href="https://www.instagram.com/dr.mithiladesai/"><img src="dr-award-2023.jpg" alt="Dr. Desai with her 2023 award" style="object-position:30% 20%"></a>
     </div>
   </div></section>
 
@@ -833,10 +1331,11 @@ select{width:100%;font:400 16.5px var(--sans);padding:15px 16px;border:1px solid
 <!-- ================= DOCTOR ================= -->
 <main class="page" id="doctor">
   <section class="phero g"><div class="wrap">
-    <div class="arch photo" style="max-width:480px"><img src="assets/dr-elle-2026.jpg" alt="Dr. Mithila Desai in a saree at the ELLE India awards" style="object-position:50% 25%"></div>
+    <div class="xph" style="justify-self:start"><div class="fr"><img src="dr-armchair.jpg" alt="Dr. Mithila Desai seated in a calm therapy room, listening" style="object-position:50% 20%"></div>
+      <div class="xfl b"><span class="xi">IAWARD</span><div><b>ELLE India 2026</b><small>Mental Health Expert of the Year</small></div></div></div>
     <div>
       <p class="crumb"><a href="#home">Home</a> / Dr. Mithila Desai</p>
-      <span class="eyebrow" style="margin-top:20px">Clinical psychologist · Borivali West</span>
+      <span class="xtag"><span>IUSER</span>Clinical psychologist · Borivali West</span>
       <h1>Dr. Mithila Desai, clinical <em>psychologist</em></h1>
       <div class="facts">
         <div><small>Qualification</small><b>PhD <span class="cf">CONFIRM subject, university, year</span></b></div>
@@ -850,19 +1349,19 @@ select{width:100%;font:400 16.5px var(--sans);padding:15px 16px;border:1px solid
     </div>
   </div></section>
 
-  <section class="sec g" style="background:#fff;border-top:1px solid var(--line)"><div class="wrap two">
-    <div><span class="eyebrow">About</span><p class="state" style="margin-top:26px">"Healing begins the moment you feel truly <em>heard</em>."</p><p class="muted" style="margin-top:14px">Dr. Desai's guiding principle <span class="cf">CONFIRM as her words</span></p></div>
-    <div class="lead" style="display:grid;gap:18px;max-width:none">
-      <p>Dr. Mithila Desai is a clinical psychologist in Borivali West, Mumbai. She holds a PhD and has worked in psychology for 35 years. She sees adults, teenagers, children, couples and families for talking therapy and psychological assessment, in person and online.</p>
-      <p>Alongside her clinical work, she has worked with schools for many years, supporting students, parents and teachers, and has counselled employees through workplace programmes. She has also trained psychology students. <span class="cf">CONFIRM</span></p>
-      <p>Dr. Desai is a psychologist, not a medical doctor. She does not prescribe medicine. When medicine may help, she suggests a psychiatrist and, with your consent, works alongside them.</p>
+  <section class="sec g" style="background:#fff;border-top:1px solid var(--line)"><div class="wrap xab">
+    <div class="col rv"><div class="a"><img src="dr-desk.jpg" alt="Dr. Mithila Desai at her desk" loading="lazy"></div>
+      <div class="q"><p>"Healing begins the moment you feel truly heard."</p><small>Dr. Desai's guiding principle <span class="cf">CONFIRM as her words</span></small></div></div>
+    <div class="tx"><span class="eyebrow">01 · About</span><h2 class="h2 chars" style="margin:8px 0 6px">Thirty five years of <em>listening</em>.</h2>
+      <p class="lead" style="max-width:none">Dr. Mithila Desai is a clinical psychologist in Borivali West, Mumbai. She holds a PhD and has worked in psychology for 35 years. She sees adults, teenagers, children, couples and families for talking therapy and psychological assessment, in person and online.</p>
+      <p class="muted">Alongside her clinical work, she has worked with schools for many years, supporting students, parents and teachers, and has counselled employees through workplace programmes. She has also trained psychology students. <span class="cf">CONFIRM</span></p>
+      <div class="xpsy"><span class="xi">IPILL</span><div><b>A psychologist, not a psychiatrist</b><p>Dr. Desai is not a medical doctor and does not prescribe medicine. When medicine may help, she suggests a psychiatrist and, with your consent, works alongside them.</p></div></div>
     </div>
   </div></section>
 
   <section class="sec g"><div class="wrap">
-    <span class="eyebrow">How she works</span>
-    <h2 class="h2" style="margin-top:22px;max-width:16ch">Listening comes <em>first</em>.</h2>
-    <div class="why">
+    <div class="xh"><div><span class="eyebrow">02 · How she works</span><h2 class="h2 chars">Listening comes <em>first</em>.</h2></div><p class="lead">Six things clients can expect from the first session onwards.</p></div>
+    <div class="why" style="margin-top:0">
       <div class="rv"><span class="wi">IEAR</span><h3>Listening comes first</h3><p>The early sessions are about understanding what is happening and what matters to you.</p></div>
       <div class="rv"><span class="wi">ITOOL</span><h3>Skills you can use</h3><p>Practical ways to handle worry, low mood or conflict between sessions.</p></div>
       <div class="rv"><span class="wi">ILEAF</span><h3>The present moment</h3><p>Mindfulness, noticing what is happening now without judging it, is part of how she works. <span class="cf">CONFIRM</span></p></div>
@@ -872,145 +1371,378 @@ select{width:100%;font:400 16.5px var(--sans);padding:15px 16px;border:1px solid
     </div>
   </div></section>
 
-  <section class="sec g" style="padding-top:0"><div class="wrap two">
-    <div><span class="eyebrow">Training and roles</span><h2 class="h2" style="margin-top:22px">Education, roles and <em>awards</em>.</h2><p class="notebox">Directory listings disagree on her degrees and years. The final list will come from Dr. Desai. <span class="cf">CONFIRM full list</span></p></div>
-    <div class="edu">
-      <div><small>PhD</small><p><b>Clinical psychology</b><span class="muted">University and year <span class="cf">CONFIRM</span></span></p></div>
-      <div><small>Master's</small><p><b>Clinical psychology</b><span class="muted">University of Mumbai <span class="cf">CONFIRM</span></span></p></div>
-      <div><small>Training</small><p><b>CBT and REBT practitioner</b><span class="muted"><span class="cf">CONFIRM</span></span></p></div>
-      <div><small>Registration</small><p><b>Rehabilitation Council of India</b><span class="muted">CRR number <span class="cf">CONFIRM</span></span></p></div>
-      <div><small>Founder</small><p><b>The Mental Health, Borivali West</b><span class="muted">Earlier known as Power of Mind</span></p></div>
-      <div><small>2026</small><p><b>Mental Health Expert of the Year</b><span class="muted">ELLE India Beauty and Wellness Awards</span></p></div>
-      <div><small>2023</small><p><b>Excellence in Mental Health and Wellness</b><span class="muted">Women Entrepreneur Awards</span></p></div>
+  <section class="sec g" style="padding-top:0"><div class="wrap">
+    <div class="xh"><div><span class="eyebrow">03 · Beyond the therapy room</span><h2 class="h2 chars">Schools, workplaces and <em>stages</em>.</h2></div><p class="lead">Much of her work happens where people learn, work and gather.</p></div>
+    <div class="xbey">
+      <div class="ph rv"><img src="dr-talk-2026.jpg" alt="Dr. Mithila Desai receiving a plaque at the Resilient Living Conference" loading="lazy"><div><small>Resilient Living Conference · 2026</small><h3>Speaking on relationships and the role they play in resilient living</h3></div></div>
+      <div class="ls">
+        <article class="rv"><span class="xi dot">ISCHOOL</span><div><h3>Schools</h3><p>Supporting students, parents and teachers for many years. <span class="cf">CONFIRM</span></p></div></article>
+        <article class="rv"><span class="xi dot">IBRIEF</span><div><h3>Workplaces</h3><p>Counselling employees through workplace wellbeing programmes.</p></div></article>
+        <article class="rv"><span class="xi dot">ICAP</span><div><h3>Teaching</h3><p>Training the next generation of psychology students. <span class="cf">CONFIRM</span></p></div></article>
+      </div>
     </div>
   </div></section>
 
   <section class="sec g" style="background:#fff;border-top:1px solid var(--line)"><div class="wrap">
-    <span class="eyebrow">What she helps with</span>
-    <h2 class="h2" style="margin-top:22px">Areas of <em>care</em>.</h2>
-    <div class="cols3" id="chipgroups"></div>
+    <div class="xpath">
+      <div class="xst"><span class="eyebrow">04 · Training and roles</span><h2 class="h2" style="margin:22px 0 20px">Education, roles and <em>awards</em>.</h2><p class="notebox">Directory listings disagree on her degrees and years. The final list will come from Dr. Desai. <span class="cf">CONFIRM full list</span></p></div>
+      <div class="xpl"><i class="fill"></i>
+        <div class="s"><span class="xi">ICAP</span><small>PhD</small><h3>Clinical psychology</h3><p>University and year <span class="cf">CONFIRM</span></p></div>
+        <div class="s"><span class="xi">ICAP</span><small>Master's</small><h3>Clinical psychology</h3><p>University of Mumbai <span class="cf">CONFIRM</span></p></div>
+        <div class="s"><span class="xi">ITOOL</span><small>Training</small><h3>CBT and REBT practitioner</h3><p><span class="cf">CONFIRM</span></p></div>
+        <div class="s"><span class="xi">ISHIELD</span><small>Registration</small><h3>Rehabilitation Council of India</h3><p>CRR number <span class="cf">CONFIRM</span></p></div>
+        <div class="s"><span class="xi">ISPROUT</span><small>Founder</small><h3>The Mental Health, Borivali West</h3><p>Earlier known as Power of Mind</p></div>
+        <div class="s"><span class="xi">IAWARD</span><small>2023</small><h3>Excellence in Mental Health and Wellness</h3><p>Women Entrepreneur Awards</p></div>
+        <div class="s"><span class="xi">IAWARD</span><small>2026</small><h3>Mental Health Expert of the Year</h3><p>ELLE India Beauty and Wellness Awards</p></div>
+      </div>
+    </div>
   </div></section>
 
-  <section class="sec g"><div class="wrap two">
-    <div><span class="eyebrow">Questions</span><h2 class="h2" style="margin-top:22px">About Dr. <em>Desai</em>.</h2></div>
-    <div class="faq">
-      <details open><summary>Why is a psychologist called "Dr."?<i></i></summary><p>Dr. Desai holds a PhD, the highest university degree, which is why she uses the title "Dr.". She is not a medical doctor and does not prescribe medicine. Her training is in understanding thoughts, feelings and behaviour, and helping people through talking therapy and assessment.</p></details>
-      <details><summary>Does Dr. Desai see children?<i></i></summary><p>Yes, usually with a parent involved in some sessions. For younger children, play and drawing are often part of the session, because children may find it easier to show than to tell. <span class="cf">CONFIRM youngest age</span></p></details>
-      <details><summary>Which languages can I speak in my session?<i></i></summary><p>English or Hindi <span class="cf">CONFIRM Marathi, Gujarati</span>. Many people mix languages, and that is fine. Use whatever words feel natural to you.</p></details>
-      <details><summary>Can she give me a certificate or a letter?<i></i></summary><p>After an assessment she writes a report. She can also write letters for schools, colleges or employers when appropriate and you agree. Official disability certificates are issued by government medical boards.</p></details>
+  <section class="sec g"><div class="wrap">
+    <div class="xh"><div><span class="eyebrow">05 · Recognition</span><h2 class="h2 chars">Recognised for her <em>work</em>.</h2></div></div>
+    <div class="xaw">
+      <div class="awc rv"><img src="dr-elle-2026.jpg" alt="Dr. Desai receiving the ELLE India award"><div><small>ELLE India · 2026</small><h3>Mental Health Expert of the Year</h3><p>ELLE India Beauty and Wellness Awards</p></div></div>
+      <div class="awc rv"><img src="dr-award-2023.jpg" alt="Dr. Desai with the Women Entrepreneur Award" style="object-position:30% 20%"><div><small>Women Entrepreneur Awards · 2023</small><h3>Excellence in Mental Health and Wellness</h3><p>Women Entrepreneur Awards</p></div></div>
     </div>
+  </div></section>
+
+  <section class="sec g" style="background:#fff;border-top:1px solid var(--line)"><div class="wrap">
+    <span class="eyebrow">06 · What she helps with</span>
+    <div class="xh" style="margin-top:0"><h2 class="h2 chars" style="margin-top:22px">Areas of <em>care</em>.</h2><p class="lead">Tap a topic to read more about it.</p></div>
+    <div class="xcare">
+      <article class="c-feel rv"><div class="tx"><span class="xi dot">IHEART</span><small>01</small><h3>Feelings and mood</h3><p>When emotions feel too strong, too flat, or won't settle.</p><div class="cch"><a href="#anxiety">Anxiety<i>IARR</i></a><a href="#anxiety">Panic<i>IARR</i></a><a href="#services">Low mood<i>IARR</i></a><a href="#services">Depression<i>IARR</i></a><a href="#services">Stress<i>IARR</i></a><a href="#services">Anger<i>IARR</i></a><a href="#services">Grief<i>IARR</i></a><a href="#services">Loneliness<i>IARR</i></a></div></div><div class="ph"><img src="clinic-nook.jpg" alt="A calm corner of the therapy room" loading="lazy"></div></article>
+      <article class="c-think rv"><span class="xi dot">ILOOP</span><div><small>02</small><h3>Thoughts and habits</h3><p>Patterns that feel hard to stop or change.</p><div class="cch"><a href="#services">OCD<i>IARR</i></a><a href="#services">Habits and dependence<i>IARR</i></a><a href="#services">Sleep problems<i>IARR</i></a><a href="#services">Self-esteem<i>IARR</i></a><a href="#services">Body image<i>IARR</i></a></div></div></article>
+      <article class="c-img rv"><div class="ph"><img src="svc-couples.jpg" alt="A couple in a warm therapy room" loading="lazy" style="object-position:50% 45%"></div><div class="tx"><span class="xi">IRINGS</span><small>03</small><h3>Relationships</h3><div class="cch"><a href="#services">Couples<i>IARR</i></a><a href="#services">Pre-marital questions<i>IARR</i></a><a href="#services">Family conflict<i>IARR</i></a><a href="#services">Parenting<i>IARR</i></a></div></div></article>
+      <article class="c-img rv"><div class="ph"><img src="svc-child-teen.jpg" alt="A child drawing with a parent beside them" loading="lazy"></div><div class="tx"><span class="xi">ICHILD</span><small>04</small><h3>Children and teenagers</h3><div class="cch"><a href="#services">Worry<i>IARR</i></a><a href="#services">Behaviour<i>IARR</i></a><a href="#services">School stress<i>IARR</i></a><a href="#services">Bullying<i>IARR</i></a><a href="#services">ADHD and learning<i>IARR</i></a></div></div></article>
+      <article class="c-sm rv"><span class="xi">ICLIP</span><small>05</small><h3>Assessments</h3><p>Clear answers, in plain words.</p><div class="cch"><a href="#services">Attention<i>IARR</i></a><a href="#services">Learning<i>IARR</i></a><a href="#services">Personality<i>IARR</i></a><a href="#services">Aptitude and career<i>IARR</i></a></div></article>
+      <article class="c-sm rv"><span class="xi">IBRIEF</span><small>06</small><h3>Organisations</h3><p>Schools and workplaces.</p><div class="cch"><a href="#services">Employee counselling<i>IARR</i></a><a href="#services">Workshops<i>IARR</i></a><a href="#services">School programmes<i>IARR</i></a></div></article>
+      <article class="c-start rv"><i class="tree"></i><div><span class="eyebrow">Not sure where to start?</span><h3>You don't need the right word for it.</h3><p>Tell Dr. Desai what's been happening. She'll help you make sense of it in the first session.</p></div><div class="cta"><a class="btn" href="#book"><span class="i">ICAL</span><span class="t">Book a session</span></a><a class="ghost" href="#visit">How the first session works</a></div></article>
+    </div>
+  </div></section>
+
+  <section class="sec g"><div class="wrap">
+    <div class="xfq">
+      <div><span class="eyebrow">07 · Questions</span><h2 class="h2" style="margin:22px 0 30px">About Dr. <em>Desai</em>.</h2>
+        <div class="card"><img src="dr-door.jpg" alt="Dr. Desai at the door of her consultation room" loading="lazy" style="object-position:50% 15%"><div><b>Your first session</b><p>A conversation, not a test. See what happens and what to bring.</p><a class="link" href="#visit">Plan your first session IARR</a></div></div></div>
+      <div class="faq">
+        <details open><summary>Why is a psychologist called "Dr."?<i></i></summary><p>Dr. Desai holds a PhD, the highest university degree, which is why she uses the title "Dr.". She is not a medical doctor and does not prescribe medicine. Her training is in understanding thoughts, feelings and behaviour, and helping people through talking therapy and assessment.</p></details>
+        <details><summary>Does Dr. Desai see children?<i></i></summary><p>Yes, usually with a parent involved in some sessions. For younger children, play and drawing are often part of the session, because children may find it easier to show than to tell. <span class="cf">CONFIRM youngest age</span></p></details>
+        <details><summary>Which languages can I speak in my session?<i></i></summary><p>English or Hindi <span class="cf">CONFIRM Marathi, Gujarati</span>. Many people mix languages, and that is fine. Use whatever words feel natural to you.</p></details>
+        <details><summary>Can she give me a certificate or a letter?<i></i></summary><p>After an assessment she writes a report. She can also write letters for schools, colleges or employers when appropriate and you agree. Official disability certificates are issued by government medical boards.</p></details>
+      </div>
+    </div>
+    <div class="xend"><div class="tx"><span class="eyebrow">Book with Dr. Desai</span><h2>Start with one <em>conversation</em>.</h2><p>In person on Gulmohar Road, Borivali West, or online for Indians living abroad.</p>
+      <div class="cta"><a class="btn" href="#book"><span class="i">ICAL</span><span class="t">Book a session</span></a><a class="ghost" href="tel:+918779651309">ITEL 87796 51309</a></div></div>
+      <div class="im"><img src="clinic-room.jpg" alt="Dr. Desai's consultation room" loading="lazy"></div></div>
   </div></section>
 </main>
 
 <!-- ================= SERVICES ================= -->
 <main class="page" id="services">
-  <section class="ihero g"><i class="tree"></i><div class="wrap" style="position:relative">
-    <p class="crumb"><a href="#home">Home</a> / How we help</p>
-    <h1>How we can <em>help</em>.</h1>
-    <p class="lead">Talking therapy and psychological assessment with Dr. Mithila Desai in Borivali West and online. Start with the way of working that fits your situation, or with the concern you'd like help with.</p>
-  </div></section>
-  <section class="sec g" style="padding-top:0"><div class="wrap">
-    <div class="exp" id="svc"></div>
-    <div class="cols3" style="margin-top:80px">
-      <div><span class="eyebrow">Assessments</span><h3 style="margin-top:14px">Clear answers, in plain words</h3><ul class="list"><li>Psychological assessment</li><li>ADHD, learning and neurodiversity</li><li>Career guidance and aptitude testing</li></ul></div>
-      <div><span class="eyebrow">For organisations</span><h3 style="margin-top:14px">Schools and workplaces</h3><ul class="list"><li>Workplace wellbeing and EAP counselling</li><li>Workshops for students, parents and teachers</li></ul></div>
-      <div style="background:var(--clay-100);border-color:var(--clay-100)"><span class="eyebrow">What we do not offer</span><h3 style="margin-top:14px">So you find the right help quickly</h3><ul class="list"><li><span><b>Medicine.</b> Please see a psychiatrist.</span></li><li><span><b>Emergency care.</b> Call 112 or 14416.</span></li><li><span><b>Hospital or residential care</b>, including detox.</span></li><li><span><b>Disability certificates</b>, issued by government boards.</span></li></ul></div>
+  <section class="xhero g"><i class="tree"></i><div class="wrap">
+    <div>
+      <p class="crumb"><a href="#home">Home</a> / How we help</p>
+      <span class="xtag"><span>ICOMPASS</span>Therapy, assessment and programmes</span>
+      <h1>How we can <em>help</em>.</h1>
+      <p class="lead">Talking therapy and psychological assessment with Dr. Mithila Desai in Borivali West and online. Start with the way of working that fits your situation, or with the concern you'd like help with.</p>
+      <div class="cta"><a class="btn" href="#book"><span class="i">ICAL</span><span class="t">Book a session</span></a><a class="link" href="#x-con">Find your concern IARR</a></div>
+      <div class="xtrust"><span>IPERSON Individuals</span><span>IRINGS Couples</span><span>IFAMILY Families</span><span>ISCHOOL Schools and workplaces</span></div>
     </div>
+    <div class="xph">
+      <div class="fr"><img src="clinic-room.jpg" alt="The consultation room with a wooden desk and window light"></div>
+      <div class="xfl a"><span class="xi">IGLOBE</span><div><b>In person or online</b><small>Borivali West and abroad</small></div></div>
+    </div>
+  </div></section>
+
+  <section class="sec g" style="padding-top:clamp(20px,3vw,40px)"><div class="wrap">
+    <div class="xh"><div><span class="eyebrow">01 · Ways we work</span><h2 class="h2 chars">For one person, two, or a whole <em>family</em>.</h2></div><p class="lead">Pick who the sessions are for. Dr. Desai adapts how she works to each.</p></div>
+    <div class="xways">
+      <a class="xway rv" href="#book"><div class="m"><img src="dr-armchair.jpg" alt="Dr. Desai listening in a calm therapy room" style="object-position:50% 25%" loading="lazy"></div><div class="b"><span class="xi dot">IPERSON</span><small>01</small><h3>Individual therapy</h3><p>One-to-one sessions for adults, for worry, low mood, stress or a hard season.</p><span class="go">Book a session IARR</span></div></a>
+      <a class="xway rv" href="#book"><div class="m"><img src="svc-child-teen.jpg" alt="A child drawing at a low wooden table with a parent beside them" loading="lazy"></div><div class="b"><span class="xi dot">ICHILD</span><small>02</small><h3>Child and teen therapy</h3><p>Support for young people, with parents involved at the right moments.</p><span class="go">Book a session IARR</span></div></a>
+      <a class="xway rv" href="#book"><div class="m"><img src="svc-couples.jpg" alt="A couple seen from behind on a sofa in a warm therapy room" loading="lazy" style="object-position:50% 40%"></div><div class="b"><span class="xi dot">IRINGS</span><small>03</small><h3>Couples counselling</h3><p>For couples who feel stuck, before or after marriage.</p><span class="go">Book a session IARR</span></div></a>
+      <a class="xway rv" href="#book"><div class="m"><img src="svc-family.jpg" alt="A warm family therapy room with armchairs and a sofa" loading="lazy"></div><div class="b"><span class="xi dot">IFAMILY</span><small>04</small><h3>Family counselling</h3><p>Working through change and conflict together.</p><span class="go">Book a session IARR</span></div></a>
+    </div>
+  </div></section>
+
+  <section class="sec g" id="x-con" style="background:#fff;border-top:1px solid var(--line);scroll-margin-top:90px"><div class="wrap">
+    <div class="xh"><div><span class="eyebrow">02 · Concerns</span><h2 class="h2 chars">What would you like help <em>with</em>?</h2></div><p class="lead">Each page explains the signs, how therapy helps and what you can try today.</p></div>
+    <div class="xcon" id="xcon"></div>
+  </div></section>
+
+  <section class="sec g"><div class="wrap">
+    <div class="xh"><div><span class="eyebrow">03 · Assessments and programmes</span><h2 class="h2 chars">Clear answers, and support beyond the <em>room</em>.</h2></div></div>
+    <div class="xtri">
+      <article class="rv"><div class="m"><img src="svc-assessment.jpg" alt="A desk with a questionnaire, a pencil, a timer and a cup of tea" loading="lazy"></div><div class="b"><small>Assessments</small><h3>Clear answers, in plain words</h3><ul><li>ITICK Psychological assessment</li><li>ITICK ADHD, learning and neurodiversity</li><li>ITICK Career guidance and aptitude testing</li></ul></div></article>
+      <article class="rv"><div class="m"><img src="dr-talk-2026.jpg" alt="Dr. Desai at the Resilient Living Conference" style="object-position:30% 30%" loading="lazy"></div><div class="b"><small>For organisations</small><h3>Schools and workplaces</h3><ul><li>ITICK Workplace wellbeing and EAP counselling</li><li>ITICK Workshops for students, parents and teachers</li></ul></div></article>
+      <article class="no rv"><div class="b"><span class="xi">ISHIELD</span><small style="margin-top:8px">What we do not offer</small><h3>So you find the right help quickly</h3><ul><li>IX<span><b>Medicine.</b> Please see a psychiatrist.</span></li><li>IX<span><b>Emergency care.</b> Call 112 or 14416.</span></li><li>IX<span><b>Hospital or residential care</b>, including detox.</span></li><li>IX<span><b>Disability certificates</b>, issued by government boards.</span></li></ul></div></article>
+    </div>
+    <div class="xend"><div class="tx"><span class="eyebrow">Not sure where to start?</span><h2>Tell us who it's for. We'll <em>guide</em> you.</h2><p>Your first session is a conversation, not a test. Together you decide on next steps.</p>
+      <div class="cta"><a class="btn" href="#book"><span class="i">ICAL</span><span class="t">Book a session</span></a><a class="ghost" href="#visit">Plan your first session</a></div></div>
+      <div class="im"><img src="dr-door.jpg" alt="Dr. Desai at the door of her consultation room" style="object-position:50% 20%" loading="lazy"></div></div>
   </div></section>
 </main>
 
 <main class="page" id="team">
-  <section class="ihero g"><i class="tree"></i><div class="wrap" style="position:relative">
-    <p class="crumb"><a href="#home">Home</a> / Our team</p>
-    <h1>The people behind The Mental <em>Health</em>.</h1>
-    <p class="lead">The practice is led by clinical psychologist Dr. Mithila Desai, who sees clients herself. She leads a multidisciplinary team, so you are supported by the right person, and medicine can be considered by a psychiatrist when it may help. <span class="cf">CONFIRM team list</span></p>
-  </div></section>
-  <section class="sec g" style="padding-top:0"><div class="wrap">
-    <div class="team"><article class="tm lead rv"><div class="ph"><img src="assets/dr-portrait.jpg" alt="Dr. Mithila Desai"></div><div class="bd"><span class="role">Founder · Lead clinical psychologist</span><h3>Dr. Mithila Desai, PhD</h3><p>Sees every client herself, from the first session to the last. RCI <span class="cf">CONFIRM no.</span></p><p style="margin-top:14px"><a class="link" href="#doctor">View profile IARR</a></p></div></article><article class="tm rv"><div class="ph"><i class="tree"></i><b>SP</b><small>Photo with consent</small></div><div class="bd"><span class="role">Consultant psychiatrist</span><h3>Dr. Sujay Prabhugaonkar</h3><p>MBBS, DPM (Mumbai). A medical doctor who can assess whether medicine may help, and prescribe it. <span class="cf">CONFIRM still on team, MMC no.</span></p></div></article><article class="tm rv"><div class="ph"><i class="tree"></i><b>NP</b><small>Photo with consent</small></div><div class="bd"><span class="role">Role to confirm</span><h3>Dr. Neha Pansare</h3><p>MBBS, MPH <span class="cf">CONFIRM role</span></p></div></article><article class="tm rv"><div class="ph"><i class="tree"></i><b>AS</b><small>Photo with consent</small></div><div class="bd"><span class="role">Psychologist</span><h3>Ms. Ashmi R. Shah</h3><p>Master's in Clinical Psychology <span class="cf">CONFIRM spelling, RCI no.</span></p></div></article><article class="tm rv"><div class="ph"><i class="tree"></i><b>AS</b><small>Photo with consent</small></div><div class="bd"><span class="role">Psychologist</span><h3>Ms. Ashika Shah</h3><p>Qualification to confirm <span class="cf">CONFIRM spelling, RCI no.</span></p></div></article><article class="tm rv"><div class="ph"><i class="tree"></i><b>VS</b><small>Photo with consent</small></div><div class="bd"><span class="role">Coordinator</span><h3>Ms. Vishwa Shah</h3><p>Appointments and client queries. Usually the first voice you hear. <span class="cf">CONFIRM show on site</span></p></div></article></div>
-    <p class="notebox" style="margin-top:30px">Each card goes live only after that person confirms their details and gives written consent for their name and photo. Photos come from the old site once consent is in.</p>
-  </div></section>
-  <section class="sec g" style="background:#fff;border-top:1px solid var(--line)"><div class="wrap two">
-    <div><span class="eyebrow">Working together</span><p class="state" style="margin-top:24px">The team shares only what is needed for your care, and only when you <em>agree</em>.</p></div>
-    <div class="faq">
-      <details open><summary>Who will I see if I book a session?<i></i></summary><p>Unless you ask for someone else, your sessions are with Dr. Mithila Desai. If another team member would suit you better, for example a psychiatrist to talk about medicine, she will explain why and ask for your consent first. <span class="cf">CONFIRM</span></p></details>
-      <details><summary>Can I see the psychiatrist directly?<i></i></summary><p>Please ask when you book. <span class="cf">CONFIRM yes or no, and how</span></p></details>
-      <details><summary>Can I keep my own psychiatrist?<i></i></summary><p>Yes. You choose. With your consent, Dr. Desai can work alongside them.</p></details>
+  <section class="xhero g"><i class="tree"></i><div class="wrap">
+    <div>
+      <p class="crumb"><a href="#home">Home</a> / Our team</p>
+      <span class="xtag"><span>IFAMILY</span>A multidisciplinary team</span>
+      <h1>The people behind The Mental <em>Health</em>.</h1>
+      <p class="lead">The practice is led by clinical psychologist Dr. Mithila Desai, who sees clients herself. She leads a multidisciplinary team, so you are supported by the right person, and medicine can be considered by a psychiatrist when it may help. <span class="cf">CONFIRM team list</span></p>
+      <div class="cta"><a class="btn" href="#book"><span class="i">ICAL</span><span class="t">Book with Dr. Desai</span></a><a class="link" href="#x-roles">Who does what IARR</a></div>
     </div>
+    <div class="xmos">
+      <figure><img src="dr-desk.jpg" alt="Dr. Mithila Desai"></figure>
+      <figure><img src="team-sujay-prabhugaonkar.jpg" alt="Dr. Sujay Prabhugaonkar"></figure>
+      <figure><img src="team-neha-pansare.jpg" alt="Dr. Neha Pansare"></figure>
+      <figure><img src="team-ashmi-shah.jpg" alt="Ms. Ashmi R. Shah"></figure>
+      <figure><img src="team-ashika-shah.jpg" alt="Ms. Ashika Shah"></figure>
+      <figure><img src="team-vishwa-shah.jpg" alt="Ms. Vishwa Shah"></figure>
+    </div>
+  </div></section>
+
+  <section class="sec g" style="padding-top:clamp(40px,5vw,70px)"><div class="wrap">
+    <span class="eyebrow">01 · Meet the team</span><h2 class="h2 chars" style="margin-top:22px">A dedicated team, one shared <em>approach</em>.</h2>
+    <div class="tb"><article class="ld">
+    <div class="ph"><img src="dr-desk.jpg" alt="Dr. Mithila Desai smiling, seated at her desk"></div>
+    <div class="bd">
+      <span class="role">Founder · Lead clinical psychologist</span>
+      <h3>Dr. Mithila Desai, PhD</h3>
+      <p class="d">Stays with you from the first session to the last, and decides with you who else should be involved. RCI <span class="cf">CONFIRM no.</span></p>
+      <div class="flow">
+        <div class="fs"><span class="ic"><svg class="i" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c1-4 4-6 8-6s7 2 8 6"/></svg></span><b>You meet her first</b><small>Every client starts with Dr. Desai.</small></div>
+        <div class="fs"><span class="ic"><svg class="i" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20c.8-3.5 3.4-5.5 6.5-5.5s5.7 2 6.5 5.5"/><circle cx="17" cy="9" r="2.6"/><path d="M16 14.6c2.6-.2 4.8 1.4 5.5 4.4"/></svg></span><b>The right colleague joins</b><small>A psychiatrist or psychologist, only if it helps.</small></div>
+        <div class="fs"><span class="ic"><svg class="i" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="m15.5 8.5-2 5-5 2 2-5z"/></svg></span><b>One shared plan</b><small>Everyone works from the same plan.</small></div>
+      </div>
+      <div class="acts"><a class="btn" href="#book"><i><svg class="i" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="3"/><path d="M3 10h18M8 3v4M16 3v4"/></svg></i><span>Book with Dr. Desai</span></a><a class="link" href="#doctor">View profile <svg class="i" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
+    </div>
+  </article>
+
+  <div class="mh"><span class="ic"><svg class="i" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20c.8-3.5 3.4-5.5 6.5-5.5s5.7 2 6.5 5.5"/><circle cx="17" cy="9" r="2.6"/><path d="M16 14.6c2.6-.2 4.8 1.4 5.5 4.4"/></svg></span>Working alongside Dr. Desai</div>
+
+  <div class="mem">
+    <article class="m" tabindex="0"><img src="team-sujay-prabhugaonkar.jpg" alt="Dr. Sujay Prabhugaonkar" loading="lazy"><span class="tag"><svg class="i" viewBox="0 0 24 24"><path d="M6 3v6a4 4 0 0 0 8 0V3"/><path d="M10 13v3a5 5 0 0 0 10 0v-2"/><circle cx="20" cy="12" r="2"/></svg></span>
+      <div class="cap"><span class="r">Consultant psychiatrist</span><h4>Dr. Sujay Prabhugaonkar</h4><div class="more"><div><p>MBBS, DPM (Mumbai). Can assess whether medicine may help, and prescribe it.</p><span class="cf">CONFIRM still on team, MMC no.</span></div></div></div></article>
+    <article class="m" tabindex="0"><img src="team-neha-pansare.jpg" alt="Dr. Neha Pansare" loading="lazy"><span class="tag"><svg class="i" viewBox="0 0 24 24"><path d="M12 21s-7-4.5-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 11c0 5.5-7 10-7 10z"/></svg></span>
+      <div class="cap"><span class="r">Role to confirm</span><h4>Dr. Neha Pansare</h4><div class="more"><div><p>MBBS, MPH.</p><span class="cf">CONFIRM role</span></div></div></div></article>
+    <article class="m" tabindex="0"><img src="team-ashmi-shah.jpg" alt="Ms. Ashmi R. Shah" loading="lazy"><span class="tag"><svg class="i" viewBox="0 0 24 24"><path d="M4 5h16v11H9l-5 4z"/></svg></span>
+      <div class="cap"><span class="r">Psychologist</span><h4>Ms. Ashmi R. Shah</h4><div class="more"><div><p>Master's in Clinical Psychology.</p><span class="cf">CONFIRM spelling, RCI no.</span></div></div></div></article>
+    <article class="m" tabindex="0"><img src="team-ashika-shah.jpg" alt="Ms. Ashika Shah" loading="lazy"><span class="tag"><svg class="i" viewBox="0 0 24 24"><path d="M4 5h16v11H9l-5 4z"/></svg></span>
+      <div class="cap"><span class="r">Psychologist</span><h4>Ms. Ashika Shah</h4><div class="more"><div><p>Qualification to confirm.</p><span class="cf">CONFIRM spelling, RCI no.</span></div></div></div></article>
+    <article class="m" tabindex="0"><img src="team-vishwa-shah.jpg" alt="Ms. Vishwa Shah" loading="lazy"><span class="tag"><svg class="i" viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg></span>
+      <div class="cap"><span class="r">Care coordinator</span><h4>Ms. Vishwa Shah</h4><div class="more"><div><p>Appointments and client queries. Usually the first voice you hear.</p></div></div></div></article>
+  </div>
+  </div>
+  </div></section>
+
+  <section class="sec g" id="x-roles" style="background:#fff;border-top:1px solid var(--line);scroll-margin-top:90px"><div class="wrap">
+    <div class="xh"><div><span class="eyebrow">02 · Who does what</span><h2 class="h2 chars">The right person for each part of your <em>care</em>.</h2></div><p class="lead">Psychologists and psychiatrists train differently and help in different ways. Here is what each person on the team does.</p></div>
+    <div class="xroles">
+      <article class="on rv"><span class="xi dot">ICHAT</span><h3>Psychologists</h3><div class="who"><img src="dr-desk.jpg" alt=""><img src="team-ashmi-shah.jpg" alt=""><img src="team-ashika-shah.jpg" alt=""><span>Dr. Desai, Ms. Ashmi Shah, Ms. Ashika Shah</span></div>
+        <dl><div><dt>What they do</dt><dd>Talking therapy and psychological assessment. They do not prescribe medicine.</dd></div><div><dt>When you'd see them</dt><dd>From your first session. Unless you ask for someone else, your sessions are with Dr. Desai.</dd></div></dl></article>
+      <article class="rv"><span class="xi dot">IPILL</span><h3>Consultant psychiatrist</h3><div class="who"><img src="team-sujay-prabhugaonkar.jpg" alt=""><span>Dr. Sujay Prabhugaonkar <span class="cf">CONFIRM</span></span></div>
+        <dl><div><dt>What they do</dt><dd>A medical doctor who can assess whether medicine may help, and prescribe it.</dd></div><div><dt>When you'd see them</dt><dd>Only if medicine may help, and only with your consent. You can also keep your own psychiatrist.</dd></div></dl></article>
+      <article class="rv"><span class="xi dot">ITEL</span><h3>Care coordinator</h3><div class="who"><img src="team-vishwa-shah.jpg" alt=""><span>Ms. Vishwa Shah</span></div>
+        <dl><div><dt>What they do</dt><dd>Appointments and client queries.</dd></div><div><dt>When you'd speak to them</dt><dd>Usually the first voice you hear, when you call or message to book.</dd></div></dl></article>
+    </div>
+  </div></section>
+
+  <section class="sec g"><div class="wrap">
+    <div class="xh"><div><span class="eyebrow">03 · How care is shared</span><h2 class="h2 chars">One plan, decided <em>with</em> you.</h2></div><p class="lead">You are never passed around. Dr. Desai stays with you and brings others in only when it helps.</p></div>
+    <div class="xflow4">
+      <article class="rv"><span class="xi">ITEL</span><small>01</small><h3>You get in touch</h3><p>The care coordinator helps you book a time, in person or online.</p></article>
+      <article class="rv"><span class="xi">IUSER</span><small>02</small><h3>You meet Dr. Desai</h3><p>Your first session is with her. You talk, and agree on a plan.</p></article>
+      <article class="rv"><span class="xi">ILINK</span><small>03</small><h3>A colleague joins, if needed</h3><p>For example, a psychiatrist to talk about medicine. She explains why and asks first.</p></article>
+      <article class="rv"><span class="xi">ICOMPASS</span><small>04</small><h3>One shared plan</h3><p>Everyone works from the same plan, and you review it together.</p></article>
+    </div>
+  </div></section>
+
+  <section class="g"><div class="wrap">
+    <div class="xconf dark"><i class="tree"></i><div class="in2">
+      <div><span class="eyebrow">04 · Your privacy</span><p class="state" style="margin-top:24px;color:var(--on-dark)">The team shares only what is needed for your care, and only when you <em style="color:var(--honey)">agree</em>.</p></div>
+      <div class="pts">
+        <div><span class="xi">ILOCK</span><span><b>Your consent first</b><p>No one else joins your care without you saying yes.</p></span></div>
+        <div><span class="xi">ISHIELD</span><span><b>Only what's needed</b><p>Colleagues hear only what helps them help you.</p></span></div>
+        <div><span class="xi">IHEART</span><span><b>Your choice of psychiatrist</b><p>Keep your own if you have one. Dr. Desai can work alongside them.</p></span></div>
+      </div>
+    </div></div>
+  </div></section>
+
+  <section class="sec g"><div class="wrap">
+    <div class="xh"><div><span class="eyebrow">05 · Where you'll meet us</span><h2 class="h2 chars">A calm room on Gulmohar <em>Road</em>.</h2></div><p class="lead">Inside Dr. Navalkar's Orthocare &amp; Multi-speciality Clinic building, room C-2, Shimpoli, Borivali West.</p></div>
+    <div class="xduo">
+      <figure class="rv"><img src="clinic-room.jpg" alt="The consultation room" loading="lazy"><figcaption><span>IPERSON</span>The consultation room</figcaption></figure>
+      <figure class="rv"><img src="clinic-waiting.jpg" alt="The waiting area and reception" loading="lazy"><figcaption><span>ICLOCK</span>The waiting area</figcaption></figure>
+    </div>
+  </div></section>
+
+  <section class="sec g" style="padding-top:0"><div class="wrap">
+    <div class="xfq">
+      <div><span class="eyebrow">06 · Questions</span><h2 class="h2" style="margin-top:22px">About the <em>team</em>.</h2></div>
+      <div class="faq">
+        <details open><summary>Who will I see if I book a session?<i></i></summary><p>Unless you ask for someone else, your sessions are with Dr. Mithila Desai. If another team member would suit you better, for example a psychiatrist to talk about medicine, she will explain why and ask for your consent first. <span class="cf">CONFIRM</span></p></details>
+        <details><summary>Can I see the psychiatrist directly?<i></i></summary><p>Please ask when you book. <span class="cf">CONFIRM yes or no, and how</span></p></details>
+        <details><summary>Can I keep my own psychiatrist?<i></i></summary><p>Yes. You choose. With your consent, Dr. Desai can work alongside them.</p></details>
+      </div>
+    </div>
+    <div class="xend"><div class="tx"><span class="eyebrow">Start with Dr. Desai</span><h2>One first conversation, then the right <em>support</em>.</h2><p>In person on Gulmohar Road, Borivali West, or online.</p>
+      <div class="cta"><a class="btn" href="#book"><span class="i">ICAL</span><span class="t">Book a session</span></a><a class="ghost" href="#visit">Plan your first session</a></div></div>
+      <div class="im"><img src="dr-door.jpg" alt="Dr. Desai welcoming you at her door" style="object-position:50% 20%" loading="lazy"></div></div>
   </div></section>
 </main>
 
 <!-- ================= ANXIETY ================= -->
 <main class="page" id="anxiety">
-  <section class="ihero g"><i class="tree"></i><div class="wrap" style="position:relative">
-    <p class="crumb"><a href="#home">Home</a> / <a href="#services">How we help</a> / Anxiety and panic</p>
-    <h1>Help for anxiety and <em>panic</em>.</h1>
-    <p class="lead">Anxiety is the body's alarm system staying switched on, with worry, tension and fear that are out of proportion to what is happening, or that won't go away. Dr. Mithila Desai helps adults, teenagers and children understand their anxiety and learn practical ways to calm it, in person or online.</p>
-    <div class="cta"><a class="btn" href="#book"><span class="i">ICAL</span><span class="t">Talk to Dr. Desai</span></a></div>
-    <div class="glance">
-      <div><small>What it is</small><p>Worry, fear or panic that is hard to control and affects daily life</p></div>
-      <div><small>How common</small><p>Among the most common mental health conditions in India and worldwide</p></div>
-      <div><small>Common types</small><p>Generalised, panic, social, health anxiety, specific fears</p></div>
-      <div><small>How therapy helps</small><p>Understanding the cycle and practising new responses</p></div>
-      <div><small>Here</small><p>Assessment, therapy and skills for daily life</p></div>
+  <section class="xhero g"><i class="tree"></i><div class="wrap">
+    <div>
+      <p class="crumb"><a href="#home">Home</a> / <a href="#services">How we help</a> / Anxiety and panic</p>
+      <span class="xtag"><span>IMIND</span>Concern · Anxiety and panic</span>
+      <h1>Help for anxiety and <em>panic</em>.</h1>
+      <p class="lead">Anxiety is the body's alarm system staying switched on, with worry, tension and fear that are out of proportion to what is happening, or that won't go away. Dr. Mithila Desai helps adults, teenagers and children understand their anxiety and learn practical ways to calm it, in person or online.</p>
+      <div class="cta"><a class="btn" href="#book"><span class="i">ICAL</span><span class="t">Talk to Dr. Desai</span></a><a class="link" href="#x-signs">Is this anxiety? IARR</a></div>
+      <div class="xtrust"><span>IPIN Borivali West</span><span>IGLOBE Online, in India or abroad</span><span>IFAMILY Adults, teens and children</span></div>
+    </div>
+    <div class="xph">
+      <div class="fr"><img src="clinic-nook.jpg" alt="A calm corner of the therapy room with a green couch and soft light" style="object-position:40% 50%"></div>
+      <div class="xfl a"><img src="dr-desk.jpg" alt=""><div><b>Dr. Mithila Desai, PhD</b><small>Clinical psychologist</small></div></div>
+      <div class="xfl b"><span class="xi">ISHIELD</span><div><b>Reviewed by Dr. Desai</b><small>Last reviewed <span class="cf">CONFIRM</span></small></div></div>
     </div>
   </div></section>
-  <section class="sec g" style="background:#fff;border-top:1px solid var(--line)"><div class="wrap side">
-    <div>
-      <h2>Signs that can mean <em>anxiety</em></h2>
-      <ul class="list"><li>Worrying most days about many things, and finding it hard to stop</li><li>Feeling restless, tense or on edge</li><li>Racing heart, tight chest, breathlessness, sweating, trembling, stomach upset</li><li>Trouble falling asleep because your mind won't settle</li><li>Avoiding places, people or situations because of fear</li><li>Needing reassurance again and again</li><li>Sudden waves of intense fear that peak within minutes</li></ul>
-      <h2>Panic <em>attacks</em></h2>
-      <p class="lead" style="margin-top:14px;max-width:none">A sudden rush of intense fear with strong body sensations: pounding heart, breathlessness, dizziness, tingling, and a feeling that something terrible is about to happen. It usually peaks within about 10 minutes. Panic attacks are frightening but not dangerous in themselves.</p>
-      <p class="notebox"><b>Important:</b> chest pain, breathlessness and fainting can also have physical causes. If this is your first episode, if you have heart or lung problems, or if you're unsure, see a doctor or go to a hospital emergency department first.</p>
-      <h2>How therapy <em>helps</em></h2>
-      <div class="steps5">
-        <div><p><b>Understanding your anxiety</b>What sets it off, what you feel, what you do, and what keeps it going.</p></div>
-        <div><p><b>Calming the body</b>Breathing, relaxation and grounding skills you can use anywhere.</p></div>
-        <div><p><b>Working with worried thoughts</b>Noticing them, questioning them, and letting some of them pass.</p></div>
-        <div><p><b>Facing fears gradually</b>Small, planned steps back into situations you've been avoiding, at a pace you agree to.</p></div>
-        <div><p><b>Preventing setbacks</b>A plan for what to do if anxiety returns.</p></div>
-      </div>
-      <h2>Simple things to try <em>today</em></h2>
-      <ul class="list"><li>Breathe out slowly, a little longer than you breathe in, for a few minutes</li><li>Name five things you can see and four you can hear</li><li>Reduce tea, coffee and energy drinks</li><li>Keep a regular sleep time</li><li>Write your worries down at a set time each day, then put them aside</li></ul>
-      <h2>Common <em>questions</em></h2>
-      <div class="faq" style="margin-top:20px">
-        <details><summary>Is anxiety a real health problem or just stress?<i></i></summary><p>Everyone feels anxious sometimes. It becomes a health problem when it is strong, frequent and lasts for weeks, and starts to limit work, study, sleep or relationships. It is common, is not a weakness, and responds well to the right help.</p></details>
-        <details><summary>Can a panic attack harm my heart?<i></i></summary><p>In a healthy heart it is not dangerous. Because chest pain and breathlessness can also come from heart or lung problems, please get a medical check if symptoms are new, different or severe.</p></details>
-        <details><summary>Will I always have anxiety?<i></i></summary><p>Many people find it reduces a great deal with therapy and stays manageable. Some notice it returning in stressful times, but with the skills they've learnt, it no longer takes over.</p></details>
-        <details><summary>Is it better to avoid what makes me anxious?<i></i></summary><p>Avoiding brings short-term relief but usually makes anxiety stronger over time. Therapy helps you return to what you've been avoiding, slowly and with support.</p></details>
-        <details><summary>Can children have anxiety?<i></i></summary><p>Yes. Children may show it through stomach aches, clinginess, tears before school or trouble sleeping.</p></details>
-      </div>
-      <div class="rev"><img src="assets/dr-portrait.jpg" alt=""><span>Written and reviewed by <b>Dr. Mithila Desai</b>, clinical psychologist · Last reviewed <span class="cf">CONFIRM date</span></span></div>
-      <p class="refs">Sources: National Mental Health Survey of India 2015 to 16, NIMHANS · World Health Organization, Anxiety disorders fact sheet, 2023 · NICE CG113, Generalised anxiety disorder and panic disorder in adults</p>
+
+  <div class="g"><div class="wrap">
+    <div class="xgl rv">
+      <div><span class="xi">IMIND</span><small>What it is</small><p>Worry, fear or panic that is hard to control and affects daily life</p></div>
+      <div><span class="xi">IFAMILY</span><small>How common</small><p>Among the most common mental health conditions in India and worldwide</p></div>
+      <div><span class="xi">ILOOP</span><small>Common types</small><p>Generalised, panic, social, health anxiety, specific fears</p></div>
+      <div><span class="xi">ICOMPASS</span><small>How therapy helps</small><p>Understanding the cycle and practising new responses</p></div>
+      <div><span class="xi">ILEAF</span><small>Here</small><p>Assessment, therapy and skills for daily life</p></div>
     </div>
-    <aside>
-      <div class="box d"><span class="eyebrow">Talk to Dr. Desai</span><p style="margin:12px 0 18px">In person in Borivali West, or online.</p><a class="btn" href="#book"><span class="i">ICAL</span><span class="t">Book a session</span></a></div>
-      <div class="box"><b>Related</b><ul class="list" style="margin-top:8px"><li>Individual therapy</li><li>OCD</li><li>Stress and burnout</li><li>Sleep problems</li></ul></div>
-      <div class="alertline" style="margin:0"><b>Thinking of harming yourself?</b> Please don't wait for an appointment. Call Tele-MANAS 14416 or 112. <a class="link" href="#help" style="color:var(--alert)">Get help now</a></div>
-    </aside>
+  </div></div>
+
+  <nav class="xnav g" aria-label="On this page"><div class="wrap">
+    <a href="#x-signs" data-x="x-signs">ICLIP Signs</a><a href="#x-panic" data-x="x-panic">IHEART Panic attacks</a><a href="#x-help" data-x="x-help">ICOMPASS How therapy helps</a><a href="#x-try" data-x="x-try">ILEAF Try today</a><a href="#x-faq" data-x="x-faq">ICHAT Questions</a>
+  </div></nav>
+
+  <section class="xsec g" id="x-signs"><div class="wrap">
+    <div class="xh"><div><span class="eyebrow">01 · Signs</span><h2 class="h2 chars">Signs that can mean <em>anxiety</em>.</h2></div><p class="lead">Anxiety shows up in the mind, the body and in what you do. A few of these on most days, for weeks, is worth talking about.</p></div>
+    <div class="xsg">
+      <article class="big rv"><span class="xi dot">IMIND</span><h3>In your mind</h3><p class="k">Thoughts that won't settle</p>
+        <ul><li>Worrying most days about many things, and finding it hard to stop</li><li>Needing reassurance again and again</li><li>Trouble falling asleep because your mind won't settle</li></ul>
+        <div class="ph"><img src="clinic-room.jpg" alt="The consultation room in soft daylight" loading="lazy"></div></article>
+      <article class="rv"><span class="xi dot">IHEART</span><h3>In your body</h3><p class="k">The alarm system switched on</p>
+        <ul><li>Feeling restless, tense or on edge</li><li>Racing heart, tight chest, breathlessness, sweating, trembling, stomach upset</li></ul></article>
+      <article class="rv"><span class="xi dot">IDOOR</span><h3>In what you do</h3><p class="k">Life getting smaller</p>
+        <ul><li>Avoiding places, people or situations because of fear</li></ul></article>
+      <article class="wide rv"><span class="xi">IFLAME</span><div><h3>Sudden waves of intense fear that peak within minutes</h3><p>This can be a panic attack. Read what happens, and why it is frightening but not dangerous in itself.</p></div></article>
+    </div>
+  </div></section>
+
+  <section class="xsec g" id="x-panic"><div class="wrap">
+    <div class="xpw dark"><i class="tree"></i><div class="in2">
+      <div><span class="eyebrow">02 · Panic attacks</span><h2>A wave that rises, peaks and <em>passes</em>.</h2>
+        <p class="lead">A sudden rush of intense fear with strong body sensations: pounding heart, breathlessness, dizziness, tingling, and a feeling that something terrible is about to happen. It usually peaks within about 10 minutes. Panic attacks are frightening but not dangerous in themselves.</p></div>
+      <div>
+        <div class="xwave rv"><svg viewBox="0 0 520 220" aria-hidden="true"><defs><linearGradient id="xwg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#D9AE84" stop-opacity=".35"/><stop offset="1" stop-color="#D9AE84" stop-opacity="0"/></linearGradient></defs>
+          <path d="M0 200 H520" stroke="rgba(250,247,242,.14)"/><path d="M0 120 H520" stroke="rgba(250,247,242,.06)" stroke-dasharray="4 6"/>
+          <path class="ar" d="M0 196 C60 194 90 180 130 120 C160 70 175 30 200 28 C230 26 250 70 290 120 C340 175 420 194 520 196 V200 H0Z"/>
+          <path class="cv" d="M0 196 C60 194 90 180 130 120 C160 70 175 30 200 28 C230 26 250 70 290 120 C340 175 420 194 520 196"/>
+          <g class="pk"><circle cx="200" cy="28" r="7" fill="#D9AE84"/><circle cx="200" cy="28" r="16" fill="none" stroke="#D9AE84" stroke-opacity=".4"/></g></svg>
+          <div class="lb"><span><b>It starts</b>A sudden rush</span><span style="text-align:center"><b>It peaks</b>Within about 10 minutes</span><span style="text-align:right"><b>It eases</b>The body settles</span></div>
+        </div>
+        <div class="xnote">IPILL<span><b>Important:</b> chest pain, breathlessness and fainting can also have physical causes. If this is your first episode, if you have heart or lung problems, or if you're unsure, see a doctor or go to a hospital emergency department first.</span></div>
+      </div>
+    </div></div>
+  </div></section>
+
+  <section class="xsec g" id="x-help"><div class="wrap">
+    <div class="xh"><div><span class="eyebrow">03 · How therapy helps</span><h2 class="h2 chars">Five steps, at your <em>pace</em>.</h2></div><p class="lead">Therapy for anxiety is practical. You understand what keeps it going, then practise new responses, one small step at a time.</p></div>
+    <div class="xpath">
+      <div class="xst"><div class="fr"><img src="dr-armchair.jpg" alt="Dr. Mithila Desai listening in her therapy room" loading="lazy"></div><div class="cap"><span class="xi">IEAR</span>Every step is agreed with you, never rushed.</div></div>
+      <div class="xpl"><i class="fill"></i>
+        <div class="s"><span class="xi">IMIND</span><small>01</small><h3>Understanding your anxiety</h3><p>What sets it off, what you feel, what you do, and what keeps it going.</p></div>
+        <div class="s"><span class="xi">IHEART</span><small>02</small><h3>Calming the body</h3><p>Breathing, relaxation and grounding skills you can use anywhere.</p></div>
+        <div class="s"><span class="xi">ICHAT</span><small>03</small><h3>Working with worried thoughts</h3><p>Noticing them, questioning them, and letting some of them pass.</p></div>
+        <div class="s"><span class="xi">ISPROUT</span><small>04</small><h3>Facing fears gradually</h3><p>Small, planned steps back into situations you've been avoiding, at a pace you agree to.</p></div>
+        <div class="s"><span class="xi">ISHIELD</span><small>05</small><h3>Preventing setbacks</h3><p>A plan for what to do if anxiety returns.</p></div>
+      </div>
+    </div>
+  </div></section>
+
+  <section class="xsec g" id="x-try"><div class="wrap">
+    <div class="xh"><div><span class="eyebrow">04 · Try today</span><h2 class="h2 chars">Simple things to try <em>today</em>.</h2></div><p class="lead">Small habits that calm the alarm a little. They help alongside therapy, not instead of it.</p></div>
+    <div class="xtools">
+      <article class="br rv"><div class="xbr"><i></i><span class="i2">Breathe in</span><span class="o">Breathe out slowly</span></div><p>Breathe out slowly, a little longer than you breathe in, for a few minutes</p><small>Follow the circle for a minute</small></article>
+      <article class="rv"><div class="tp"><span class="xi">IEYE</span><span class="n">02</span></div><p>Name five things you can see and four you can hear</p></article>
+      <article class="rv"><div class="tp"><span class="xi">ICUP</span><span class="n">03</span></div><p>Reduce tea, coffee and energy drinks</p></article>
+      <article class="rv"><div class="tp"><span class="xi">IMOON</span><span class="n">04</span></div><p>Keep a regular sleep time</p></article>
+      <article class="rv"><div class="tp"><span class="xi">IPEN</span><span class="n">05</span></div><p>Write your worries down at a set time each day, then put them aside</p></article>
+    </div>
+  </div></section>
+
+  <section class="xsec g" id="x-faq"><div class="wrap">
+    <div class="xfq">
+      <div><span class="eyebrow">05 · Questions</span><h2 class="h2" style="margin:22px 0 30px">Common <em>questions</em>.</h2>
+        <div class="card"><img src="dr-online.jpg" alt="Dr. Desai in an online session" loading="lazy"><div><b>In person or online</b><p>Meet in Borivali West, or join by video from home, in India or abroad.</p><a class="btn" href="#book"><span class="i">ICAL</span><span class="t">Book a session</span></a></div></div></div>
+      <div>
+        <div class="faq">
+          <details open><summary>Is anxiety a real health problem or just stress?<i></i></summary><p>Everyone feels anxious sometimes. It becomes a health problem when it is strong, frequent and lasts for weeks, and starts to limit work, study, sleep or relationships. It is common, is not a weakness, and responds well to the right help.</p></details>
+          <details><summary>Can a panic attack harm my heart?<i></i></summary><p>In a healthy heart it is not dangerous. Because chest pain and breathlessness can also come from heart or lung problems, please get a medical check if symptoms are new, different or severe.</p></details>
+          <details><summary>Will I always have anxiety?<i></i></summary><p>Many people find it reduces a great deal with therapy and stays manageable. Some notice it returning in stressful times, but with the skills they've learnt, it no longer takes over.</p></details>
+          <details><summary>Is it better to avoid what makes me anxious?<i></i></summary><p>Avoiding brings short-term relief but usually makes anxiety stronger over time. Therapy helps you return to what you've been avoiding, slowly and with support.</p></details>
+          <details><summary>Can children have anxiety?<i></i></summary><p>Yes. Children may show it through stomach aches, clinginess, tears before school or trouble sleeping.</p></details>
+        </div>
+        <div class="xrev"><img src="dr-desk.jpg" alt=""><span>Written and reviewed by <b>Dr. Mithila Desai</b>, clinical psychologist · Last reviewed <span class="cf">CONFIRM date</span></span></div>
+        <p class="xrefs">ICLIP<span>Sources: National Mental Health Survey of India 2015 to 16, NIMHANS · World Health Organization, Anxiety disorders fact sheet, 2023 · NICE CG113, Generalised anxiety disorder and panic disorder in adults</span></p>
+      </div>
+    </div>
+  </div></section>
+
+  <section class="xsec g"><div class="wrap">
+    <div class="xh" style="margin-bottom:30px"><div><span class="eyebrow">Related</span><h2 class="h2" style="font-size:clamp(28px,3.4vw,44px)">Often goes <em>together</em>.</h2></div></div>
+    <div class="xrel">
+      <a href="#services"><span class="xi">IPERSON</span><b>Individual therapy</b><small>One-to-one sessions for adults.</small><span class="go">Read more IARR</span></a>
+      <a href="#services"><span class="xi">ILOOP</span><b>OCD</b><small>Unwanted thoughts and repeated checking or cleaning.</small><span class="go">Read more IARR</span></a>
+      <a href="#services"><span class="xi">IFLAME</span><b>Stress and burnout</b><small>When pressure spills into sleep, temper and health.</small><span class="go">Read more IARR</span></a>
+      <a href="#services"><span class="xi">IMOON</span><b>Sleep problems</b><small>Trouble falling or staying asleep.</small><span class="go">Read more IARR</span></a>
+    </div>
+    <div class="xend"><div class="tx"><span class="eyebrow">Talk to Dr. Desai</span><h2>You don't have to work it out <em>alone</em>.</h2><p>In person on Gulmohar Road, Borivali West, or online. A short message is enough to begin.</p>
+      <div class="cta"><a class="btn" href="#book"><span class="i">ICAL</span><span class="t">Book a session</span></a><a class="ghost" href="#visit">Plan your first session</a></div>
+      <p class="cr">ITEL<span><b>Thinking of harming yourself?</b> Please don't wait for an appointment. Call Tele-MANAS 14416 or 112.</span></p></div>
+      <div class="im"><img src="clinic-waiting.jpg" alt="The calm waiting area of the practice" loading="lazy"></div></div>
   </div></section>
 </main>
 
 <!-- ================= FIRST SESSION ================= -->
 <main class="page" id="visit">
-  <section class="ihero g"><i class="tree"></i><div class="wrap" style="position:relative">
+  <section class="ihero g"><i class="tree"></i><div class="wrap vhero" style="position:relative"><div>
     <p class="crumb"><a href="#home">Home</a> / Your first session</p>
     <h1>Plan your first <em>session</em>.</h1>
     <p class="lead">Your first session with Dr. Desai is a conversation, not a test. You talk about what brings you in, she asks a few questions to understand your situation, and together you decide on next steps.</p>
+  </div><figure class="vph"><img src="dr-door.jpg" alt="Dr. Mithila Desai smiling at the door of her consultation room"><figcaption><span>IPERSON</span>She'll be the one you meet first</figcaption></figure></div></section>
+  <section class="sec g fu" style="padding-top:0"><div class="wrap">
+    <span class="eyebrow">Finding us</span><h2 class="h2" style="margin-top:22px;max-width:18ch">From the gate to the <em>room</em>, in four steps.</h2>
+    <div class="fsteps">
+      <article class="rv"><div class="fp"><img src="clinic-entrance.jpg" alt="Clinic building entrance" loading="lazy"><b>01</b></div><h3>Come to Gulmohar Road</h3><p>We're inside Dr. Navalkar's Orthocare &amp; Multi-speciality Clinic building, opposite Banana Leaf Restaurant, Shimpoli, Borivali West.</p><p style="margin-top:10px"><a class="link" href="https://maps.app.goo.gl/Eem6wa6ysR3Swfs27" target="_blank" rel="noopener">Open in Google Maps IARR</a></p></article>
+      <article class="rv"><div class="fp"><img src="clinic-waiting.jpg" alt="Reception and waiting area" loading="lazy"><b>02</b></div><h3>Check in at reception</h3><p>Tell the front desk you're here to see Dr. Mithila Desai, then take a seat in the waiting area.</p></article>
+      <article class="rv"><div class="fp"><img src="clinic-room.jpg" alt="Consultation room C-2" loading="lazy"><b>03</b></div><h3>Room C-2</h3><p>Dr. Desai's room is C-2. The front desk will show you the way.</p></article>
+      <article class="rv"><div class="fp"><img src="clinic-nook.jpg" alt="A calm corner of the therapy room" loading="lazy"><b>04</b></div><h3>Settle in</h3><p>Take a moment before you begin. There's no rush, and you share only what you're ready to.</p></article>
+    </div>
   </div></section>
   <section class="sec g" style="background:#fff;border-top:1px solid var(--line)"><div class="wrap side">
     <div>
       <h2>What happens at the first <em>session</em></h2>
-      <div class="steps5">
-        <div><p><b>Welcome</b>Dr. Desai explains confidentiality and its limits, and how sessions work.</p></div>
-        <div><p><b>Your story</b>What brings you in now, how long it has been going on, what you've tried, and what you'd like to be different.</p></div>
-        <div><p><b>Some background</b>Sleep, work or study, family, health and any medicine you take, so she sees the whole picture.</p></div>
-        <div><p><b>Questions for her</b>Ask anything: how she works, how long therapy may take, what happens next.</p></div>
-        <div><p><b>A plan</b>You agree whether to meet again, how often, and what to focus on first.</p></div>
+      <div class="xpl" style="margin-top:34px"><i class="fill"></i>
+        <div class="s"><span class="xi">ISHIELD</span><small>01</small><h3>Welcome</h3><p>Dr. Desai explains confidentiality and its limits, and how sessions work.</p></div>
+        <div class="s"><span class="xi">ICHAT</span><small>02</small><h3>Your story</h3><p>What brings you in now, how long it has been going on, what you've tried, and what you'd like to be different.</p></div>
+        <div class="s"><span class="xi">ILEAF</span><small>03</small><h3>Some background</h3><p>Sleep, work or study, family, health and any medicine you take, so she sees the whole picture.</p></div>
+        <div class="s"><span class="xi">IEAR</span><small>04</small><h3>Questions for her</h3><p>Ask anything: how she works, how long therapy may take, what happens next.</p></div>
+        <div class="s"><span class="xi">ICOMPASS</span><small>05</small><h3>A plan</h3><p>You agree whether to meet again, how often, and what to focus on first.</p></div>
       </div>
       <p class="notebox">You share only what you're ready to share. There are no right or wrong answers.</p>
       <h2>What to <em>bring</em></h2>
       <ul class="list"><li>Reports from earlier therapy or assessments, or school reports if the session is for your child</li><li>A list of medicines you take, if any (name and dose)</li><li>A few notes on what you'd like help with, if that makes it easier to start</li></ul>
       <h2>Online <em>sessions</em></h2>
+      <figure class="onl"><img src="dr-online.jpg" alt="Dr. Desai in an online session with headphones and a laptop" loading="lazy"><figcaption><span>IGLOBE</span>Online, from wherever you are</figcaption></figure>
       <ul class="list"><li>A private room where you won't be overheard, ideally with the door closed</li><li>Headphones</li><li>A charged phone or laptop with a steady connection</li><li>The video link we send you <span class="cf">CONFIRM platform</span></li></ul>
       <h2>Children and <em>teenagers</em></h2>
       <ul class="list"><li>For anyone under 18, a parent or guardian books and gives consent.</li><li>Dr. Desai usually meets the parent first or together with the child, then the child alone for part of the time. <span class="cf">CONFIRM</span></li><li>She explains to both of you what stays between her and a teenager, and when parents must be told.</li></ul>
@@ -1064,7 +1796,7 @@ select{width:100%;font:400 16.5px var(--sans);padding:15px 16px;border:1px solid
         <a href="#"><span class="ico">IWA</span><p><b>WhatsApp</b><span>A short message is enough <span class="cf">CONFIRM number</span></span></p></a>
         <a href="#visit"><span class="ico">IPIN</span><p><b>Visit</b><span>Gulmohar Road, Shimpoli, opposite Banana Leaf Restaurant</span></p></a>
       </div>
-      <div class="sign" style="border-top:0"><img src="assets/dr-portrait.jpg" alt=""><div><span class="sg" style="font-size:26px">"There's no wrong way to begin."</span><small>Dr. Mithila Desai <span class="cf">CONFIRM</span></small></div></div>
+      <div class="sign" style="border-top:0"><img src="dr-desk.jpg" alt="" style="object-position:55% 15%"><div><span class="sg" style="font-size:26px">"There's no wrong way to begin."</span><small>Dr. Mithila Desai <span class="cf">CONFIRM</span></small></div></div>
     </div>
     <form id="f">
       <h3>Request a session</h3>
@@ -1108,6 +1840,7 @@ DOOR:'<path d="M6 20V4h9v16M4 20h16M12 12h.01"/>',
 PIN:'<path d="M12 21s-6-5.5-6-11a6 6 0 0 1 12 0c0 5.5-6 11-6 11z"/><circle cx="12" cy="10" r="2.2"/>',
 LOCK:'<rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/>',
 STAR:'<path d="M12 4l2.4 5 5.4.6-4 3.7 1.1 5.4L12 16l-4.9 2.7 1.1-5.4-4-3.7 5.4-.6z"/>',CLOCK:'<circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/>',SEND:'<path d="M4 12l16-8-6 16-2.5-6.5z"/>'};
+Object.assign(I,{EYE:'<path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/>',CUP:'<path d="M4 9h13v5a5 5 0 0 1-5 5H9a5 5 0 0 1-5-5z"/><path d="M17 11h1.5a2.5 2.5 0 0 1 0 5H17"/><path d="M8 3c0 1.5 1 1.5 1 3M12 3c0 1.5 1 1.5 1 3"/>',PEN:'<path d="M4 20l4-1 11-11-3-3L5 16z"/><path d="M14 6l3 3"/>',BRIEF:'<rect x="3" y="7" width="18" height="13" rx="2.5"/><path d="M9 7V5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2M3 13h18"/>',SCHOOL:'<path d="M3 21h18M5 21V10l7-5 7 5v11"/><path d="M10 21v-5h4v5"/><circle cx="12" cy="11" r="1.6"/>'});
 const svg=k=>`<svg class="ic" viewBox="0 0 24 24" aria-hidden="true">${I[k]}</svg>`;
 Object.assign(I,{CLOUD:'<path d="M7 18h10a4 4 0 0 0 .5-8 6 6 0 0 0-11.5 1.5A3.3 3.3 0 0 0 7 18z"/>',FLAME:'<path d="M12 21c-4 0-6-3-6-6 0-4 4-6 4-10 3 2 4 4 4 6 1-1 1.5-2 1.5-3 2 2 2.5 4.5 2.5 7 0 3-2 6-6 6z"/>',RINGS:'<circle cx="9" cy="13" r="5"/><circle cx="15" cy="13" r="5"/><path d="M10 4l2 2 2-2"/>',SPROUT:'<path d="M12 21v-9M12 12c0-4-3-6-7-6 0 4 3 6 7 6zM12 14c0-3 2.5-5 6-5 0 3.5-2.5 5-6 5z"/>',COMPASS:'<circle cx="12" cy="12" r="8.5"/><path d="M15.5 8.5l-2 5-5 2 2-5z"/>'});
 
@@ -1131,10 +1864,9 @@ const W=[["Therapy","For one person, two, or a whole family.",[["Individual ther
 const WI=['PERSON','MIND','COMPASS','FAMILY'];document.getElementById('wg').innerHTML=W.map((c,ci)=>`<div class="rv"><span class="ic2">${svg(WI[ci])}</span><span class="eyebrow">${c[0]}</span><h3 style="margin-top:12px">${c[0]==='Concerns'?'What we help with':c[0]}</h3><p>${c[1]}</p>${c[2].map(x=>`<a href="${x[0].startsWith('Anxiety')?'#anxiety':'#services'}"><span style="color:var(--ink);font-weight:500;font-size:15px">${x[0]}<span>${x[1]}</span></span>IARR</a>`).join('')}</div>`).join('');
 const S=[["Individual therapy","One-to-one sessions for adults, for worry, low mood, stress or a hard season."],["Child and teen therapy","Support for young people, with parents involved at the right moments."],["Couples counselling","For couples who feel stuck, before or after marriage."],["Family counselling","Working through change and conflict together."],["Anxiety and panic","Worry that won't switch off, and panic attacks."],["Depression and low mood","When everything feels heavy or flat."],["OCD","Unwanted thoughts and repeated checking or cleaning."],["Stress, anger and burnout","When pressure spills into sleep, temper and health."],["Trauma","After frightening, painful or overwhelming experiences."],["Self-esteem and body image","How you see and speak to yourself."],["Grief and loss","Living with a death or another big loss."],["Sleep problems","Trouble falling or staying asleep."],["Online therapy for Indians abroad","Sessions planned around your time zone."]];
 const SI=['PERSON','CHILD','RINGS','FAMILY','MIND','CLOUD','LOOP','FLAME','SHIELD','MIRROR','LEAF','MOON','GLOBE'];
-document.getElementById('svc').classList.add('sv');
-document.getElementById('svc').innerHTML=S.map((e,i)=>`<a href="${i===4?'#anxiety':'#book'}"><span class="bdg">${svg(SI[i])}<i>${String(i+1).padStart(2,'0')}</i></span><h3>${e[0]}</h3><p>${e[1]}</p><span class="go">${svg('ARR')}</span></a>`).join('');
+document.getElementById('xcon').innerHTML=S.slice(4).map((e,k)=>{const i=k+4;return i===12?`<a class="ft" href="#book"><div class="tt"><span class="xi">${svg('GLOBE')}</span><b>${e[0]}</b><small>${e[1]} Video sessions with Dr. Desai for Indians living abroad, at a booked time.</small><span class="btn"><span class="i">${svg('CAL')}</span><span class="t">Book an online session</span></span></div><div class="im"><img src="dr-online.jpg" alt="Dr. Desai in an online video session" loading="lazy"></div></a>`:`<a href="${i===4?'#anxiety':'#book'}"><span class="xi">${svg(SI[i])}</span><span><b>${e[0]}</b><small>${e[1]}</small></span><span class="go">${svg('ARR')}</span></a>`}).join('');
 const G=[["Feelings and mood","anxiety,panic,low mood,depression,stress,anger,grief,loneliness"],["Thoughts and habits","OCD,habits and dependence,sleep problems,self-esteem,body image"],["Relationships","couples,pre-marital questions,family conflict,parenting"],["Children and teenagers","worry,behaviour,school stress,bullying,ADHD and learning"],["Assessments","attention,learning,personality,aptitude and career"],["Organisations","employee counselling,workshops,school programmes"]];
-document.getElementById('chipgroups').innerHTML=G.map(g=>`<div><h3>${g[0]}</h3><div class="chips">${g[1].split(',').map(x=>`<span>${x[0].toUpperCase()+x.slice(1)}</span>`).join('')}</div></div>`).join('');
+
 
 // orbit
 const O=[["Anxiety and overthinking","Worry that won't switch off, panic, and the 3am what-ifs. Practical ways to calm the body and loosen anxious thoughts.","MIND","#anxiety"],
@@ -1179,9 +1911,14 @@ function fall(){const y=document.getElementById('yrs');if(!y||!y.offsetParent)re
 addEventListener('scroll',()=>{chars();fall()},{passive:true});
 document.querySelectorAll('.startp,.cols3>div,.steps5>div,.edu>div,.sign,.glance,.nums>div,.ways a,.vcard>div,.tm,.awc,.oi').forEach(e=>e.classList.add('rv'));
 
+
+// gallery parallax
+function plx(){document.querySelectorAll('.page.on .gi').forEach(g=>{const r=g.getBoundingClientRect();const c=(r.top+r.height/2-innerHeight/2);g.style.setProperty('--py',(c*parseFloat(g.dataset.s||0)).toFixed(1)+'px')})}
+if(!matchMedia('(prefers-reduced-motion: reduce)').matches)addEventListener('scroll',plx,{passive:true});
+
 // icon tokens
-const w=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT);const ns=[];while(w.nextNode())if(/I(CAL|TEL|ARR|TICK|X|MENU|WA|MIND|HEART|DOOR|PIN|LOCK|SEND|STAR|CLOCK|CLOUD|FLAME|RINGS|SPROUT|COMPASS|PERSON|CHILD|FAMILY|LOOP|SHIELD|MIRROR|LEAF|MOON|GLOBE|USER|AWARD|CAP|CLIP|PILL|EAR|TOOL|CHAT|LINK)\b/.test(w.currentNode.nodeValue))ns.push(w.currentNode);
-ns.forEach(n=>{const s=document.createElement('span');s.innerHTML=n.nodeValue.replace(/I(CAL|TEL|ARR|TICK|X|MENU|WA|MIND|HEART|DOOR|PIN|LOCK|SEND|STAR|CLOCK|CLOUD|FLAME|RINGS|SPROUT|COMPASS|PERSON|CHILD|FAMILY|LOOP|SHIELD|MIRROR|LEAF|MOON|GLOBE|USER|AWARD|CAP|CLIP|PILL|EAR|TOOL|CHAT|LINK)\b/g,(m,k)=>svg(k));s.style.display='contents';n.replaceWith(s)});
+const w=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT);const ns=[];while(w.nextNode())if(/I(CAL|TEL|ARR|TICK|X|MENU|WA|MIND|HEART|DOOR|PIN|LOCK|SEND|STAR|CLOCK|CLOUD|FLAME|RINGS|SPROUT|COMPASS|PERSON|CHILD|FAMILY|LOOP|SHIELD|MIRROR|LEAF|MOON|GLOBE|USER|AWARD|CAP|CLIP|PILL|EAR|TOOL|CHAT|LINK|EYE|CUP|PEN|BRIEF|SCHOOL)\b/.test(w.currentNode.nodeValue))ns.push(w.currentNode);
+ns.forEach(n=>{const s=document.createElement('span');s.innerHTML=n.nodeValue.replace(/I(CAL|TEL|ARR|TICK|X|MENU|WA|MIND|HEART|DOOR|PIN|LOCK|SEND|STAR|CLOCK|CLOUD|FLAME|RINGS|SPROUT|COMPASS|PERSON|CHILD|FAMILY|LOOP|SHIELD|MIRROR|LEAF|MOON|GLOBE|USER|AWARD|CAP|CLIP|PILL|EAR|TOOL|CHAT|LINK|EYE|CUP|PEN|BRIEF|SCHOOL)\b/g,(m,k)=>svg(k));s.style.display='contents';n.replaceWith(s)});
 
 // chips and form
 document.querySelectorAll('[data-g]').forEach(g=>g.addEventListener('click',e=>{if(e.target.tagName!=='BUTTON')return;g.querySelectorAll('button').forEach(b=>b.setAttribute('aria-pressed',b===e.target))}));
@@ -1199,4 +1936,10 @@ let io;function obs(){io&&io.disconnect();io=new IntersectionObserver(es=>es.for
 document.querySelectorAll('.page.on .rv:not(.in),.page.on .tl:not(.in)').forEach(el=>{if(el.getBoundingClientRect().top<innerHeight)el.classList.add('in');else io.observe(el)})}
 addEventListener('scroll',()=>document.getElementById('nav').classList.toggle('s',scrollY>10),{passive:true});
 route();jtick();chars();fall();
+function xp(){document.querySelectorAll('.page.on .xpl').forEach(l=>{const r=l.getBoundingClientRect();const p=Math.min(1,Math.max(0,(innerHeight*.6-r.top)/r.height));l.style.setProperty('--p',p.toFixed(3));l.querySelectorAll('.s').forEach(s=>s.classList.toggle('on',s.getBoundingClientRect().top<innerHeight*.6))});
+document.querySelectorAll('.page.on .xnav').forEach(n=>{let cur=null;n.querySelectorAll('a').forEach(a=>{const t=document.getElementById(a.dataset.x);if(t&&t.getBoundingClientRect().top<200)cur=a});n.querySelectorAll('a').forEach(a=>a.classList.toggle('on',a===cur))})}
+addEventListener('scroll',xp,{passive:true});addEventListener('hashchange',()=>setTimeout(xp,80));
+document.querySelectorAll('.xnav a').forEach(a=>a.addEventListener('click',e=>{e.preventDefault();const t=document.getElementById(a.dataset.x);t&&window.scrollTo({top:t.getBoundingClientRect().top+scrollY-150,behavior:'smooth'})}));
+document.querySelectorAll('a[href="#x-signs"],a[href="#x-con"],a[href="#x-roles"]').forEach(a=>{if(a.closest('.xnav'))return;a.addEventListener('click',e=>{e.preventDefault();const t=document.getElementById(a.getAttribute('href').slice(1));t&&window.scrollTo({top:t.getBoundingClientRect().top+scrollY-120,behavior:'smooth'})})});
+xp();
 </script>

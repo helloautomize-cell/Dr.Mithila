@@ -36,7 +36,7 @@ const notoSansDevanagari = Noto_Sans_Devanagari({
 
 export const metadata: Metadata = {
   title: {
-    default: "The Mental Health · Dr. Mithila Desai, clinical psychologist",
+    default: "The Mental Health · Dr. Mithila Desai, Clinical Psychologist",
     template: "%s · The Mental Health",
   },
   description:

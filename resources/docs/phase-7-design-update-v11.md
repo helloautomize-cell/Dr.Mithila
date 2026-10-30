@@ -38,3 +38,12 @@ Exact copy from the preview, no dashes, no new claims, no country lists for over
 
 ## 5. Location (confirmed)
 Set `mapsUrl: "https://maps.app.goo.gl/Eem6wa6ysR3Swfs27"` in lib/site-config.ts. Use it for every "Get directions" button (opens in a new tab, rel noopener), for a tap on the map illustration ("Tap to open in Google Maps"), and for an "Open in Google Maps" link under step 01 of Finding us. The embedded live map still loads only after consent.
+
+## 6. Areas of care (Dr. Desai page, section 06), preview v12
+Replace the plain chip cards with `AreasOfCareBento`, a 4-column bento:
+- Feelings and mood: 2 columns by 2 rows, clay gradient, IconTile (heart), serif number 01, title, line "When emotions feel too strong, too flat, or won't settle.", chips, and clinic-nook.jpg at the bottom (radius 22px, max 340px tall).
+- Thoughts and habits: 2 columns, icon on the left, line "Patterns that feel hard to stop or change.", chips.
+- Relationships and Children and teenagers: 1 column each, a 130px photo band on top (svc-couples.jpg, svc-child-teen.jpg) with the IconTile overlapping it, then number, title, chips.
+- Assessments ("Clear answers, in plain words.") and Organisations ("Schools and workplaces."): 1 column each, icon, number, title, line, chips.
+- "Not sure where to start?": 2 columns, espresso with tree watermark, H3 "You don't need the right word for it.", line "Tell Dr. Desai what's been happening. She'll help you make sense of it in the first session.", BookButton and ghost "How the first session works" (to /plan-your-visit/).
+Every chip is a link to its concern page (Anxiety and Panic to /anxiety-and-panic/, the rest to the matching concern or service page). On hover or focus the chip fills walnut, text turns white and a small arrow slides in. Cards lift 4px on hover and the IconTile rotates and fills walnut. 2 columns at 1080px, 1 column at 640px. Lead next to the heading: "Tap a topic to read more about it."

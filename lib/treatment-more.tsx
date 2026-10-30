@@ -7,7 +7,7 @@ import { makeTreatment, type TreatmentData } from "@/lib/treatment";
 export const MORE_TREATMENT: Record<string, TreatmentData> = {
   "/depression/": makeTreatment({
     url: "/depression/",
-    label: "Depression and low mood",
+    label: "Depression and Low Mood",
     tagLabel: "Concern · Depression and low mood",
     icon: "CLOUD",
     title: (
@@ -19,17 +19,17 @@ export const MORE_TREATMENT: Record<string, TreatmentData> = {
     glance: [
       {
         icon: "CLOUD",
-        label: "What it is",
+        label: "What It Is",
         text: "A lasting low mood or loss of interest, with changes in sleep, energy, appetite and thinking",
       },
       {
         icon: "FAMILY",
-        label: "How common",
+        label: "How Common",
         text: "One of the main causes of ill health worldwide, including in India",
       },
       {
         icon: "USER",
-        label: "Who it affects",
+        label: "Who It Affects",
         text: "People of every age, including teenagers, new mothers and older adults",
       },
       {
@@ -73,22 +73,22 @@ export const MORE_TREATMENT: Record<string, TreatmentData> = {
       points: [
         {
           icon: "USER",
-          title: "In men",
+          title: "In Men",
           text: "anger, long work hours, drinking more, or withdrawing.",
         },
         {
           icon: "SPROUT",
-          title: "In teenagers",
+          title: "In Teenagers",
           text: "irritability, falling marks, staying in their room, or loss of friends.",
         },
         {
           icon: "HEART",
-          title: "After childbirth",
+          title: "After Childbirth",
           text: "tearfulness, anxiety, feeling unable to bond, lasting beyond the first two weeks.",
         },
         {
           icon: "CLOCK",
-          title: "In older adults",
+          title: "In Older Adults",
           text: "body aches, poor sleep, memory complaints, or loss of interest after retirement or bereavement.",
         },
       ],
@@ -110,31 +110,31 @@ export const MORE_TREATMENT: Record<string, TreatmentData> = {
       {
         icon: "COMPASS",
         n: "02",
-        title: "Small, planned activities",
+        title: "Small, Planned Activities",
         text: "That slowly bring back energy and pleasure.",
       },
       {
         icon: "CHAT",
         n: "03",
-        title: "Noticing harsh or hopeless thoughts",
+        title: "Noticing Harsh or Hopeless Thoughts",
         text: "And finding fairer ways to see yourself and your situation.",
       },
       {
         icon: "TOOL",
         n: "04",
-        title: "Problem-solving",
+        title: "Problem-Solving",
         text: "For the practical worries that weigh on you.",
       },
       {
         icon: "LINK",
         n: "05",
-        title: "Relationships and support",
+        title: "Relationships and Support",
         text: "So you are not carrying everything alone.",
       },
       {
         icon: "SHIELD",
         n: "06",
-        title: "Staying well",
+        title: "Staying Well",
         text: "With a plan for early warning signs.",
       },
     ],
@@ -163,25 +163,25 @@ export const MORE_TREATMENT: Record<string, TreatmentData> = {
     related: [
       {
         icon: "PERSON",
-        title: "Individual therapy",
+        title: "Individual Therapy",
         text: "One-to-one sessions for adults.",
         href: "/individual-therapy/",
       },
       {
         icon: "LEAF",
-        title: "Grief and loss",
+        title: "Grief and Loss",
         text: "Living with a death or another big loss.",
         href: "/grief-and-loss/",
       },
       {
         icon: "SHIELD",
-        title: "Self-harm and suicidal thoughts",
+        title: "Self-Harm and Suicidal Thoughts",
         text: "When thoughts of ending your life come up.",
         href: "/self-harm-and-suicidal-thoughts/",
       },
       {
         icon: "MOON",
-        title: "Sleep problems",
+        title: "Sleep Problems",
         text: "Trouble falling or staying asleep.",
         href: "/sleep-problems/",
       },
@@ -214,12 +214,12 @@ export const MORE_TREATMENT: Record<string, TreatmentData> = {
       },
       {
         icon: "FAMILY",
-        label: "How common",
+        label: "How Common",
         text: "Affects about 1 to 2 in 100 people at some point in life",
       },
       {
         icon: "COMPASS",
-        label: "Main therapy",
+        label: "Main Therapy",
         text: "Cognitive behavioural therapy with exposure and response prevention (ERP)",
       },
       {
@@ -271,7 +271,7 @@ export const MORE_TREATMENT: Record<string, TreatmentData> = {
         },
         {
           icon: "LOOP",
-          title: "More doubt",
+          title: "More Doubt",
           text: "the relief fades and the thought returns stronger.",
         },
       ],
@@ -287,25 +287,25 @@ export const MORE_TREATMENT: Record<string, TreatmentData> = {
       {
         icon: "LOOP",
         n: "01",
-        title: "Understanding the OCD cycle",
+        title: "Understanding the OCD Cycle",
         text: "Thought, anxiety, ritual, short relief, more doubt.",
       },
       {
         icon: "COMPASS",
         n: "02",
-        title: "Exposure and response prevention (ERP)",
+        title: "Exposure and Response Prevention (ERP)",
         text: "With Dr. Desai's support, you face the feared thought or situation in small planned steps and practise not doing the ritual, so the anxiety settles on its own and the OCD loses its grip.",
       },
       {
         icon: "CHAT",
         n: "03",
-        title: "Working with thoughts",
+        title: "Working with Thoughts",
         text: "Learning to treat obsessions as \"just OCD\" rather than warnings.",
       },
       {
         icon: "FAMILY",
         n: "04",
-        title: "Family involvement",
+        title: "Family Involvement",
         text: "Helping family members step back from rituals and reassurance in a kind way.",
       },
     ],
@@ -334,19 +334,19 @@ export const MORE_TREATMENT: Record<string, TreatmentData> = {
     related: [
       {
         icon: "MIND",
-        title: "Anxiety and panic",
+        title: "Anxiety and Panic",
         text: "Worry that won't switch off, and panic attacks.",
         href: "/anxiety/",
       },
       {
         icon: "PERSON",
-        title: "Individual therapy",
+        title: "Individual Therapy",
         text: "One-to-one sessions for adults.",
         href: "/individual-therapy/",
       },
       {
         icon: "CHILD",
-        title: "Child and teen therapy",
+        title: "Child and Teen Therapy",
         text: "Support for young people, with parents involved.",
         href: "/child-and-teen-therapy/",
       },
@@ -357,7 +357,7 @@ export const MORE_TREATMENT: Record<string, TreatmentData> = {
 
   "/stress-and-burnout/": makeTreatment({
     url: "/stress-and-burnout/",
-    label: "Stress, anger and burnout",
+    label: "Stress, Anger and Burnout",
     tagLabel: "Concern · Stress, anger and burnout",
     icon: "FLAME",
     title: (
@@ -384,7 +384,7 @@ export const MORE_TREATMENT: Record<string, TreatmentData> = {
       },
       {
         icon: "LOOP",
-        label: "Common triggers",
+        label: "Common Triggers",
         text: "Work hours, commutes, exams, money, caring for family, conflict",
       },
       {
@@ -424,12 +424,12 @@ export const MORE_TREATMENT: Record<string, TreatmentData> = {
       points: [
         {
           icon: "CAP",
-          title: "For students",
+          title: "For Students",
           text: "therapy can help with planning, sleep, panic before exams, and difficult conversations about marks and careers. See Career guidance.",
         },
         {
           icon: "SHIELD",
-          title: "Safety first",
+          title: "Safety First",
           text: "if anger has led to violence, or someone at home is afraid of you or of another family member, please speak to Dr. Desai openly. If anyone is in danger, call 112.",
         },
       ],
@@ -445,25 +445,25 @@ export const MORE_TREATMENT: Record<string, TreatmentData> = {
       {
         icon: "COMPASS",
         n: "01",
-        title: "Mapping the pressure",
+        title: "Mapping the Pressure",
         text: "What is within your control and what is not.",
       },
       {
         icon: "HEART",
         n: "02",
-        title: "Body skills",
+        title: "Body Skills",
         text: "Breathing, relaxation and sleep routines.",
       },
       {
         icon: "MIND",
         n: "03",
-        title: "Thinking skills",
+        title: "Thinking Skills",
         text: "Noticing \"all or nothing\" thoughts and perfectionism.",
       },
       {
         icon: "FLAME",
         n: "04",
-        title: "Anger skills",
+        title: "Anger Skills",
         text: "Recognising early signs, pausing, and expressing anger without harm.",
       },
       {
@@ -475,7 +475,7 @@ export const MORE_TREATMENT: Record<string, TreatmentData> = {
       {
         icon: "BRIEF",
         n: "06",
-        title: "Returning to work",
+        title: "Returning to Work",
         text: "After burnout, step by step.",
       },
     ],
@@ -500,25 +500,25 @@ export const MORE_TREATMENT: Record<string, TreatmentData> = {
     related: [
       {
         icon: "MIND",
-        title: "Anxiety and panic",
+        title: "Anxiety and Panic",
         text: "Worry that won't switch off, and panic attacks.",
         href: "/anxiety/",
       },
       {
         icon: "CLOUD",
-        title: "Depression and low mood",
+        title: "Depression and Low Mood",
         text: "When everything feels heavy or flat.",
         href: "/depression/",
       },
       {
         icon: "MOON",
-        title: "Sleep problems",
+        title: "Sleep Problems",
         text: "Trouble falling or staying asleep.",
         href: "/sleep-problems/",
       },
       {
         icon: "BRIEF",
-        title: "Workplace wellbeing",
+        title: "Workplace Wellbeing",
         text: "Counselling and talks for organisations.",
         href: "/workplace-wellbeing/",
       },
@@ -529,7 +529,7 @@ export const MORE_TREATMENT: Record<string, TreatmentData> = {
 
   "/trauma/": makeTreatment({
     url: "/trauma/",
-    label: "Trauma and difficult experiences",
+    label: "Trauma and Difficult Experiences",
     tagLabel: "Concern · Trauma and difficult experiences",
     icon: "SHIELD",
     title: (
@@ -541,12 +541,12 @@ export const MORE_TREATMENT: Record<string, TreatmentData> = {
     glance: [
       {
         icon: "SHIELD",
-        label: "What causes it",
+        label: "What Causes It",
         text: "Accidents, assault, abuse, bullying, sudden death of someone close, disasters, medical emergencies, long-term victimisation",
       },
       {
         icon: "MIND",
-        label: "Common effects",
+        label: "Common Effects",
         text: "Flashbacks, nightmares, feeling on guard, numbness, avoidance, shame",
       },
       {
@@ -561,7 +561,7 @@ export const MORE_TREATMENT: Record<string, TreatmentData> = {
       },
       {
         icon: "CHAT",
-        label: "Your pace",
+        label: "Your Pace",
         text: "You do not have to tell everything at once",
       },
     ],
@@ -596,12 +596,12 @@ export const MORE_TREATMENT: Record<string, TreatmentData> = {
       points: [
         {
           icon: "TEL",
-          title: "In an emergency",
+          title: "In an Emergency",
           text: "call 112, the women's helpline 181, or Childline 1098 for a child. Dr. Desai can help you think through options.",
         },
         {
           icon: "SHIELD",
-          title: "No pressure to talk",
+          title: "No Pressure to Talk",
           text: "you choose what to share and when. Therapy should feel challenging at times, but never overwhelming.",
         },
       ],
@@ -617,19 +617,19 @@ export const MORE_TREATMENT: Record<string, TreatmentData> = {
       {
         icon: "SHIELD",
         n: "01",
-        title: "Safety and stability first",
+        title: "Safety and Stability First",
         text: "Skills to calm the body and manage strong feelings before going near painful memories.",
       },
       {
         icon: "CHAT",
         n: "02",
-        title: "Making sense of what happened",
+        title: "Making Sense of What Happened",
         text: "At your pace and in your words.",
       },
       {
         icon: "MIND",
         n: "03",
-        title: "Working with stuck beliefs",
+        title: "Working with Stuck Beliefs",
         text: "Such as \"it was my fault\" or \"nowhere is safe\".",
       },
       {
@@ -660,25 +660,25 @@ export const MORE_TREATMENT: Record<string, TreatmentData> = {
     related: [
       {
         icon: "MIND",
-        title: "Anxiety and panic",
+        title: "Anxiety and Panic",
         text: "Worry that won't switch off, and panic attacks.",
         href: "/anxiety/",
       },
       {
         icon: "CLOUD",
-        title: "Depression and low mood",
+        title: "Depression and Low Mood",
         text: "When everything feels heavy or flat.",
         href: "/depression/",
       },
       {
         icon: "PERSON",
-        title: "Individual therapy",
+        title: "Individual Therapy",
         text: "One-to-one sessions for adults.",
         href: "/individual-therapy/",
       },
       {
         icon: "CHILD",
-        title: "Child and teen therapy",
+        title: "Child and Teen Therapy",
         text: "Support for young people, with parents involved.",
         href: "/child-and-teen-therapy/",
       },
@@ -689,7 +689,7 @@ export const MORE_TREATMENT: Record<string, TreatmentData> = {
 
   "/self-esteem-and-body-image/": makeTreatment({
     url: "/self-esteem-and-body-image/",
-    label: "Self-esteem and body image",
+    label: "Self-Esteem and Body Image",
     tagLabel: "Concern · Self-esteem and body image",
     icon: "MIRROR",
     title: (
@@ -701,12 +701,12 @@ export const MORE_TREATMENT: Record<string, TreatmentData> = {
     glance: [
       {
         icon: "MIRROR",
-        label: "Common signs",
+        label: "Common Signs",
         text: "Harsh self-criticism, comparing yourself, needing approval, avoiding mirrors or photos",
       },
       {
         icon: "LINK",
-        label: "Often linked with",
+        label: "Often Linked With",
         text: "Anxiety, depression, bullying, social media, family criticism",
       },
       {
@@ -716,7 +716,7 @@ export const MORE_TREATMENT: Record<string, TreatmentData> = {
       },
       {
         icon: "PILL",
-        label: "Eating concerns",
+        label: "Eating Concerns",
         text: "Need medical checks as well",
       },
       {
@@ -756,7 +756,7 @@ export const MORE_TREATMENT: Record<string, TreatmentData> = {
       points: [
         {
           icon: "PILL",
-          title: "Medical monitoring",
+          title: "Medical Monitoring",
           text: "eating disorders can affect physical health seriously and need medical checks alongside therapy.",
         },
       ],
@@ -772,37 +772,37 @@ export const MORE_TREATMENT: Record<string, TreatmentData> = {
       {
         icon: "MIND",
         n: "01",
-        title: "Questioning self-critical thoughts",
+        title: "Questioning Self-Critical Thoughts",
         text: "Noticing them and questioning them.",
       },
       {
         icon: "EAR",
         n: "02",
-        title: "Understanding where they came from",
+        title: "Understanding Where They Came From",
         text: "Without blame.",
       },
       {
         icon: "LEAF",
         n: "03",
-        title: "Building self-respect",
+        title: "Building Self-Respect",
         text: "Through small, real actions.",
       },
       {
         icon: "SHIELD",
         n: "04",
-        title: "Healthy boundaries",
+        title: "Healthy Boundaries",
         text: "In relationships.",
       },
       {
         icon: "MIRROR",
         n: "05",
-        title: "A kinder relationship with your body",
+        title: "A Kinder Relationship with Your Body",
         text: "Focused on what it does rather than how it looks.",
       },
       {
         icon: "GLOBE",
         n: "06",
-        title: "Social media that does not hurt",
+        title: "Social Media That Does Not Hurt",
         text: "Using it in ways that do not hurt.",
       },
     ],
@@ -823,25 +823,25 @@ export const MORE_TREATMENT: Record<string, TreatmentData> = {
     related: [
       {
         icon: "CLOUD",
-        title: "Depression and low mood",
+        title: "Depression and Low Mood",
         text: "When everything feels heavy or flat.",
         href: "/depression/",
       },
       {
         icon: "MIND",
-        title: "Anxiety and panic",
+        title: "Anxiety and Panic",
         text: "Worry that won't switch off, and panic attacks.",
         href: "/anxiety/",
       },
       {
         icon: "PERSON",
-        title: "Individual therapy",
+        title: "Individual Therapy",
         text: "One-to-one sessions for adults.",
         href: "/individual-therapy/",
       },
       {
         icon: "CHILD",
-        title: "Child and teen therapy",
+        title: "Child and Teen Therapy",
         text: "Support for young people, with parents involved.",
         href: "/child-and-teen-therapy/",
       },
@@ -850,7 +850,7 @@ export const MORE_TREATMENT: Record<string, TreatmentData> = {
 
   "/grief-and-loss/": makeTreatment({
     url: "/grief-and-loss/",
-    label: "Grief and loss",
+    label: "Grief and Loss",
     tagLabel: "Concern · Grief and loss",
     icon: "LEAF",
     title: (
@@ -862,7 +862,7 @@ export const MORE_TREATMENT: Record<string, TreatmentData> = {
     glance: [
       {
         icon: "LEAF",
-        label: "Losses we help with",
+        label: "Losses We Help With",
         text: "Death of a family member or friend, miscarriage or stillbirth, suicide loss, divorce or separation, loss of health, job or home, a pet",
       },
       {
@@ -914,31 +914,31 @@ export const MORE_TREATMENT: Record<string, TreatmentData> = {
       {
         icon: "CHAT",
         n: "01",
-        title: "Talking freely",
+        title: "Talking Freely",
         text: "About the person and the loss, without being told to \"move on\".",
       },
       {
         icon: "MIND",
         n: "02",
-        title: "Understanding the mix of feelings",
+        title: "Understanding the Mix of Feelings",
         text: "Including relief, anger or guilt.",
       },
       {
         icon: "CLOCK",
         n: "03",
-        title: "Handling rituals and anniversaries",
+        title: "Handling Rituals and Anniversaries",
         text: "And family expectations.",
       },
       {
         icon: "LINK",
         n: "04",
-        title: "Keeping a bond",
+        title: "Keeping a Bond",
         text: "Finding a way to keep a bond with the person while building life forward.",
       },
       {
         icon: "CHILD",
         n: "05",
-        title: "Supporting children",
+        title: "Supporting Children",
         text: "In the family.",
       },
     ],
@@ -959,19 +959,19 @@ export const MORE_TREATMENT: Record<string, TreatmentData> = {
     related: [
       {
         icon: "CLOUD",
-        title: "Depression and low mood",
+        title: "Depression and Low Mood",
         text: "When everything feels heavy or flat.",
         href: "/depression/",
       },
       {
         icon: "FAMILY",
-        title: "Family counselling",
+        title: "Family Counselling",
         text: "Working through change and conflict together.",
         href: "/family-counselling/",
       },
       {
         icon: "PERSON",
-        title: "Individual therapy",
+        title: "Individual Therapy",
         text: "One-to-one sessions for adults.",
         href: "/individual-therapy/",
       },
@@ -980,7 +980,7 @@ export const MORE_TREATMENT: Record<string, TreatmentData> = {
 
   "/sleep-problems/": makeTreatment({
     url: "/sleep-problems/",
-    label: "Sleep problems",
+    label: "Sleep Problems",
     tagLabel: "Concern · Sleep problems",
     icon: "MOON",
     title: (
@@ -997,17 +997,17 @@ export const MORE_TREATMENT: Record<string, TreatmentData> = {
       },
       {
         icon: "COMPASS",
-        label: "Works on",
+        label: "Works On",
         text: "Sleep habits, timing, and the worries that keep you awake",
       },
       {
         icon: "LINK",
-        label: "Often linked with",
+        label: "Often Linked With",
         text: "Anxiety, low mood, stress, shift work, screens",
       },
       {
         icon: "PILL",
-        label: "Medical checks",
+        label: "Medical Checks",
         text: "Needed for loud snoring, breathing pauses or restless legs",
       },
       {
@@ -1043,7 +1043,7 @@ export const MORE_TREATMENT: Record<string, TreatmentData> = {
       points: [
         {
           icon: "PILL",
-          title: "Sleeping tablets",
+          title: "Sleeping Tablets",
           text: "please do not stop them suddenly without your doctor.",
         },
       ],
@@ -1059,31 +1059,31 @@ export const MORE_TREATMENT: Record<string, TreatmentData> = {
       {
         icon: "CLIP",
         n: "01",
-        title: "A sleep diary",
+        title: "A Sleep Diary",
         text: "To see your real pattern.",
       },
       {
         icon: "CLOCK",
         n: "02",
-        title: "A steady wake-up time",
+        title: "A Steady Wake-Up Time",
         text: "And time in bed matched to your sleep.",
       },
       {
         icon: "DOOR",
         n: "03",
-        title: "Out of bed when awake for long",
+        title: "Out of Bed When Awake for Long",
         text: "So the bed links with sleep again.",
       },
       {
         icon: "LEAF",
         n: "04",
-        title: "Calming a racing mind",
+        title: "Calming a Racing Mind",
         text: "At night.",
       },
       {
         icon: "MIND",
         n: "05",
-        title: "Changing unhelpful beliefs",
+        title: "Changing Unhelpful Beliefs",
         text: "About sleep.",
       },
     ],
@@ -1100,19 +1100,19 @@ export const MORE_TREATMENT: Record<string, TreatmentData> = {
     related: [
       {
         icon: "MIND",
-        title: "Anxiety and panic",
+        title: "Anxiety and Panic",
         text: "Worry that won't switch off, and panic attacks.",
         href: "/anxiety/",
       },
       {
         icon: "CLOUD",
-        title: "Depression and low mood",
+        title: "Depression and Low Mood",
         text: "When everything feels heavy or flat.",
         href: "/depression/",
       },
       {
         icon: "FLAME",
-        title: "Stress and burnout",
+        title: "Stress and Burnout",
         text: "When pressure spills into sleep, temper and health.",
         href: "/stress-and-burnout/",
       },
@@ -1123,7 +1123,7 @@ export const MORE_TREATMENT: Record<string, TreatmentData> = {
 
   "/individual-therapy/": makeTreatment({
     url: "/individual-therapy/",
-    label: "Individual therapy",
+    label: "Individual Therapy",
     tagLabel: "Service · Individual therapy for adults",
     icon: "PERSON",
     title: (
@@ -1135,12 +1135,12 @@ export const MORE_TREATMENT: Record<string, TreatmentData> = {
     glance: [
       {
         icon: "USER",
-        label: "Who it is for",
+        label: "Who It Is For",
         text: "Adults from 18 to older age",
       },
       {
         icon: "CHAT",
-        label: "What it is",
+        label: "What It Is",
         text: "Regular talking sessions with one psychologist",
       },
       {
@@ -1154,7 +1154,7 @@ export const MORE_TREATMENT: Record<string, TreatmentData> = {
       },
       {
         icon: "CAL",
-        label: "How often",
+        label: "How Often",
         text: "Often weekly at first, then spaced out",
       },
       {
@@ -1202,19 +1202,19 @@ export const MORE_TREATMENT: Record<string, TreatmentData> = {
       {
         icon: "COMPASS",
         n: "02",
-        title: "A shared plan",
+        title: "A Shared Plan",
         text: "Dr. Desai explains what she suggests focusing on and why. You agree on it together.",
       },
       {
         icon: "CHAT",
         n: "03",
-        title: "The work",
+        title: "The Work",
         text: "Sessions combine talking things through with practical skills, such as noticing unhelpful thoughts, calming the body, solving problems, or setting boundaries.",
       },
       {
         icon: "LEAF",
         n: "04",
-        title: "Between sessions",
+        title: "Between Sessions",
         text: "You may try small things in daily life and talk about how they went.",
       },
       {
@@ -1226,7 +1226,7 @@ export const MORE_TREATMENT: Record<string, TreatmentData> = {
       {
         icon: "SHIELD",
         n: "06",
-        title: "Ending well",
+        title: "Ending Well",
         text: "When you are ready to stop, you plan how to keep what you have learnt. You can come back later if you need to.",
       },
     ],
@@ -1255,25 +1255,25 @@ export const MORE_TREATMENT: Record<string, TreatmentData> = {
     related: [
       {
         icon: "MIND",
-        title: "Anxiety and panic",
+        title: "Anxiety and Panic",
         text: "Worry that won't switch off, and panic attacks.",
         href: "/anxiety/",
       },
       {
         icon: "CLOUD",
-        title: "Depression and low mood",
+        title: "Depression and Low Mood",
         text: "When everything feels heavy or flat.",
         href: "/depression/",
       },
       {
         icon: "FLAME",
-        title: "Stress and burnout",
+        title: "Stress and Burnout",
         text: "When pressure spills into sleep, temper and health.",
         href: "/stress-and-burnout/",
       },
       {
         icon: "GLOBE",
-        title: "Online therapy",
+        title: "Online Therapy",
         text: "Sessions by video, from home or abroad.",
         href: "/online-therapy/",
       },
@@ -1284,7 +1284,7 @@ export const MORE_TREATMENT: Record<string, TreatmentData> = {
 
   "/child-and-teen-therapy/": makeTreatment({
     url: "/child-and-teen-therapy/",
-    label: "Child and teen therapy",
+    label: "Child and Teen Therapy",
     tagLabel: "Service · Child and teen therapy",
     icon: "CHILD",
     title: (
@@ -1313,7 +1313,7 @@ export const MORE_TREATMENT: Record<string, TreatmentData> = {
       },
       {
         icon: "FAMILY",
-        label: "Who comes",
+        label: "Who Comes",
         text: "The young person, with a parent for part or all of some sessions",
       },
       {
@@ -1363,12 +1363,12 @@ export const MORE_TREATMENT: Record<string, TreatmentData> = {
       points: [
         {
           icon: "FAMILY",
-          title: "Parent sessions",
+          title: "Parent Sessions",
           text: "Dr. Desai may suggest some sessions with parents alone, to plan routines, responses to difficult behaviour, or ways to talk about feelings at home.",
         },
         {
           icon: "LOCK",
-          title: "Privacy for teenagers",
+          title: "Privacy for Teenagers",
           text: "she explains at the start what stays private, what she shares with parents in general terms, and that she will tell parents if there is a risk of serious harm.",
         },
       ],
@@ -1384,7 +1384,7 @@ export const MORE_TREATMENT: Record<string, TreatmentData> = {
       {
         icon: "FAMILY",
         n: "01",
-        title: "Parents first",
+        title: "Parents First",
         text: (
           <>
             Dr. Desai usually meets the parent or parents to hear the history,
@@ -1395,25 +1395,25 @@ export const MORE_TREATMENT: Record<string, TreatmentData> = {
       {
         icon: "CHILD",
         n: "02",
-        title: "Meeting the child",
+        title: "Meeting the Child",
         text: "With younger children, through play and drawing. With teenagers, a private conversation, with clear rules on confidentiality.",
       },
       {
         icon: "SCHOOL",
         n: "03",
-        title: "Information from school",
+        title: "Information From School",
         text: "If helpful and with your permission.",
       },
       {
         icon: "COMPASS",
         n: "04",
-        title: "A plan",
+        title: "A Plan",
         text: "Shared with parents in plain words: what to work on, how often to meet, and what parents can do at home.",
       },
       {
         icon: "CLIP",
         n: "05",
-        title: "An assessment",
+        title: "An Assessment",
         text: "Only if a specific question needs one, such as attention or learning.",
       },
     ],
@@ -1442,25 +1442,25 @@ export const MORE_TREATMENT: Record<string, TreatmentData> = {
     related: [
       {
         icon: "CLIP",
-        title: "ADHD and learning assessment",
+        title: "ADHD and Learning Assessment",
         text: "Clear answers about attention and learning.",
         href: "/psychological-assessment/adhd-learning-neurodiversity/",
       },
       {
         icon: "MIND",
-        title: "Anxiety and panic",
+        title: "Anxiety and Panic",
         text: "Worry that won't switch off, and panic attacks.",
         href: "/anxiety/",
       },
       {
         icon: "FAMILY",
-        title: "Family counselling",
+        title: "Family Counselling",
         text: "Working through change and conflict together.",
         href: "/family-counselling/",
       },
       {
         icon: "SCHOOL",
-        title: "Schools and colleges",
+        title: "Schools and Colleges",
         text: "Programmes for students and teachers.",
         href: "/schools-and-colleges/",
       },
@@ -1471,7 +1471,7 @@ export const MORE_TREATMENT: Record<string, TreatmentData> = {
 
   "/couples-counselling/": makeTreatment({
     url: "/couples-counselling/",
-    label: "Couples and marriage counselling",
+    label: "Couples and Marriage Counselling",
     tagLabel: "Service · Couples and marriage counselling",
     icon: "RINGS",
     title: (
@@ -1483,12 +1483,12 @@ export const MORE_TREATMENT: Record<string, TreatmentData> = {
     glance: [
       {
         icon: "RINGS",
-        label: "Who it is for",
+        label: "Who It Is For",
         text: "Couples, married or not, and couples planning to marry",
       },
       {
         icon: "FAMILY",
-        label: "Who comes",
+        label: "Who Comes",
         text: "Usually both partners together, sometimes one at a time",
       },
       {
@@ -1502,7 +1502,7 @@ export const MORE_TREATMENT: Record<string, TreatmentData> = {
       },
       {
         icon: "SHIELD",
-        label: "Her role",
+        label: "Her Role",
         text: "Neutral; she does not take sides",
       },
       {
@@ -1542,12 +1542,12 @@ export const MORE_TREATMENT: Record<string, TreatmentData> = {
       points: [
         {
           icon: "SHIELD",
-          title: "Individual support instead",
+          title: "Individual Support Instead",
           text: "Dr. Desai will offer individual support. If you are in danger, call 112, or the women's helpline 181.",
         },
         {
           icon: "RINGS",
-          title: "Pre-marital counselling",
+          title: "Pre-Marital Counselling",
           text: "a few sessions before marriage to talk openly about expectations around family, work, money, children, faith and roles at home. It is not a test of whether to marry.",
         },
       ],
@@ -1563,13 +1563,13 @@ export const MORE_TREATMENT: Record<string, TreatmentData> = {
       {
         icon: "CHAT",
         n: "01",
-        title: "A joint first session",
+        title: "A Joint First Session",
         text: "Each partner describes the problem in their own words, without interruption.",
       },
       {
         icon: "PERSON",
         n: "02",
-        title: "Individual time",
+        title: "Individual Time",
         text: "Dr. Desai may meet each partner alone once, to hear what is hard to say in front of the other.",
       },
       {
@@ -1621,25 +1621,25 @@ export const MORE_TREATMENT: Record<string, TreatmentData> = {
     related: [
       {
         icon: "FAMILY",
-        title: "Family counselling",
+        title: "Family Counselling",
         text: "Working through change and conflict together.",
         href: "/family-counselling/",
       },
       {
         icon: "PERSON",
-        title: "Individual therapy",
+        title: "Individual Therapy",
         text: "One-to-one sessions for adults.",
         href: "/individual-therapy/",
       },
       {
         icon: "FLAME",
-        title: "Stress and burnout",
+        title: "Stress and Burnout",
         text: "When pressure spills into sleep, temper and health.",
         href: "/stress-and-burnout/",
       },
       {
         icon: "GLOBE",
-        title: "Online therapy",
+        title: "Online Therapy",
         text: "Sessions by video, from home or abroad.",
         href: "/online-therapy/",
       },
@@ -1650,7 +1650,7 @@ export const MORE_TREATMENT: Record<string, TreatmentData> = {
 
   "/family-counselling/": makeTreatment({
     url: "/family-counselling/",
-    label: "Family counselling and parenting support",
+    label: "Family Counselling and Parenting Support",
     tagLabel: "Service · Family counselling and parenting support",
     icon: "FAMILY",
     title: (
@@ -1662,17 +1662,17 @@ export const MORE_TREATMENT: Record<string, TreatmentData> = {
     glance: [
       {
         icon: "FAMILY",
-        label: "Who comes",
+        label: "Who Comes",
         text: "Parents, children, grandparents or adult siblings, in different combinations",
       },
       {
         icon: "CHAT",
-        label: "Common reasons",
+        label: "Common Reasons",
         text: "Conflict, change, a child's behaviour, illness or loss",
       },
       {
         icon: "USER",
-        label: "Parenting support",
+        label: "Parenting Support",
         text: "Sessions for parents alone are welcome",
       },
       {
@@ -1717,12 +1717,12 @@ export const MORE_TREATMENT: Record<string, TreatmentData> = {
       points: [
         {
           icon: "LEAF",
-          title: "Everyday life",
+          title: "Everyday Life",
           text: "routines, screen time and sleep; responding to tantrums, defiance or aggression; supporting an anxious or withdrawn child.",
         },
         {
           icon: "CHAT",
-          title: "Harder conversations",
+          title: "Harder Conversations",
           text: "talking to children about difficult topics; parenting a teenager while staying connected; co-parenting after separation.",
         },
       ],
@@ -1737,25 +1737,25 @@ export const MORE_TREATMENT: Record<string, TreatmentData> = {
       {
         icon: "EAR",
         n: "01",
-        title: "Hearing everyone",
+        title: "Hearing Everyone",
         text: "Each person gets a turn to speak and be heard.",
       },
       {
         icon: "LOOP",
         n: "02",
-        title: "Looking at patterns",
+        title: "Looking at Patterns",
         text: "Dr. Desai helps the family see what keeps a problem going, rather than who is to blame.",
       },
       {
         icon: "LEAF",
         n: "03",
-        title: "Small changes",
+        title: "Small Changes",
         text: "The family agrees on practical steps at home.",
       },
       {
         icon: "FAMILY",
         n: "04",
-        title: "Different combinations",
+        title: "Different Combinations",
         text: "Some sessions include everyone, some only parents or only siblings.",
       },
     ],
@@ -1780,19 +1780,19 @@ export const MORE_TREATMENT: Record<string, TreatmentData> = {
     related: [
       {
         icon: "CHILD",
-        title: "Child and teen therapy",
+        title: "Child and Teen Therapy",
         text: "Support for young people, with parents involved.",
         href: "/child-and-teen-therapy/",
       },
       {
         icon: "RINGS",
-        title: "Couples counselling",
+        title: "Couples Counselling",
         text: "For couples who feel stuck, before or after marriage.",
         href: "/couples-counselling/",
       },
       {
         icon: "LEAF",
-        title: "Grief and loss",
+        title: "Grief and Loss",
         text: "Living with a death or another big loss.",
         href: "/grief-and-loss/",
       },
@@ -1803,7 +1803,7 @@ export const MORE_TREATMENT: Record<string, TreatmentData> = {
 
   "/online-therapy/": makeTreatment({
     url: "/online-therapy/",
-    label: "Online therapy",
+    label: "Online Therapy",
     tagLabel: "Service · Online therapy",
     icon: "GLOBE",
     title: (
@@ -1829,7 +1829,7 @@ export const MORE_TREATMENT: Record<string, TreatmentData> = {
       },
       {
         icon: "TOOL",
-        label: "You need",
+        label: "You Need",
         text: "A private room, headphones, a charged device, steady internet",
       },
       {
@@ -1843,7 +1843,7 @@ export const MORE_TREATMENT: Record<string, TreatmentData> = {
       },
       {
         icon: "SHIELD",
-        label: "Not suitable for",
+        label: "Not Suitable For",
         text: "Emergencies, and most young children",
       },
     ],
@@ -1879,12 +1879,12 @@ export const MORE_TREATMENT: Record<string, TreatmentData> = {
       points: [
         {
           icon: "LOCK",
-          title: "Your space",
+          title: "Your Space",
           text: "use headphones and a room where you cannot be overheard. Some people sit in a parked car or go for a walk. Avoid shared or office devices if possible. If someone walks in, you can pause or switch to chat.",
         },
         {
           icon: "SHIELD",
-          title: "When online is not the right choice",
+          title: "When Online Is Not the Right Choice",
           text: "if you are at high risk of harming yourself, in crisis, or for most young children, in-person or emergency care is better. Dr. Desai may suggest in-person sessions or another service.",
         },
       ],
@@ -1906,13 +1906,13 @@ export const MORE_TREATMENT: Record<string, TreatmentData> = {
       {
         icon: "TEL",
         n: "02",
-        title: "Receive a link",
+        title: "Receive a Link",
         text: "And a short note on privacy and what to do if the call drops.",
       },
       {
         icon: "SHIELD",
         n: "03",
-        title: "First session",
+        title: "First Session",
         text: "Dr. Desai confirms your identity and your location during the session, and asks for an emergency contact. This is standard good practice.",
       },
       {
@@ -1964,25 +1964,25 @@ export const MORE_TREATMENT: Record<string, TreatmentData> = {
     related: [
       {
         icon: "GLOBE",
-        title: "Indians abroad",
+        title: "Indians Abroad",
         text: "Sessions planned around your time zone.",
         href: "/online-therapy/indians-abroad/",
       },
       {
         icon: "PERSON",
-        title: "Individual therapy",
+        title: "Individual Therapy",
         text: "One-to-one sessions for adults.",
         href: "/individual-therapy/",
       },
       {
         icon: "MIND",
-        title: "Anxiety and panic",
+        title: "Anxiety and Panic",
         text: "Worry that won't switch off, and panic attacks.",
         href: "/anxiety/",
       },
       {
         icon: "RINGS",
-        title: "Couples counselling",
+        title: "Couples Counselling",
         text: "For couples who feel stuck, before or after marriage.",
         href: "/couples-counselling/",
       },
@@ -1993,7 +1993,7 @@ export const MORE_TREATMENT: Record<string, TreatmentData> = {
 
   "/online-therapy/indians-abroad/": makeTreatment({
     url: "/online-therapy/indians-abroad/",
-    label: "Online therapy for Indians abroad",
+    label: "Online Therapy for Indians Abroad",
     tagLabel: "Service · Online therapy for Indians abroad",
     icon: "GLOBE",
     title: (
@@ -2019,7 +2019,7 @@ export const MORE_TREATMENT: Record<string, TreatmentData> = {
       },
       {
         icon: "CLOCK",
-        label: "Time zones",
+        label: "Time Zones",
         text: <Confirm>early morning or late evening India time slots</Confirm>,
       },
       {
@@ -2061,12 +2061,12 @@ export const MORE_TREATMENT: Record<string, TreatmentData> = {
       points: [
         {
           icon: "SHIELD",
-          title: "Your responsibility",
+          title: "Your Responsibility",
           text: "you are responsible for checking whether this applies to you.",
         },
         {
           icon: "TEL",
-          title: "No emergency care abroad",
+          title: "No Emergency Care Abroad",
           text: "she cannot arrange emergency care in your country. At the first session, she will ask you for a local emergency contact and the emergency number where you live.",
         },
         {
@@ -2086,13 +2086,13 @@ export const MORE_TREATMENT: Record<string, TreatmentData> = {
       {
         icon: "GLOBE",
         n: "01",
-        title: "Tell us your city",
+        title: "Tell Us Your City",
         text: "Tell us your city and time zone when you book.",
       },
       {
         icon: "CLOCK",
         n: "02",
-        title: "A slot that fits",
+        title: "A Slot That Fits",
         text: (
           <>
             We offer slots that fall in your morning or evening <Confirm />.
@@ -2102,13 +2102,13 @@ export const MORE_TREATMENT: Record<string, TreatmentData> = {
       {
         icon: "CAL",
         n: "03",
-        title: "Clear confirmation",
+        title: "Clear Confirmation",
         text: "The confirmation shows the time in both India time and your local time.",
       },
       {
         icon: "LOOP",
         n: "04",
-        title: "Daylight saving",
+        title: "Daylight Saving",
         text: "Daylight saving changes are checked twice a year.",
       },
     ],
@@ -2133,19 +2133,19 @@ export const MORE_TREATMENT: Record<string, TreatmentData> = {
     related: [
       {
         icon: "GLOBE",
-        title: "Online therapy",
+        title: "Online Therapy",
         text: "Video sessions from anywhere in India.",
         href: "/online-therapy/",
       },
       {
         icon: "PERSON",
-        title: "Individual therapy",
+        title: "Individual Therapy",
         text: "One-to-one sessions for adults.",
         href: "/individual-therapy/",
       },
       {
         icon: "RINGS",
-        title: "Couples counselling",
+        title: "Couples Counselling",
         text: "For couples who feel stuck, before or after marriage.",
         href: "/couples-counselling/",
       },
@@ -2154,7 +2154,7 @@ export const MORE_TREATMENT: Record<string, TreatmentData> = {
 
   "/addiction-and-habits/": makeTreatment({
     url: "/addiction-and-habits/",
-    label: "Habits, addiction and dependence",
+    label: "Habits, Addiction and Dependence",
     tagLabel: "Concern · Habits, addiction and dependence",
     icon: "LOOP",
     title: (
@@ -2166,7 +2166,7 @@ export const MORE_TREATMENT: Record<string, TreatmentData> = {
     glance: [
       {
         icon: "LOOP",
-        label: "Habits we can help with",
+        label: "Habits We Can Help With",
         text: (
           <>
             Alcohol, tobacco and nicotine, cannabis, gaming, betting, phone and
@@ -2181,7 +2181,7 @@ export const MORE_TREATMENT: Record<string, TreatmentData> = {
       },
       {
         icon: "PILL",
-        label: "Medical care",
+        label: "Medical Care",
         text: "Needed for withdrawal from alcohol and some drugs",
       },
       {
@@ -2224,7 +2224,7 @@ export const MORE_TREATMENT: Record<string, TreatmentData> = {
       points: [
         {
           icon: "PILL",
-          title: "See a doctor first",
+          title: "See a Doctor First",
           text: "please speak to a doctor or psychiatrist before stopping. Psychologists do not provide medical detox. Dr. Desai can work alongside your doctor or a de-addiction centre.",
         },
       ],
@@ -2240,25 +2240,25 @@ export const MORE_TREATMENT: Record<string, TreatmentData> = {
       {
         icon: "MIND",
         n: "01",
-        title: "What it does and costs",
+        title: "What It Does and Costs",
         text: "Looking honestly at what the habit does for you and what it costs.",
       },
       {
         icon: "COMPASS",
         n: "02",
-        title: "Your reasons for change",
+        title: "Your Reasons for Change",
         text: "Finding your reasons for change.",
       },
       {
         icon: "LOOP",
         n: "03",
-        title: "Identifying triggers",
+        title: "Identifying Triggers",
         text: "People, places, feelings, times of day.",
       },
       {
         icon: "TOOL",
         n: "04",
-        title: "Plans for cravings",
+        title: "Plans for Cravings",
         text: "Practical plans for cravings and difficult moments.",
       },
       {
@@ -2270,7 +2270,7 @@ export const MORE_TREATMENT: Record<string, TreatmentData> = {
       {
         icon: "SHIELD",
         n: "06",
-        title: "Planning for slips",
+        title: "Planning for Slips",
         text: "Slips are common and can be learnt from.",
       },
     ],
@@ -2291,19 +2291,19 @@ export const MORE_TREATMENT: Record<string, TreatmentData> = {
     related: [
       {
         icon: "FLAME",
-        title: "Stress and burnout",
+        title: "Stress and Burnout",
         text: "When pressure spills into sleep, temper and health.",
         href: "/stress-and-burnout/",
       },
       {
         icon: "CLOUD",
-        title: "Depression and low mood",
+        title: "Depression and Low Mood",
         text: "When everything feels heavy or flat.",
         href: "/depression/",
       },
       {
         icon: "FAMILY",
-        title: "Family counselling",
+        title: "Family Counselling",
         text: "Working through change and conflict together.",
         href: "/family-counselling/",
       },
@@ -2315,7 +2315,7 @@ export const MORE_TREATMENT: Record<string, TreatmentData> = {
   "/self-harm-and-suicidal-thoughts/": makeTreatment({
     url: "/self-harm-and-suicidal-thoughts/",
     crisis: true,
-    label: "Self-harm and suicidal thoughts",
+    label: "Self-Harm and Suicidal Thoughts",
     tagLabel: "Support · Self-harm and suicidal thoughts",
     icon: "HEART",
     title: (
@@ -2327,17 +2327,17 @@ export const MORE_TREATMENT: Record<string, TreatmentData> = {
     glance: [
       {
         icon: "TEL",
-        label: "Right now",
+        label: "Right Now",
         text: "Call 112 or Tele-MANAS 14416 if you are in danger",
       },
       {
         icon: "COMPASS",
-        label: "Ongoing therapy",
+        label: "Ongoing Therapy",
         text: "To understand the pain behind the thoughts and build safer ways to cope",
       },
       {
         icon: "PEN",
-        label: "Safety plan",
+        label: "Safety Plan",
         text: "A written, personal plan for difficult moments",
       },
       {
@@ -2375,17 +2375,17 @@ export const MORE_TREATMENT: Record<string, TreatmentData> = {
       points: [
         {
           icon: "CHAT",
-          title: "Do not keep it secret",
+          title: "Do Not Keep It Secret",
           text: "do not promise to keep it secret if their life is at risk.",
         },
         {
           icon: "LOCK",
-          title: "Make home safer",
+          title: "Make Home Safer",
           text: "remove or lock away medicines, sharp objects and other means at home.",
         },
         {
           icon: "HEART",
-          title: "Get support too",
+          title: "Get Support Too",
           text: "help them get support, and get support for yourself too.",
         },
       ],
@@ -2401,31 +2401,31 @@ export const MORE_TREATMENT: Record<string, TreatmentData> = {
       {
         icon: "EAR",
         n: "01",
-        title: "A safe, non-judging place",
+        title: "A Safe, Non-Judging Place",
         text: "To talk about what is happening.",
       },
       {
         icon: "PEN",
         n: "02",
-        title: "A safety plan",
+        title: "A Safety Plan",
         text: "Warning signs, things that help, people to call, and how to make your surroundings safer.",
       },
       {
         icon: "MIND",
         n: "03",
-        title: "Understanding the urges",
+        title: "Understanding the Urges",
         text: "What the urges do for you, and finding other ways to get the same relief.",
       },
       {
         icon: "COMPASS",
         n: "04",
-        title: "What lies underneath",
+        title: "What Lies Underneath",
         text: "Working on depression, trauma, relationships or pressure.",
       },
       {
         icon: "FAMILY",
         n: "05",
-        title: "Involving others",
+        title: "Involving Others",
         text: "Family or a psychiatrist when needed, with your knowledge.",
       },
     ],
@@ -2446,13 +2446,13 @@ export const MORE_TREATMENT: Record<string, TreatmentData> = {
     related: [
       {
         icon: "SHIELD",
-        title: "Get help now",
+        title: "Get Help Now",
         text: "Emergency numbers and crisis support.",
         href: "/get-help-now/",
       },
       {
         icon: "CLOUD",
-        title: "Depression and low mood",
+        title: "Depression and Low Mood",
         text: "When everything feels heavy or flat.",
         href: "/depression/",
       },
@@ -2464,7 +2464,7 @@ export const MORE_TREATMENT: Record<string, TreatmentData> = {
       },
       {
         icon: "CHILD",
-        title: "Child and teen therapy",
+        title: "Child and Teen Therapy",
         text: "Support for young people, with parents involved.",
         href: "/child-and-teen-therapy/",
       },
@@ -2475,7 +2475,7 @@ export const MORE_TREATMENT: Record<string, TreatmentData> = {
 
   "/lgbtqia-affirmative-counselling/": makeTreatment({
     url: "/lgbtqia-affirmative-counselling/",
-    label: "LGBTQIA+ affirmative counselling",
+    label: "LGBTQIA+ Affirmative Counselling",
     tagLabel: "Service · LGBTQIA+ affirmative counselling",
     icon: "HEART",
     title: (
@@ -2492,7 +2492,7 @@ export const MORE_TREATMENT: Record<string, TreatmentData> = {
       },
       {
         icon: "SHIELD",
-        label: "What we do not do",
+        label: "What We Do Not Do",
         text: "Any attempt to change someone's orientation or gender identity",
       },
       {
@@ -2502,7 +2502,7 @@ export const MORE_TREATMENT: Record<string, TreatmentData> = {
       },
       {
         icon: "CHAT",
-        label: "Common topics",
+        label: "Common Topics",
         text: "Coming out, family pressure, marriage pressure, relationships, discrimination, anxiety, low mood",
       },
       {
@@ -2561,25 +2561,25 @@ export const MORE_TREATMENT: Record<string, TreatmentData> = {
       {
         icon: "EAR",
         n: "01",
-        title: "Your story",
+        title: "Your Story",
         text: "What brings you in, at your pace.",
       },
       {
         icon: "COMPASS",
         n: "02",
-        title: "Your goals",
+        title: "Your Goals",
         text: "What you would like to be different.",
       },
       {
         icon: "CHAT",
         n: "03",
-        title: "The work",
+        title: "The Work",
         text: "Talking through, and practical skills for what you are carrying.",
       },
       {
         icon: "LOCK",
         n: "04",
-        title: "Your privacy",
+        title: "Your Privacy",
         text: "Nothing is shared with family without your consent.",
       },
     ],
@@ -2596,25 +2596,25 @@ export const MORE_TREATMENT: Record<string, TreatmentData> = {
     related: [
       {
         icon: "PERSON",
-        title: "Individual therapy",
+        title: "Individual Therapy",
         text: "One-to-one sessions for adults.",
         href: "/individual-therapy/",
       },
       {
         icon: "RINGS",
-        title: "Couples counselling",
+        title: "Couples Counselling",
         text: "For couples who feel stuck, before or after marriage.",
         href: "/couples-counselling/",
       },
       {
         icon: "FAMILY",
-        title: "Family counselling",
+        title: "Family Counselling",
         text: "Working through change and conflict together.",
         href: "/family-counselling/",
       },
       {
         icon: "GLOBE",
-        title: "Online therapy",
+        title: "Online Therapy",
         text: "Sessions by video, from home or abroad.",
         href: "/online-therapy/",
       },
@@ -2625,7 +2625,7 @@ export const MORE_TREATMENT: Record<string, TreatmentData> = {
 
   "/psychological-assessment/": makeTreatment({
     url: "/psychological-assessment/",
-    label: "Psychological assessment",
+    label: "Psychological Assessment",
     tagLabel: "Service · Psychological assessment",
     icon: "CLIP",
     title: (
@@ -2637,12 +2637,12 @@ export const MORE_TREATMENT: Record<string, TreatmentData> = {
     glance: [
       {
         icon: "CLIP",
-        label: "Common questions",
+        label: "Common Questions",
         text: "Attention and learning, intellectual ability, emotional difficulties, personality, career aptitude",
       },
       {
         icon: "TOOL",
-        label: "What it includes",
+        label: "What It Includes",
         text: "Interview, history, questionnaires and tests, and a feedback session",
       },
       {
@@ -2701,7 +2701,7 @@ export const MORE_TREATMENT: Record<string, TreatmentData> = {
       {
         icon: "CHAT",
         n: "01",
-        title: "First meeting",
+        title: "First Meeting",
         text: "Dr. Desai understands the question you want answered and gathers history. For children, she meets the parents.",
       },
       {
@@ -2713,7 +2713,7 @@ export const MORE_TREATMENT: Record<string, TreatmentData> = {
       {
         icon: "SCHOOL",
         n: "03",
-        title: "Other information",
+        title: "Other Information",
         text: "School reports or teacher forms, with your consent.",
       },
       {
@@ -2750,19 +2750,19 @@ export const MORE_TREATMENT: Record<string, TreatmentData> = {
     related: [
       {
         icon: "CLIP",
-        title: "ADHD and learning assessment",
+        title: "ADHD and Learning Assessment",
         text: "Clear answers about attention and learning.",
         href: "/psychological-assessment/adhd-learning-neurodiversity/",
       },
       {
         icon: "CAP",
-        title: "Career guidance",
+        title: "Career Guidance",
         text: "Aptitude testing and guidance for students and adults.",
         href: "/career-guidance/",
       },
       {
         icon: "CHILD",
-        title: "Child and teen therapy",
+        title: "Child and Teen Therapy",
         text: "Support for young people, with parents involved.",
         href: "/child-and-teen-therapy/",
       },
@@ -2771,7 +2771,7 @@ export const MORE_TREATMENT: Record<string, TreatmentData> = {
 
   "/psychological-assessment/adhd-learning-neurodiversity/": makeTreatment({
     url: "/psychological-assessment/adhd-learning-neurodiversity/",
-    label: "ADHD, learning and neurodiversity assessment",
+    label: "ADHD, Learning and Neurodiversity Assessment",
     tagLabel: "Assessment · ADHD, learning and neurodiversity",
     icon: "MIND",
     title: (
@@ -2801,7 +2801,7 @@ export const MORE_TREATMENT: Record<string, TreatmentData> = {
       },
       {
         icon: "PEN",
-        label: "Specific learning disorder",
+        label: "Specific Learning Disorder",
         text: "Difficulty with reading, writing or maths despite good teaching",
       },
       {
@@ -2821,7 +2821,7 @@ export const MORE_TREATMENT: Record<string, TreatmentData> = {
       },
       {
         icon: "COMPASS",
-        label: "After assessment",
+        label: "After Assessment",
         text: "Practical plans for home, school and work",
       },
     ],
@@ -2860,7 +2860,7 @@ export const MORE_TREATMENT: Record<string, TreatmentData> = {
         },
         {
           icon: "CLIP",
-          title: "Official certificates",
+          title: "Official Certificates",
           text: "certificates for board exam accommodations or disability benefits come from government hospitals and medical boards.",
         },
       ],
@@ -2876,13 +2876,13 @@ export const MORE_TREATMENT: Record<string, TreatmentData> = {
       {
         icon: "CHAT",
         n: "01",
-        title: "Parent or adult interview",
+        title: "Parent or Adult Interview",
         text: "About development, school, health and family history.",
       },
       {
         icon: "CLIP",
         n: "02",
-        title: "Rating forms",
+        title: "Rating Forms",
         text: "From parents and teachers, or from a partner for adults.",
       },
       {
@@ -2894,13 +2894,13 @@ export const MORE_TREATMENT: Record<string, TreatmentData> = {
       {
         icon: "EAR",
         n: "04",
-        title: "Feedback session",
+        title: "Feedback Session",
         text: "And a written report with recommendations.",
       },
       {
         icon: "COMPASS",
         n: "05",
-        title: "Next steps",
+        title: "Next Steps",
         text: "Therapy, parent guidance, school strategies, or a psychiatrist or developmental paediatrician for a medical opinion, where needed.",
       },
     ],
@@ -2931,19 +2931,19 @@ export const MORE_TREATMENT: Record<string, TreatmentData> = {
     related: [
       {
         icon: "CLIP",
-        title: "Psychological assessment",
+        title: "Psychological Assessment",
         text: "All assessment types, and what to expect.",
         href: "/psychological-assessment/",
       },
       {
         icon: "CHILD",
-        title: "Child and teen therapy",
+        title: "Child and Teen Therapy",
         text: "Support for young people, with parents involved.",
         href: "/child-and-teen-therapy/",
       },
       {
         icon: "SCHOOL",
-        title: "Schools and colleges",
+        title: "Schools and Colleges",
         text: "Programmes for students and teachers.",
         href: "/schools-and-colleges/",
       },
@@ -2954,7 +2954,7 @@ export const MORE_TREATMENT: Record<string, TreatmentData> = {
 
   "/career-guidance/": makeTreatment({
     url: "/career-guidance/",
-    label: "Career guidance and aptitude testing",
+    label: "Career Guidance and Aptitude Testing",
     tagLabel: "Assessment · Career guidance and aptitude testing",
     icon: "CAP",
     title: (
@@ -2998,7 +2998,7 @@ export const MORE_TREATMENT: Record<string, TreatmentData> = {
       },
       {
         icon: "LEAF",
-        label: "Also helps with",
+        label: "Also Helps With",
         text: "Exam stress and family disagreement about choices",
       },
     ],
@@ -3028,7 +3028,7 @@ export const MORE_TREATMENT: Record<string, TreatmentData> = {
       {
         icon: "CHAT",
         n: "01",
-        title: "Getting to know the student",
+        title: "Getting to Know the Student",
         text: "Interests, marks, hobbies, worries and family expectations.",
       },
       {
@@ -3046,7 +3046,7 @@ export const MORE_TREATMENT: Record<string, TreatmentData> = {
       {
         icon: "COMPASS",
         n: "04",
-        title: "Report and plan",
+        title: "Report and Plan",
         text: "Streams, courses or careers to explore, and how to find out more.",
       },
     ],
@@ -3067,19 +3067,19 @@ export const MORE_TREATMENT: Record<string, TreatmentData> = {
     related: [
       {
         icon: "CLIP",
-        title: "Psychological assessment",
+        title: "Psychological Assessment",
         text: "All assessment types, and what to expect.",
         href: "/psychological-assessment/",
       },
       {
         icon: "FLAME",
-        title: "Stress and burnout",
+        title: "Stress and Burnout",
         text: "When pressure spills into sleep, temper and health.",
         href: "/stress-and-burnout/",
       },
       {
         icon: "SCHOOL",
-        title: "Schools and colleges",
+        title: "Schools and Colleges",
         text: "Programmes for students and teachers.",
         href: "/schools-and-colleges/",
       },
@@ -3088,7 +3088,7 @@ export const MORE_TREATMENT: Record<string, TreatmentData> = {
 
   "/workplace-wellbeing/": makeTreatment({
     url: "/workplace-wellbeing/",
-    label: "Workplace wellbeing and EAP",
+    label: "Workplace Wellbeing and EAP",
     tagLabel: "For organisations · Workplace wellbeing and EAP",
     icon: "BRIEF",
     title: (
@@ -3117,12 +3117,12 @@ export const MORE_TREATMENT: Record<string, TreatmentData> = {
       },
       {
         icon: "CHAT",
-        label: "Employee counselling",
+        label: "Employee Counselling",
         text: "Confidential one-to-one sessions, in person or online",
       },
       {
         icon: "USER",
-        label: "For managers and HR",
+        label: "For Managers and HR",
         text: "Guidance on supporting a distressed employee",
       },
       {
@@ -3167,7 +3167,7 @@ export const MORE_TREATMENT: Record<string, TreatmentData> = {
       points: [
         {
           icon: "LOCK",
-          title: "Anonymous reports",
+          title: "Anonymous Reports",
           text: "usage reports are anonymous and grouped. Safety exceptions apply as for every client.",
         },
       ],
@@ -3183,7 +3183,7 @@ export const MORE_TREATMENT: Record<string, TreatmentData> = {
       {
         icon: "PEN",
         n: "01",
-        title: "Send a request",
+        title: "Send a Request",
         text: (
           <>
             Your organisation, number of employees, location and what you are
@@ -3195,7 +3195,7 @@ export const MORE_TREATMENT: Record<string, TreatmentData> = {
       {
         icon: "CHAT",
         n: "02",
-        title: "A proposal",
+        title: "A Proposal",
         text: "Fees are discussed directly.",
       },
     ],
@@ -3221,19 +3221,19 @@ export const MORE_TREATMENT: Record<string, TreatmentData> = {
     related: [
       {
         icon: "FLAME",
-        title: "Stress and burnout",
+        title: "Stress and Burnout",
         text: "When pressure spills into sleep, temper and health.",
         href: "/stress-and-burnout/",
       },
       {
         icon: "GLOBE",
-        title: "Online therapy",
+        title: "Online Therapy",
         text: "Sessions by video, from home or abroad.",
         href: "/online-therapy/",
       },
       {
         icon: "SCHOOL",
-        title: "Schools and colleges",
+        title: "Schools and Colleges",
         text: "Programmes for students and teachers.",
         href: "/schools-and-colleges/",
       },
@@ -3242,7 +3242,7 @@ export const MORE_TREATMENT: Record<string, TreatmentData> = {
 
   "/schools-and-colleges/": makeTreatment({
     url: "/schools-and-colleges/",
-    label: "Schools and colleges",
+    label: "Schools and Colleges",
     tagLabel: "For organisations · Schools and colleges",
     icon: "SCHOOL",
     title: (
@@ -3316,7 +3316,7 @@ export const MORE_TREATMENT: Record<string, TreatmentData> = {
       {
         icon: "PEN",
         n: "01",
-        title: "Send the form",
+        title: "Send the Form",
         text: (
           <>
             Your school or college name, the audience, age group, number of
@@ -3328,7 +3328,7 @@ export const MORE_TREATMENT: Record<string, TreatmentData> = {
       {
         icon: "CHAT",
         n: "02",
-        title: "We plan together",
+        title: "We Plan Together",
         text: "Topics, format and language agreed with you.",
       },
     ],
@@ -3354,19 +3354,19 @@ export const MORE_TREATMENT: Record<string, TreatmentData> = {
     related: [
       {
         icon: "CHILD",
-        title: "Child and teen therapy",
+        title: "Child and Teen Therapy",
         text: "Support for young people, with parents involved.",
         href: "/child-and-teen-therapy/",
       },
       {
         icon: "CLIP",
-        title: "ADHD and learning assessment",
+        title: "ADHD and Learning Assessment",
         text: "Clear answers about attention and learning.",
         href: "/psychological-assessment/adhd-learning-neurodiversity/",
       },
       {
         icon: "CAP",
-        title: "Career guidance",
+        title: "Career Guidance",
         text: "Aptitude testing and guidance for students and adults.",
         href: "/career-guidance/",
       },

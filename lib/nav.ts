@@ -24,24 +24,24 @@ export const SERVICE_GROUPS: NavGroup[] = [
     href: "/services/",
     columns: [
       {
-        heading: "Who it is for",
+        heading: "Who It Is For",
         links: [
           { label: "Adults", href: "/individual-therapy/" },
-          { label: "Children and teenagers", href: "/child-and-teen-therapy/" },
+          { label: "Children and Teenagers", href: "/child-and-teen-therapy/" },
           { label: "Couples", href: "/couples-counselling/" },
-          { label: "Families and parents", href: "/family-counselling/" },
+          { label: "Families and Parents", href: "/family-counselling/" },
         ],
       },
       {
         heading: "How",
         links: [
-          { label: "In person in Borivali", href: "/services/" },
-          { label: "Online therapy", href: "/online-therapy/" },
+          { label: "In Person in Borivali", href: "/services/" },
+          { label: "Online Therapy", href: "/online-therapy/" },
           {
-            label: "Online therapy for Indians abroad",
+            label: "Online Therapy for Indians Abroad",
             href: "/online-therapy/indians-abroad/",
           },
-          { label: "Plan your first session", href: "/plan-your-visit/" },
+          { label: "Plan Your First Session", href: "/plan-your-visit/" },
         ],
       },
     ],
@@ -54,10 +54,10 @@ export const SERVICE_GROUPS: NavGroup[] = [
       {
         heading: "Feelings",
         links: [
-          { label: "Anxiety and panic", href: "/anxiety/" },
-          { label: "Depression and low mood", href: "/depression/" },
-          { label: "Stress, anger and burnout", href: "/stress-and-burnout/" },
-          { label: "Grief and loss", href: "/grief-and-loss/" },
+          { label: "Anxiety and Panic", href: "/anxiety/" },
+          { label: "Depression and Low Mood", href: "/depression/" },
+          { label: "Stress, Anger and Burnout", href: "/stress-and-burnout/" },
+          { label: "Grief and Loss", href: "/grief-and-loss/" },
         ],
       },
       {
@@ -65,12 +65,12 @@ export const SERVICE_GROUPS: NavGroup[] = [
         links: [
           { label: "OCD", href: "/ocd/" },
           {
-            label: "Habits, addiction and dependence",
+            label: "Habits, Addiction and Dependence",
             href: "/addiction-and-habits/",
           },
-          { label: "Sleep problems", href: "/sleep-problems/" },
+          { label: "Sleep Problems", href: "/sleep-problems/" },
           {
-            label: "Self-esteem and body image",
+            label: "Self-Esteem and Body Image",
             href: "/self-esteem-and-body-image/",
           },
         ],
@@ -80,11 +80,11 @@ export const SERVICE_GROUPS: NavGroup[] = [
         links: [
           { label: "Trauma", href: "/trauma/" },
           {
-            label: "Self-harm and suicidal thoughts",
+            label: "Self-Harm and Suicidal Thoughts",
             href: "/self-harm-and-suicidal-thoughts/",
           },
           {
-            label: "LGBTQIA+ affirmative counselling",
+            label: "LGBTQIA+ Affirmative Counselling",
             href: "/lgbtqia-affirmative-counselling/",
           },
         ],
@@ -100,15 +100,15 @@ export const SERVICE_GROUPS: NavGroup[] = [
         heading: "Assessments",
         links: [
           {
-            label: "Psychological assessment",
+            label: "Psychological Assessment",
             href: "/psychological-assessment/",
           },
           {
-            label: "ADHD, learning and neurodiversity",
+            label: "ADHD, Learning and Neurodiversity",
             href: "/psychological-assessment/adhd-learning-neurodiversity/",
           },
           {
-            label: "Career guidance and aptitude testing",
+            label: "Career Guidance and Aptitude Testing",
             href: "/career-guidance/",
           },
         ],
@@ -117,17 +117,17 @@ export const SERVICE_GROUPS: NavGroup[] = [
   },
   {
     key: "organisations",
-    label: "For organisations",
+    label: "For Organisations",
     href: "/services/",
     columns: [
       {
-        heading: "For organisations",
+        heading: "For Organisations",
         links: [
           {
-            label: "Workplace wellbeing and EAP",
+            label: "Workplace Wellbeing and EAP",
             href: "/workplace-wellbeing/",
           },
-          { label: "Schools and colleges", href: "/schools-and-colleges/" },
+          { label: "Schools and Colleges", href: "/schools-and-colleges/" },
         ],
       },
     ],
@@ -138,19 +138,19 @@ export const SERVICE_GROUPS: NavGroup[] = [
    groups above into one compact "How we help" panel). */
 export const MAIN_NAV: NavLink[] = [
   { label: "Dr. Desai", href: "/dr-mithila-desai/" },
-  { label: "How we help", href: "/services/" },
-  { label: "Our team", href: "/our-team/" },
-  { label: "Your first session", href: "/plan-your-visit/" },
-  { label: "Get help now", href: "/get-help-now/" },
+  { label: "How We Help", href: "/services/" },
+  { label: "Our Team", href: "/our-team/" },
+  { label: "Your First Session", href: "/plan-your-visit/" },
+  { label: "Get Help Now", href: "/get-help-now/" },
 ];
 
 /* Mobile menu: accordion groups (all closed) + flat links, Get help now
    always visible (site-plan section 3). */
 export const MOBILE_FLAT_LINKS: NavLink[] = [
   { label: "Dr. Mithila Desai", href: "/dr-mithila-desai/" },
-  { label: "Our team", href: "/our-team/" },
+  { label: "Our Team", href: "/our-team/" },
   { label: "About", href: "/about/" },
-  { label: "Plan your first session", href: "/plan-your-visit/" },
+  { label: "Plan Your First Session", href: "/plan-your-visit/" },
   { label: "Health Library", href: "/health-library/" },
   { label: "FAQs", href: "/faqs/" },
   { label: "Contact", href: "/contact/" },
@@ -164,14 +164,14 @@ export const FOOTER_NAV: NavColumn[] = [
   SERVICE_GROUPS[2].columns[0],
   SERVICE_GROUPS[3].columns[0],
   {
-    heading: "Client information",
+    heading: "Client Information",
     links: [
-      { label: "Our team", href: "/our-team/" },
-      { label: "Plan your first session", href: "/plan-your-visit/" },
+      { label: "Our Team", href: "/our-team/" },
+      { label: "Plan Your First Session", href: "/plan-your-visit/" },
       { label: "FAQs", href: "/faqs/" },
       { label: "Health Library", href: "/health-library/" },
       { label: "Contact", href: "/contact/" },
-      { label: "Get help now", href: "/get-help-now/" },
+      { label: "Get Help Now", href: "/get-help-now/" },
     ],
   },
 ];

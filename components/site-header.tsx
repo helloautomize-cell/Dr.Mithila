@@ -4,7 +4,7 @@ import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Icon } from "@/lib/icons";
-import { IconTile } from "@/lib/icons";
+import { TMHImage } from "@/components/tmh-image";
 import { BookButton } from "@/components/book-button";
 import { site } from "@/lib/site-config";
 import { MAIN_NAV, SERVICE_GROUPS } from "@/lib/nav";
@@ -104,9 +104,20 @@ function HelpDropdown({ onNavigate }: { onNavigate: () => void }) {
             </div>
           ))}
           <div className="dd-doc">
-            <IconTile name="PERSON" />
+            <Link
+              className="dd-ph"
+              href="/dr-mithila-desai/"
+              onClick={onNavigate}
+              aria-label="Dr. Mithila Desai, view profile"
+            >
+              <TMHImage
+                name="dr-mithila-desai/portrait"
+                alt="Dr. Mithila Desai"
+                sizes="200px"
+              />
+            </Link>
             <b>Dr. Mithila Desai</b>
-            <span>Clinical psychologist, PhD</span>
+            <span>Clinical Psychologist, PhD</span>
             <Link className="link" href="/dr-mithila-desai/" onClick={onNavigate}>
               View profile <Icon name="ARR" />
             </Link>

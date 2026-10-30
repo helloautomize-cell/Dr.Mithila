@@ -7,8 +7,8 @@ import { TeamSection } from "@/components/team-section";
 import { Icon, IconTile } from "@/lib/icons";
 import { site } from "@/lib/site-config";
 import {
+  AreasOfCareBento,
   CareFlow4,
-  ChipGroups,
   ConcernGrid,
   EndBand,
   FaqSplit,
@@ -51,17 +51,17 @@ const FACTS: [string, React.ReactNode][] = [
 const HOW = [
   {
     icon: "EAR" as const,
-    t: "Listening comes first",
+    t: "Listening Comes First",
     p: "The early sessions are about understanding what is happening and what matters to you.",
   },
   {
     icon: "TOOL" as const,
-    t: "Skills you can use",
+    t: "Skills You Can Use",
     p: "Practical ways to handle worry, low mood or conflict between sessions.",
   },
   {
     icon: "LEAF" as const,
-    t: "The present moment",
+    t: "The Present Moment",
     p: (
       <>
         Mindfulness, noticing what is happening now without judging it, is part
@@ -71,17 +71,17 @@ const HOW = [
   },
   {
     icon: "STAR" as const,
-    t: "Your strengths",
+    t: "Your Strengths",
     p: "She looks at what already helps you, and builds on it.",
   },
   {
     icon: "CHAT" as const,
-    t: "Plain words",
+    t: "Plain Words",
     p: "She explains what she notices and why she suggests something, so therapy never feels like a mystery.",
   },
   {
     icon: "LINK" as const,
-    t: "Working with others",
+    t: "Working with Others",
     p: "With your consent, she can speak with your psychiatrist, doctor or your child's school.",
   },
 ];
@@ -115,10 +115,10 @@ export function DoctorPage() {
               <span>
                 <Icon name="USER" />
               </span>
-              Clinical psychologist · Borivali West
+              Clinical Psychologist · Borivali West
             </span>
             <h1>
-              Dr. Mithila Desai, clinical <em>psychologist</em>
+              Dr. Mithila Desai, Clinical <em>Psychologist</em>
             </h1>
             <div className="facts">
               {FACTS.map(([k, v]) => (
@@ -306,7 +306,7 @@ export function DoctorPage() {
               {
                 icon: "CAP",
                 n: "PhD",
-                title: "Clinical psychology",
+                title: "Clinical Psychology",
                 text: (
                   <>
                     University and year <Confirm />
@@ -316,7 +316,7 @@ export function DoctorPage() {
               {
                 icon: "CAP",
                 n: "Master's",
-                title: "Clinical psychology",
+                title: "Clinical Psychology",
                 text: (
                   <>
                     University of Mumbai <Confirm />
@@ -326,7 +326,7 @@ export function DoctorPage() {
               {
                 icon: "TOOL",
                 n: "Training",
-                title: "CBT and REBT practitioner",
+                title: "CBT and REBT Practitioner",
                 text: <Confirm />,
               },
               {
@@ -408,72 +408,13 @@ export function DoctorPage() {
       >
         <div className="wrap">
           <span className="eyebrow">06 · What she helps with</span>
-          <h2 className="h2" style={{ marginTop: 22 }}>
-            Areas of <em>care</em>.
-          </h2>
-          <ChipGroups
-            groups={[
-              {
-                title: "Feelings and mood",
-                chips: [
-                  "Anxiety",
-                  "Panic",
-                  "Low mood",
-                  "Depression",
-                  "Stress",
-                  "Anger",
-                  "Grief",
-                  "Loneliness",
-                ],
-              },
-              {
-                title: "Thoughts and habits",
-                chips: [
-                  "OCD",
-                  "Habits and dependence",
-                  "Sleep problems",
-                  "Self-esteem",
-                  "Body image",
-                ],
-              },
-              {
-                title: "Relationships",
-                chips: [
-                  "Couples",
-                  "Pre-marital questions",
-                  "Family conflict",
-                  "Parenting",
-                ],
-              },
-              {
-                title: "Children and teenagers",
-                chips: [
-                  "Worry",
-                  "Behaviour",
-                  "School stress",
-                  "Bullying",
-                  "ADHD and learning",
-                ],
-              },
-              {
-                title: "Assessments",
-                chips: [
-                  "Attention",
-                  "Learning",
-                  "Personality",
-                  "Aptitude and career",
-                ],
-              },
-              {
-                title: "Organisations",
-                chips: [
-                  "Employee counselling",
-                  "Workshops",
-                  "School programmes",
-                ],
-              },
-            ]}
-          />
+          <div className="xh">
+            <h2 className="h2" style={{ marginTop: 22 }}>
+              Areas of <em>care</em>.
+            </h2>
+            <p className="lead">Tap a topic to read more about it.</p>
+          </div>
+          <AreasOfCareBento />
         </div>
       </section>
 
@@ -490,7 +431,7 @@ export function DoctorPage() {
               img: "dr-mithila-desai/dr-door",
               alt: "Dr. Desai at the door of her consultation room",
               pos: "50% 15%",
-              title: "Your first session",
+              title: "Your First Session",
               text: "A conversation, not a test. See what happens and what to bring.",
               cta: (
                 <Link className="link" href="/plan-your-visit/">
@@ -541,7 +482,7 @@ export function DoctorPage() {
             text="In person on Gulmohar Road, Borivali West, or online for Indians living abroad."
             img="clinic/clinic-room"
             imgAlt="Dr. Desai's consultation room"
-            primary={{ href: "/contact/#book", label: "Book a session" }}
+            primary={{ href: "/contact/#book", label: "Book a Session" }}
             ghost={{
               href: `tel:${site.phoneTel}`,
               label: (
@@ -562,7 +503,7 @@ const WAYS = [
   {
     n: 1,
     icon: "PERSON" as const,
-    title: "Individual therapy",
+    title: "Individual Therapy",
     text: "One-to-one sessions for adults, for worry, low mood, stress or a hard season.",
     href: "/individual-therapy/",
     img: {
@@ -574,7 +515,7 @@ const WAYS = [
   {
     n: 2,
     icon: "CHILD" as const,
-    title: "Child and teen therapy",
+    title: "Child and Teen Therapy",
     text: "Support for young people, with parents involved at the right moments.",
     href: "/child-and-teen-therapy/",
     img: {
@@ -585,7 +526,7 @@ const WAYS = [
   {
     n: 3,
     icon: "RINGS" as const,
-    title: "Couples counselling",
+    title: "Couples Counselling",
     text: "For couples who feel stuck, before or after marriage.",
     href: "/couples-counselling/",
     img: {
@@ -597,7 +538,7 @@ const WAYS = [
   {
     n: 4,
     icon: "FAMILY" as const,
-    title: "Family counselling",
+    title: "Family Counselling",
     text: "Working through change and conflict together.",
     href: "/family-counselling/",
     img: {
@@ -610,13 +551,13 @@ const WAYS = [
 const CONCERNS = [
   {
     icon: "MIND" as const,
-    title: "Anxiety and panic",
+    title: "Anxiety and Panic",
     text: "Worry that won't switch off, and panic attacks.",
     href: "/anxiety/",
   },
   {
     icon: "CLOUD" as const,
-    title: "Depression and low mood",
+    title: "Depression and Low Mood",
     text: "When everything feels heavy or flat.",
     href: "/depression/",
   },
@@ -628,7 +569,7 @@ const CONCERNS = [
   },
   {
     icon: "FLAME" as const,
-    title: "Stress, anger and burnout",
+    title: "Stress, Anger and Burnout",
     text: "When pressure spills into sleep, temper and health.",
     href: "/stress-and-burnout/",
   },
@@ -640,19 +581,19 @@ const CONCERNS = [
   },
   {
     icon: "MIRROR" as const,
-    title: "Self-esteem and body image",
+    title: "Self-Esteem and Body Image",
     text: "How you see and speak to yourself.",
     href: "/self-esteem-and-body-image/",
   },
   {
     icon: "LEAF" as const,
-    title: "Grief and loss",
+    title: "Grief and Loss",
     text: "Living with a death or another big loss.",
     href: "/grief-and-loss/",
   },
   {
     icon: "MOON" as const,
-    title: "Sleep problems",
+    title: "Sleep Problems",
     text: "Trouble falling or staying asleep.",
     href: "/sleep-problems/",
   },
@@ -662,7 +603,7 @@ export function ServicesPageV11() {
   return (
     <main>
       <InnerHero
-        tag={{ icon: "COMPASS", label: "Therapy, assessment and programmes" }}
+        tag={{ icon: "COMPASS", label: "Therapy, Assessment and Programmes" }}
         title={
           <>
             How we can <em>help</em>.
@@ -670,12 +611,12 @@ export function ServicesPageV11() {
         }
         lead="Talking therapy and psychological assessment with Dr. Mithila Desai in Borivali West and online. Start with the way of working that fits your situation, or with the concern you'd like help with."
         bookLabel="Book a session"
-        link={{ href: "#x-con", label: "Find your concern" }}
+        link={{ href: "#x-con", label: "Find Your Concern" }}
         trust={[
           { icon: "PERSON", label: "Individuals" },
           { icon: "RINGS", label: "Couples" },
           { icon: "FAMILY", label: "Families" },
-          { icon: "SCHOOL", label: "Schools and workplaces" },
+          { icon: "SCHOOL", label: "Schools and Workplaces" },
         ]}
         photo={{
           img: "clinic/clinic-room",
@@ -685,7 +626,7 @@ export function ServicesPageV11() {
           {
             pos: "a",
             icon: "GLOBE",
-            title: "In person or online",
+            title: "In Person or Online",
             sub: "Borivali West and abroad",
           },
         ]}
@@ -733,7 +674,7 @@ export function ServicesPageV11() {
             items={CONCERNS}
             feature={{
               icon: "GLOBE",
-              title: "Online therapy for Indians abroad",
+              title: "Online Therapy for Indians Abroad",
               text: "Sessions planned around your time zone. Video sessions with Dr. Desai for Indians living abroad, at a booked time.",
               href: "/online-therapy/",
               cta: "Book an online session",
@@ -758,7 +699,7 @@ export function ServicesPageV11() {
             cards={[
               {
                 small: "Assessments",
-                title: "Clear answers, in plain words",
+                title: "Clear Answers, in Plain Words",
                 img: {
                   img: "scenes/svc-assessment",
                   alt: "A desk with a questionnaire, a pencil, a timer and a cup of tea",
@@ -771,7 +712,7 @@ export function ServicesPageV11() {
               },
               {
                 small: "For organisations",
-                title: "Schools and workplaces",
+                title: "Schools and Workplaces",
                 img: {
                   img: "dr-mithila-desai/dr-talk-2026",
                   alt: "Dr. Desai at the Resilient Living Conference",
@@ -784,7 +725,7 @@ export function ServicesPageV11() {
               },
               {
                 small: "What we do not offer",
-                title: "So you find the right help quickly",
+                title: "So You Find the Right Help Quickly",
                 negative: true,
                 icon: "SHIELD",
                 items: [
@@ -815,8 +756,8 @@ export function ServicesPageV11() {
             img="dr-mithila-desai/dr-door"
             imgAlt="Dr. Desai at the door of her consultation room"
             imgPos="50% 20%"
-            primary={{ href: "/contact/#book", label: "Book a session" }}
-            ghost={{ href: "/plan-your-visit/", label: "Plan your first session" }}
+            primary={{ href: "/contact/#book", label: "Book a Session" }}
+            ghost={{ href: "/plan-your-visit/", label: "Plan Your First Session" }}
           />
         </div>
       </section>
@@ -829,7 +770,7 @@ export function TeamPage() {
   return (
     <main>
       <InnerHero
-        tag={{ icon: "FAMILY", label: "A multidisciplinary team" }}
+        tag={{ icon: "FAMILY", label: "A Multidisciplinary Team" }}
         title={
           <>
             The people behind The Mental <em>Health</em>.
@@ -844,7 +785,7 @@ export function TeamPage() {
           </>
         }
         bookLabel="Book with Dr. Desai"
-        link={{ href: "#x-roles", label: "Who does what" }}
+        link={{ href: "#x-roles", label: "Who Does What" }}
         media={
           <TeamMosaic
             photos={[
@@ -915,7 +856,7 @@ export function TeamPage() {
               },
               {
                 icon: "PILL",
-                title: "Consultant psychiatrist",
+                title: "Consultant Psychiatrist",
                 avatars: ["team/team-sujay-prabhugaonkar"],
                 names: (
                   <>
@@ -935,7 +876,7 @@ export function TeamPage() {
               },
               {
                 icon: "TEL",
-                title: "Care coordinator",
+                title: "Care Coordinator",
                 avatars: ["team/team-vishwa-shah"],
                 names: "Ms. Vishwa Shah",
                 dl: [
@@ -966,22 +907,22 @@ export function TeamPage() {
             steps={[
               {
                 icon: "TEL",
-                title: "You get in touch",
+                title: "You Get in Touch",
                 text: "The care coordinator helps you book a time, in person or online.",
               },
               {
                 icon: "USER",
-                title: "You meet Dr. Desai",
+                title: "You Meet Dr. Desai",
                 text: "Your first session is with her. You talk, and agree on a plan.",
               },
               {
                 icon: "LINK",
-                title: "A colleague joins, if needed",
+                title: "A Colleague Joins, if Needed",
                 text: "For example, a psychiatrist to talk about medicine. She explains why and asks first.",
               },
               {
                 icon: "COMPASS",
-                title: "One shared plan",
+                title: "One Shared Plan",
                 text: "Everyone works from the same plan, and you review it together.",
               },
             ]}
@@ -1002,17 +943,17 @@ export function TeamPage() {
             points={[
               {
                 icon: "LOCK",
-                title: "Your consent first",
+                title: "Your Consent First",
                 text: "No one else joins your care without you saying yes.",
               },
               {
                 icon: "SHIELD",
-                title: "Only what's needed",
+                title: "Only What's Needed",
                 text: "Colleagues hear only what helps them help you.",
               },
               {
                 icon: "HEART",
-                title: "Your choice of psychiatrist",
+                title: "Your Choice of Psychiatrist",
                 text: "Keep your own if you have one. Dr. Desai can work alongside them.",
               },
             ]}
@@ -1097,8 +1038,8 @@ export function TeamPage() {
             img="dr-mithila-desai/dr-door"
             imgAlt="Dr. Desai welcoming you at her door"
             imgPos="50% 20%"
-            primary={{ href: "/contact/#book", label: "Book a session" }}
-            ghost={{ href: "/plan-your-visit/", label: "Plan your first session" }}
+            primary={{ href: "/contact/#book", label: "Book a Session" }}
+            ghost={{ href: "/plan-your-visit/", label: "Plan Your First Session" }}
           />
         </div>
       </section>

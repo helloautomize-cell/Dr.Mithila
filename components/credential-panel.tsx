@@ -29,7 +29,7 @@ const DEFAULT_CREDENTIALS: Credential[] = [
     value: "PhD",
     caption: (
       <>
-        Clinical psychologist and psychotherapist <Confirm>subject</Confirm>
+        Clinical Psychologist and Psychotherapist <Confirm>subject</Confirm>
       </>
     ),
   },

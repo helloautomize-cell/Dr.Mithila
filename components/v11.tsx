@@ -739,7 +739,7 @@ export function RoleCards({ roles }: { roles: RoleCard[] }) {
   return (
     <div className="xroles">
       {roles.map((r, i) => (
-        <Reveal key={r.title} className={i === 0 ? "on" : undefined} delay={i * 0.08} as="article">
+        <Reveal key={r.title} delay={i * 0.08} as="article">
           <span className="xi">
             <Icon name={r.icon} />
           </span>
@@ -869,6 +869,167 @@ export function ChipGroups({
           </div>
         </div>
       ))}
+    </div>
+  );
+}
+
+/* Areas of care bento (preview v12, Dr. Desai page section 06) */
+const CARE_CHIPS: Record<string, [string, string][]> = {
+  feel: [
+    ["Anxiety", "/anxiety/"],
+    ["Panic", "/anxiety/"],
+    ["Low mood", "/depression/"],
+    ["Depression", "/depression/"],
+    ["Stress", "/stress-and-burnout/"],
+    ["Anger", "/individual-therapy/"],
+    ["Grief", "/grief-and-loss/"],
+    ["Loneliness", "/individual-therapy/"],
+  ],
+  think: [
+    ["OCD", "/ocd/"],
+    ["Habits and dependence", "/addiction-and-habits/"],
+    ["Sleep problems", "/sleep-problems/"],
+    ["Self-esteem", "/self-esteem-and-body-image/"],
+    ["Body image", "/self-esteem-and-body-image/"],
+  ],
+  relate: [
+    ["Couples", "/couples-counselling/"],
+    ["Pre-marital questions", "/couples-counselling/"],
+    ["Family conflict", "/family-counselling/"],
+    ["Parenting", "/family-counselling/"],
+  ],
+  kids: [
+    ["Worry", "/child-and-teen-therapy/"],
+    ["Behaviour", "/child-and-teen-therapy/"],
+    ["School stress", "/child-and-teen-therapy/"],
+    ["Bullying", "/child-and-teen-therapy/"],
+    ["ADHD and learning", "/psychological-assessment/adhd-learning-neurodiversity/"],
+  ],
+  assess: [
+    ["Attention", "/psychological-assessment/adhd-learning-neurodiversity/"],
+    ["Learning", "/psychological-assessment/adhd-learning-neurodiversity/"],
+    ["Personality", "/psychological-assessment/"],
+    ["Aptitude and career", "/psychological-assessment/"],
+  ],
+  org: [
+    ["Employee counselling", "/workplace-wellbeing/"],
+    ["Workshops", "/workplace-wellbeing/"],
+    ["School programmes", "/schools-and-colleges/"],
+  ],
+};
+
+function CareChips({ of }: { of: keyof typeof CARE_CHIPS }) {
+  return (
+    <div className="cch">
+      {CARE_CHIPS[of].map(([label, href]) => (
+        <a key={label} href={href}>
+          {label}
+          <i>
+            <Icon name="ARR" />
+          </i>
+        </a>
+      ))}
+    </div>
+  );
+}
+
+export function AreasOfCareBento() {
+  return (
+    <div className="xcare">
+      <Reveal className="c-feel" as="article">
+        <div className="tx">
+          <span className="xi">
+            <Icon name="HEART" />
+          </span>
+          <h3>Feelings and mood</h3>
+          <p>When emotions feel too strong, too flat, or won&apos;t settle.</p>
+          <CareChips of="feel" />
+        </div>
+        <div className="ph">
+          <TMHImage
+            name="clinic/clinic-nook"
+            alt="A calm corner of the therapy room"
+            sizes="(min-width: 1080px) 560px, 100vw"
+            objectPosition="40% 60%"
+          />
+        </div>
+      </Reveal>
+      <Reveal className="c-think" delay={0.08} as="article">
+        <span className="xi">
+          <Icon name="LOOP" />
+        </span>
+        <div>
+          <h3>Thoughts and habits</h3>
+          <p>Patterns that feel hard to stop or change.</p>
+          <CareChips of="think" />
+        </div>
+      </Reveal>
+      <Reveal className="c-img" delay={0.16} as="article">
+        <div className="ph">
+          <TMHImage
+            name="scenes/svc-couples"
+            alt="A couple in a warm therapy room"
+            sizes="(min-width: 1080px) 280px, 50vw"
+            objectPosition="50% 45%"
+          />
+        </div>
+        <div className="tx">
+          <span className="xi">
+            <Icon name="RINGS" />
+          </span>
+          <h3>Relationships</h3>
+          <CareChips of="relate" />
+        </div>
+      </Reveal>
+      <Reveal className="c-img" delay={0.24} as="article">
+        <div className="ph">
+          <TMHImage
+            name="scenes/svc-child-teen"
+            alt="A child drawing with a parent beside them"
+            sizes="(min-width: 1080px) 280px, 50vw"
+          />
+        </div>
+        <div className="tx">
+          <span className="xi">
+            <Icon name="CHILD" />
+          </span>
+          <h3>Children and teenagers</h3>
+          <CareChips of="kids" />
+        </div>
+      </Reveal>
+      <Reveal className="c-sm" delay={0.32} as="article">
+        <span className="xi">
+          <Icon name="CLIP" />
+        </span>
+        <h3>Assessments</h3>
+        <p>Clear answers, in plain words.</p>
+        <CareChips of="assess" />
+      </Reveal>
+      <Reveal className="c-sm" delay={0.4} as="article">
+        <span className="xi">
+          <Icon name="BRIEF" />
+        </span>
+        <h3>Organisations</h3>
+        <p>Schools and workplaces.</p>
+        <CareChips of="org" />
+      </Reveal>
+      <Reveal className="c-start" delay={0.48} as="article">
+        <i className="tree" aria-hidden="true" />
+        <div>
+          <span className="eyebrow">Not sure where to start?</span>
+          <h3>You don&apos;t need the right word for it.</h3>
+          <p>
+            Tell Dr. Desai what&apos;s been happening. She&apos;ll help you make
+            sense of it in the first session.
+          </p>
+        </div>
+        <div className="cta">
+          <BookButton href="/contact/#book" label="Book a session" />
+          <a className="ghost" href="/plan-your-visit/">
+            How the first session works
+          </a>
+        </div>
+      </Reveal>
     </div>
   );
 }

@@ -15,17 +15,17 @@ export interface JourneyStep {
 const STEPS: JourneyStep[] = [
   {
     icon: "WA",
-    title: "Get in touch",
+    title: "Get in Touch",
     text: "Use the form, call 87796 51309 or WhatsApp. We ask who the session is for and whether you'd like to meet in person or online.",
   },
   {
     icon: "CAL",
-    title: "Choose a time",
+    title: "Choose a Time",
     text: "We offer you a slot and send the address on Gulmohar Road, or the video link.",
   },
   {
     icon: "PIN",
-    title: "Arrive and settle in",
+    title: "Arrive and Settle In",
     text: "Come a few minutes early. Online, find a private, quiet spot and check your connection.",
   },
   {
@@ -35,7 +35,7 @@ const STEPS: JourneyStep[] = [
   },
   {
     icon: "COMPASS",
-    title: "Agree on a plan",
+    title: "Agree on a Plan",
     text: "Together you decide whether to meet again, how often, and what to focus on first.",
     tag: "Your plan",
   },

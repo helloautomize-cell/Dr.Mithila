@@ -87,7 +87,7 @@ export function SiteFooter() {
           </span>
           <span>
             Run by <Confirm>legal entity</Confirm> for the practice of Dr.
-            Mithila Desai, clinical psychologist, RCI CRR No. <Confirm /> · For
+            Mithila Desai, Clinical Psychologist, RCI CRR No. <Confirm /> · For
             general education, not a substitute for a session.
           </span>
         </div>
