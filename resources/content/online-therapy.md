@@ -67,7 +67,7 @@ In-person or emergency care is better if you are at high risk of harming yoursel
 
 ### When to get urgent help
 
-> **If you are in danger right now.** If you have hurt yourself, are thinking of ending your life, or feel you may act on thoughts of harming yourself or someone else, please do not wait for an appointment. Call **112**, go to the nearest hospital emergency department, or call **Tele-MANAS on 14416** or 1-800-891-4416. Tele-MANAS is the Government of India's free mental health helpline, open 24 hours, in many Indian languages. The Mental Health is not an emergency service and cannot respond to messages at all hours.
+> **If you are in danger right now.** If you have hurt yourself, are thinking of ending your life, or feel you may act on thoughts of harming yourself or someone else, please do not wait for an appointment. Call **112**, go to the nearest hospital emergency department, or call **Tele-MANAS on 14416** or 1-800-891-4416. Tele-MANAS is the Government of India's free mental health helpline, open 24 hours, in many Indian languages. Messages to The Mental Health are answered during clinic hours.
 
 ### FAQs
 

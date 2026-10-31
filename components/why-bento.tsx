@@ -208,9 +208,9 @@ export function WhyBento() {
       <article className="bt f">
         <span className="tag">
           <Icon name="PILL" />
-          Honest about medicine
+          Works with your psychiatrist
         </span>
-        <h3>A psychologist, not a psychiatrist</h3>
+        <h3>Therapy first, with care joined up</h3>
         <div className="vs">
           <div className="me">
             <b>Dr. Desai</b>

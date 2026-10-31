@@ -2127,7 +2127,7 @@ export const MORE_TREATMENT: Record<string, TreatmentData> = {
       },
       {
         q: "What if I am in a crisis?",
-        a: "Call your local emergency number straight away, or go to the nearest hospital. We are not an emergency service and cannot send help to you.",
+        a: "Call your local emergency number straight away, or go to the nearest hospital. Local emergency services can reach you fastest.",
       },
     ],
     related: [
@@ -2536,7 +2536,7 @@ export const MORE_TREATMENT: Record<string, TreatmentData> = {
           Affirmative, always, and no <em>exceptions</em>.
         </>
       ),
-      lead: "Conversion therapy is harmful, and we do not offer it in any form.",
+      lead: "Conversion therapy is harmful. Every session here is affirming.",
       points: [
         {
           icon: "SHIELD",
@@ -2845,7 +2845,7 @@ export const MORE_TREATMENT: Record<string, TreatmentData> = {
       "Repeated complaints from school about behaviour or incomplete work",
     ],
     explainer: {
-      eyebrow: "02 · What we do not do",
+      eyebrow: "02 · Good to know",
       title: (
         <>
           Clear <em>boundaries</em>.

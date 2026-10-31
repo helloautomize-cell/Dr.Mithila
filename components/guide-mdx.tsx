@@ -148,7 +148,7 @@ export function Medicine() {
     <div className="aline">
       <Icon name="PILL" />
       <span>
-        Psychologists do not prescribe medicine. Talk therapy helps many
+        Talk therapy helps many
         people on its own. When medicine may also help, Dr. Desai will tell
         you and suggest a psychiatrist, and with your consent she can work
         alongside them. Please do not stop or change any prescribed medicine
@@ -226,8 +226,7 @@ export function Crisis() {
         hospital emergency department, or call <b>Tele-MANAS on 14416</b> or
         1-800-891-4416. Tele-MANAS is the Government of India&apos;s free
         mental health helpline, open 24 hours, in many Indian languages. The
-        Mental Health is not an emergency service and cannot respond to
-        messages at all hours.
+        Messages to The Mental Health are answered during clinic hours.
       </p>
       <div className="nums2">
         <a href="tel:14416">

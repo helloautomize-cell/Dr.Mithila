@@ -34,13 +34,13 @@ Glass cards: Psychological assessment · ADHD, learning and neurodiversity · Ca
 ### For organisations
 Glass cards: Workplace wellbeing and EAP · Schools and colleges
 
-### What we do not offer
+### Care that fits your life
 
 So you can find the right help quickly:
-- **Medicine.** Psychologists do not prescribe. Please see a psychiatrist for medicine.
-- **Emergency care.** If you or someone else is in danger, call 112 or Tele-MANAS 14416, or go to the nearest hospital emergency department.
-- **Hospital or residential care**, including medical detox.
-- **Disability certificates**, which are issued by government medical boards.
+- **In person or online.** Sessions in Borivali West, or by video from anywhere.
+- **For Indians abroad.** Online sessions planned around your time zone.
+- **Joined-up care.** When medicine may help, we work alongside your psychiatrist.
+- **Urgent help.** Call 112 or Tele-MANAS 14416 (free, 24 hours).
 
 {CTA}
 

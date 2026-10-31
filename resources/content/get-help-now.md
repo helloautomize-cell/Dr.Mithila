@@ -24,7 +24,7 @@ Intro (large, first on the page): If you or someone near you is in immediate dan
 
 Buttons (large, stacked on mobile): [Call 112] [Call Tele-MANAS 14416]
 
-Line: The Mental Health is not an emergency service. We may not see messages straight away.
+Line: These helplines answer 24 hours a day. Messages to The Mental Health are answered during clinic hours.
 
 ### If you are thinking about ending your life
 
@@ -61,6 +61,6 @@ When you feel safer, ongoing support helps. You can [book a session](/contact/) 
 `[CONFIRM: Dr. Desai's own instruction for existing clients in crisis during and outside working hours]`
 
 Reviewer box: `> Clinically reviewed by **Dr. Mithila Desai**, PhD, clinical psychologist · Rehabilitation Council of India CRR No. [CONFIRM] · Last reviewed [CONFIRM: date]
-> This page gives general information about psychological care at The Mental Health. It is not a diagnosis and does not replace a session. Read our [editorial policy](/editorial-policy/).`
+> This page gives general information about psychological care at The Mental Health. For advice about your own situation, book a session with Dr. Desai. Read our [editorial policy](/editorial-policy/).`
 
 ---

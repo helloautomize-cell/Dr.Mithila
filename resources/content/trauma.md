@@ -56,7 +56,7 @@ You choose what to share and when. Therapy should feel challenging at times, but
 
 Dr. Desai decides how to work with you after she has understood your concerns, your history and your goals. She draws on established talking therapies such as [CONFIRM: approaches she uses, in plain words; sources mention CBT, REBT, mindfulness and acceptance-based work], and explains each step as you go.
 
-Psychologists do not prescribe medicine. Talk therapy helps many people on its own. When medicine may also help, Dr. Desai will tell you and suggest a psychiatrist, and with your consent she can work alongside them. Please do not stop or change any prescribed medicine without speaking to the doctor who prescribed it.
+Talk therapy helps many people on its own. When medicine may also help, Dr. Desai will tell you and suggest a psychiatrist, and with your consent she can work alongside them. Please do not stop or change any prescribed medicine without speaking to the doctor who prescribed it.
 
 ### If you are not safe now
 
@@ -64,7 +64,7 @@ If you are still living with violence or abuse, safety comes first. Call 112 in 
 
 ### When to get urgent help
 
-> **If you are in danger right now.** If you have hurt yourself, are thinking of ending your life, or feel you may act on thoughts of harming yourself or someone else, please do not wait for an appointment. Call **112**, go to the nearest hospital emergency department, or call **Tele-MANAS on 14416** or 1-800-891-4416. Tele-MANAS is the Government of India's free mental health helpline, open 24 hours, in many Indian languages. The Mental Health is not an emergency service and cannot respond to messages at all hours.
+> **If you are in danger right now.** If you have hurt yourself, are thinking of ending your life, or feel you may act on thoughts of harming yourself or someone else, please do not wait for an appointment. Call **112**, go to the nearest hospital emergency department, or call **Tele-MANAS on 14416** or 1-800-891-4416. Tele-MANAS is the Government of India's free mental health helpline, open 24 hours, in many Indian languages. Messages to The Mental Health are answered during clinic hours.
 
 ### FAQs
 

@@ -41,7 +41,7 @@ Dr. Mithila Desai is a clinical psychologist in Borivali West, Mumbai. She holds
 
 Alongside her clinical work, she has worked with schools for many years, supporting students, parents and teachers, and has provided counselling to employees through workplace employee assistance programmes `[CONFIRM: wording; corporate partners are not named]`. She has also trained psychology students `[CONFIRM]`.
 
-Dr. Desai is a psychologist, not a medical doctor. She does not prescribe medicine. When medicine may help, she suggests a psychiatrist and, with your consent, works alongside them.
+Dr. Desai’s care is talking therapy and psychological assessment. When medicine may also help, she suggests a psychiatrist and, with your consent, works alongside them.
 
 ### How Dr. Desai works
 
@@ -92,7 +92,7 @@ Shown as plain facts only (title, awarding body, year), no trophy photos. `[CONF
 ### FAQs
 
 <div class="faq">
-<details><summary>Why is a psychologist called "Dr."?<i></i></summary><p>Dr. Desai holds a PhD, the highest university degree, which is why she uses the title "Dr.". She is not a medical doctor and does not prescribe medicine. Her training is in understanding thoughts, feelings and behaviour, and in helping people through talking therapy and psychological assessment.</p></details>
+<details><summary>Why is a psychologist called "Dr."?<i></i></summary><p>Dr. Desai holds a PhD, the highest university degree, which is why she uses the title "Dr.". Her training is in understanding thoughts, feelings and behaviour, and in helping people through talking therapy and psychological assessment. When medicine is part of the plan, she works alongside a psychiatrist.</p></details>
 <details><summary>Does Dr. Desai see children?<i></i></summary><p>Yes. She works with children and teenagers, usually with a parent involved in some sessions. `[CONFIRM: youngest age she sees]`. For younger children, play and drawing are often part of the session, because children may find it easier to show than to tell.</p></details>
 <details><summary>Which languages can I speak in my session?<i></i></summary><p>Sessions are in English or Hindi `[CONFIRM: Marathi, Gujarati]`. Many people mix languages, and that is fine. Use whatever words feel natural to you.</p></details>
 <details><summary>Can Dr. Desai give me a certificate or a letter?<i></i></summary><p>After an assessment she writes a report. She can also write letters for schools, colleges or employers when they are appropriate and you agree. Official disability certificates in India are issued by government medical boards, not by private practitioners.</p></details>

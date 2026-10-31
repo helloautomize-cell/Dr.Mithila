@@ -64,7 +64,7 @@ Many Indians living abroad prefer a therapist who understands their language, fa
 <details><summary>Is it legal for me to have therapy with someone in India?<i></i></summary><p>In many countries, adults can choose to speak with a professional abroad, but rules differ, especially for health insurance or for people in certain jobs. Please check what applies to you. Dr. Desai practises under Indian registration and law, and the Terms of Use explain this.</p></details>
 <details><summary>Will my sessions be private if I live with family abroad?<i></i></summary><p>Choose a time and place where you cannot be overheard, and use headphones. Some people use their car or a booked room at work. Dr. Desai will help you plan this at the first session.</p></details>
 <details><summary>How do I pay from abroad?<i></i></summary><p>`[CONFIRM: method, currency]`.</p></details>
-<details><summary>What if I am in a crisis?<i></i></summary><p>Call your local emergency number straight away, or go to the nearest hospital. We are not an emergency service and cannot send help to you.</p></details>
+<details><summary>What if I am in a crisis?<i></i></summary><p>Call your local emergency number straight away, or go to the nearest hospital. Local emergency services can reach you fastest.</p></details>
 </div>
 
 ---

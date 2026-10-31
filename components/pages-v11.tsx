@@ -184,11 +184,12 @@ export function DoctorPage() {
                 <Icon name="PILL" />
               </span>
               <div>
-                <b>A psychologist, not a psychiatrist</b>
+                <b>Therapy first, with care joined up</b>
                 <p>
-                  Dr. Desai is not a medical doctor and does not prescribe
-                  medicine. When medicine may help, she suggests a psychiatrist
-                  and, with your consent, works alongside them.
+                  As a clinical psychologist, Dr. Desai helps through talking
+                  therapy and assessment. When medicine may also help, she
+                  suggests a psychiatrist and, with your consent, works
+                  alongside them.
                 </p>
               </div>
             </div>
@@ -443,7 +444,7 @@ export function DoctorPage() {
             faqs={[
               {
                 q: 'Why is a psychologist called "Dr."?',
-                a: 'Dr. Desai holds a PhD, the highest university degree, which is why she uses the title "Dr.". She is not a medical doctor and does not prescribe medicine. Her training is in understanding thoughts, feelings and behaviour, and helping people through talking therapy and assessment.',
+                a: 'Dr. Desai holds a PhD, the highest university degree, which is why she uses the title "Dr.". Her training is in understanding thoughts, feelings and behaviour, and helping people through talking therapy and assessment. When medicine is part of the plan, she works alongside a psychiatrist.',
               },
               {
                 q: "Does Dr. Desai see children?",
@@ -724,23 +725,17 @@ export function ServicesPageV11() {
                 ],
               },
               {
-                small: "What we do not offer",
-                title: "So You Find the Right Help Quickly",
-                negative: true,
-                icon: "SHIELD",
+                small: "Care that fits your life",
+                title: "Here, Online, and Joined Up",
+                img: {
+                  img: "dr-mithila-desai/dr-online",
+                  alt: "Dr. Desai in an online session",
+                  pos: "50% 30%",
+                },
                 items: [
-                  <>
-                    <b>Medicine.</b> Please see a psychiatrist.
-                  </>,
-                  <>
-                    <b>Emergency care.</b> Call 112 or 14416.
-                  </>,
-                  <>
-                    <b>Hospital or residential care</b>, including detox.
-                  </>,
-                  <>
-                    <b>Disability certificates</b>, issued by government boards.
-                  </>,
+                  "In person in Borivali West, or online by video",
+                  "For Indians living abroad, online",
+                  "Works alongside your psychiatrist when medicine may help",
                 ],
               },
             ]}
@@ -846,7 +841,7 @@ export function TeamPage() {
                 dl: [
                   [
                     "What they do",
-                    "Talking therapy and psychological assessment. They do not prescribe medicine.",
+                    "Talking therapy and psychological assessment, working alongside psychiatrists when medicine is needed.",
                   ],
                   [
                     "When you'd see them",

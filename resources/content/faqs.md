@@ -26,7 +26,7 @@ Intro: Short answers to the questions we hear most. If yours is not here, call o
 ### About psychologists and therapy
 
 <div class="faq">
-<details><summary>What is the difference between a psychologist and a psychiatrist?<i></i></summary><p>A psychiatrist is a medical doctor (MBBS plus specialist training in psychiatry) who can diagnose mental health conditions and prescribe medicine. A clinical psychologist has advanced university training in psychology, is registered with the Rehabilitation Council of India, and helps through assessment and talking therapy. Psychologists do not prescribe. Many people benefit from seeing one or both.</p></details>
+<details><summary>What is the difference between a psychologist and a psychiatrist?<i></i></summary><p>A psychiatrist is a medical doctor (MBBS plus specialist training in psychiatry) who can diagnose mental health conditions and prescribe medicine. A clinical psychologist has advanced university training in psychology, is registered with the Rehabilitation Council of India, and helps through assessment and talking therapy. When medicine is needed, the two often work together. Many people benefit from seeing one or both.</p></details>
 <details><summary>What does a psychologist actually do in a session?<i></i></summary><p>Mostly, listen carefully and ask useful questions. Over time, Dr. Desai helps you see patterns in your thoughts, feelings and actions, and practise new ways of handling them. Sessions are a conversation with a purpose, and you leave most of them with something to try or think about before the next one.</p></details>
 <details><summary>What is a mental health condition?<i></i></summary><p>It is a change in thinking, feeling or behaviour that causes distress or makes daily life harder for a long time. Anxiety, depression, OCD, bipolar disorder and schizophrenia are examples. Mental health conditions are common, are nobody's fault, and are treatable. Many people live full lives with the right support.</p></details>
 <details><summary>What causes mental health problems?<i></i></summary><p>Usually a mix: genes and family history, physical health, stressful or painful experiences, relationships, money and work pressure, and sometimes substance use. There is rarely a single cause. Understanding your own mix helps decide what kind of support will be most useful.</p></details>
@@ -63,9 +63,9 @@ Intro: Short answers to the questions we hear most. If yours is not here, call o
 ### Medicine and urgent help
 
 <div class="faq">
-<details><summary>Will I have to take medicine?<i></i></summary><p>Not from us. Psychologists do not prescribe. Talk therapy helps many people on its own. If Dr. Desai feels medicine might also help, she will explain why and suggest a psychiatrist. The decision is then between you and the psychiatrist.</p></details>
+<details><summary>Will I have to take medicine?<i></i></summary><p>Talk therapy helps many people on its own. If Dr. Desai feels medicine might also help, she will explain why and suggest a psychiatrist. The decision is then between you and the psychiatrist.</p></details>
 <details><summary>I already take medicine from a psychiatrist. Can I still come?<i></i></summary><p>Yes, and that is common. Therapy and medicine often work well together. Please keep taking your medicine as prescribed, and do not change or stop it without your psychiatrist. With your consent, Dr. Desai can stay in touch with them.</p></details>
-<details><summary>What should I do in a crisis?<i></i></summary><p>Call 112, go to the nearest hospital emergency department, or call Tele-MANAS on 14416 (free, 24 hours, many languages). We are not an emergency service. See [Get help now](/get-help-now/).</p></details>
+<details><summary>What should I do in a crisis?<i></i></summary><p>Call 112, go to the nearest hospital emergency department, or call Tele-MANAS on 14416 (free, 24 hours, many languages). These lines answer straight away. See [Get help now](/get-help-now/).</p></details>
 </div>
 
 {CTA}

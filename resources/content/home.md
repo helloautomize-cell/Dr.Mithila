@@ -38,7 +38,7 @@ Portrait card name pill: Dr. Mithila Desai · Clinical psychologist
 
 Mobile short line (under the portrait): In person in Borivali West, or online.
 
-Small line under the buttons (all widths): Not an emergency service. In danger? Call 112 or Tele-MANAS 14416.
+Small line under the buttons (all widths): Need urgent help? Call 112 or Tele-MANAS 14416.
 
 ### Find help by concern
 
@@ -66,7 +66,7 @@ Cards (6):
 3. **Therapy and assessment together.** If a question needs testing, such as attention, learning or career aptitude, it can be done here and explained in plain words.
 4. **Private and unhurried.** Sessions are confidential and planned around your concerns. You decide what to share and when.
 5. **In person or online.** Meet in Borivali West or join from home by video, in India or abroad.
-6. **Honest about medicine.** Dr. Desai is a psychologist and does not prescribe. If medicine may help, she will say so and can work alongside your psychiatrist.
+6. **Works with your psychiatrist.** Dr. Desai focuses on therapy and assessment. If medicine may also help, she will say so and work alongside your psychiatrist, so your care stays joined up.
 
 ### 02 / About the practice
 
@@ -174,7 +174,7 @@ Link: Visit the Health Library →
 H2: Quick *answers*
 
 <div class="faq">
-<details><summary>Is Dr. Mithila Desai a psychiatrist?<i></i></summary><p>No. Dr. Desai is a clinical psychologist with a PhD. She helps through talking therapy and psychological assessment and does not prescribe medicine. A psychiatrist is a medical doctor who can prescribe. Many people see only a psychologist; some see both. If medicine may help you, she will say so and can work alongside your psychiatrist.</p></details>
+<details><summary>Is Dr. Mithila Desai a psychologist or a psychiatrist?<i></i></summary><p>Dr. Desai is a clinical psychologist with a PhD. Her care is talking therapy and psychological assessment. A psychiatrist is a medical doctor who prescribes medicine. Many people see only a psychologist; some see both. If medicine may help you, she will say so and can work alongside your psychiatrist.</p></details>
 <details><summary>Is what I say kept private?<i></i></summary><p>Yes. What you share in a session stays between you and Dr. Desai. The only exceptions are when someone's life or safety is at serious risk, when a child may be at risk of harm, or when the law requires it. She explains these limits at your first session, so you know exactly where you stand.</p></details>
 <details><summary>Can I have sessions online?<i></i></summary><p>Yes. Online sessions happen by video at a booked time, just like a session in the room. You need a private space, headphones and a steady internet connection. Many people choose online sessions because of travel, work hours or because they live outside Mumbai. Some people mix in-person and online sessions.</p></details>
 <details><summary>How many sessions will I need?<i></i></summary><p>It depends on what you would like help with, how long it has been going on and how often you can come. Some people feel clearer after a few sessions; others meet for several months. Dr. Desai will talk about this with you early on and review progress with you along the way, so you are never unsure why you are coming.</p></details>
@@ -188,7 +188,7 @@ H2: Find *us*
 - Address (3 lines) · Get directions
 - Call 87796 51309 · WhatsApp `[CONFIRM]` · Email `[CONFIRM]`
 - Hours: `[CONFIRM: in-person days and hours; online hours; phone hours]`
-- Crisis line: Not an emergency service. In danger? Call 112 or Tele-MANAS 14416.
+- Crisis line: Need urgent help? Call 112 or Tele-MANAS 14416.
 - Photo card: building entrance + [Show map] (click to load)
 
 ### CTA band

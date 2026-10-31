@@ -70,7 +70,7 @@ Portrait card name pill: Dr. Mithila Desai · Clinical psychologist
 
 Mobile short line (under the portrait): In person in Borivali West, or online.
 
-Small line under the buttons (all widths): Not an emergency service. In danger? Call 112 or Tele-MANAS 14416.
+Small line under the buttons (all widths): Need urgent help? Call 112 or Tele-MANAS 14416.
 
 ### Find help by concern
 
@@ -98,7 +98,7 @@ Cards (6):
 3. **Therapy and assessment together.** If a question needs testing, such as attention, learning or career aptitude, it can be done here and explained in plain words.
 4. **Private and unhurried.** Sessions are confidential and planned around your concerns. You decide what to share and when.
 5. **In person or online.** Meet in Borivali West or join from home by video, in India or abroad.
-6. **Honest about medicine.** Dr. Desai is a psychologist and does not prescribe. If medicine may help, she will say so and can work alongside your psychiatrist.
+6. **Works with your psychiatrist.** Dr. Desai is a psychologist and does not prescribe. If medicine may help, she will say so and can work alongside your psychiatrist.
 
 ### 02 / About the practice
 
@@ -205,8 +205,8 @@ Link: Visit the Health Library →
 
 H2: Quick *answers*
 
-1. **Is Dr. Mithila Desai a psychiatrist?**
-   No. Dr. Desai is a clinical psychologist with a PhD. She helps through talking therapy and psychological assessment and does not prescribe medicine. A psychiatrist is a medical doctor who can prescribe. Many people see only a psychologist; some see both. If medicine may help you, she will say so and can work alongside your psychiatrist.
+1. **Is Dr. Mithila Desai a psychologist or a psychiatrist?**
+   Dr. Desai is a clinical psychologist with a PhD. Her care is talking therapy and psychological assessment. A psychiatrist is a medical doctor who prescribes medicine. Many people see only a psychologist; some see both. If medicine may help you, she will say so and can work alongside your psychiatrist.
 2. **Is what I say kept private?**
    Yes. What you share in a session stays between you and Dr. Desai. The only exceptions are when someone's life or safety is at serious risk, when a child may be at risk of harm, or when the law requires it. She explains these limits at your first session, so you know exactly where you stand.
 3. **Can I have sessions online?**
@@ -222,7 +222,7 @@ H2: Find *us*
 - Address (3 lines) · Get directions
 - Call 87796 51309 · WhatsApp `[CONFIRM]` · Email `[CONFIRM]`
 - Hours: `[CONFIRM: in-person days and hours; online hours; phone hours]`
-- Crisis line: Not an emergency service. In danger? Call 112 or Tele-MANAS 14416.
+- Crisis line: Need urgent help? Call 112 or Tele-MANAS 14416.
 - Photo card: building entrance + [Show map] (click to load)
 
 ### CTA band
@@ -491,7 +491,7 @@ See [Online therapy](/online-therapy/).
 
 ### Payment
 
-`[CONFIRM: payment methods (cash, UPI, card, bank transfer); receipts]`. Fees are not shown on the website. Please ask when you book. We do not offer packages paid in advance `[CONFIRM]`.
+`[CONFIRM: payment methods (cash, UPI, card, bank transfer); receipts]`. Fees are not shown on the website. Please ask when you book. Sessions are paid one at a time `[CONFIRM]`.
 
 ### When to get urgent help instead
 
@@ -577,7 +577,7 @@ Intro: Short answers to the questions we hear most. If yours is not here, call o
 ### About psychologists and therapy
 
 1. **What is the difference between a psychologist and a psychiatrist?**
-   A psychiatrist is a medical doctor (MBBS plus specialist training in psychiatry) who can diagnose mental health conditions and prescribe medicine. A clinical psychologist has advanced university training in psychology, is registered with the Rehabilitation Council of India, and helps through assessment and talking therapy. Psychologists do not prescribe. Many people benefit from seeing one or both.
+   A psychiatrist is a medical doctor (MBBS plus specialist training in psychiatry) who can diagnose mental health conditions and prescribe medicine. A clinical psychologist has advanced university training in psychology, is registered with the Rehabilitation Council of India, and helps through assessment and talking therapy. When medicine is needed, the two often work together. Many people benefit from seeing one or both.
 2. **What does a psychologist actually do in a session?**
    Mostly, listen carefully and ask useful questions. Over time, Dr. Desai helps you see patterns in your thoughts, feelings and actions, and practise new ways of handling them. Sessions are a conversation with a purpose, and you leave most of them with something to try or think about before the next one.
 3. **What is a mental health condition?**
@@ -623,11 +623,11 @@ Intro: Short answers to the questions we hear most. If yours is not here, call o
 ### Medicine and urgent help
 
 18. **Will I have to take medicine?**
-    Not from us. Psychologists do not prescribe. Talk therapy helps many people on its own. If Dr. Desai feels medicine might also help, she will explain why and suggest a psychiatrist. The decision is then between you and the psychiatrist.
+    Talk therapy helps many people on its own. If Dr. Desai feels medicine might also help, she will explain why and suggest a psychiatrist. The decision is then between you and the psychiatrist.
 19. **I already take medicine from a psychiatrist. Can I still come?**
     Yes, and that is common. Therapy and medicine often work well together. Please keep taking your medicine as prescribed, and do not change or stop it without your psychiatrist. With your consent, Dr. Desai can stay in touch with them.
 20. **What should I do in a crisis?**
-    Call 112, go to the nearest hospital emergency department, or call Tele-MANAS on 14416 (free, 24 hours, many languages). We are not an emergency service. See [Get help now](/get-help-now/).
+    Call 112, go to the nearest hospital emergency department, or call Tele-MANAS on 14416 (free, 24 hours, many languages). These lines answer straight away. See [Get help now](/get-help-now/).
 
 {CTA}
 
@@ -648,7 +648,7 @@ Intro (large, first on the page): If you or someone near you is in immediate dan
 
 Buttons (large, stacked on mobile): [Call 112] [Call Tele-MANAS 14416]
 
-Line: The Mental Health is not an emergency service. We may not see messages straight away.
+Line: These helplines answer 24 hours a day. Messages to The Mental Health are answered during clinic hours.
 
 ### If you are thinking about ending your life
 
@@ -1257,7 +1257,7 @@ Many Indians living abroad prefer a therapist who understands their language, fa
 3. **How do I pay from abroad?**
    `[CONFIRM: method, currency]`.
 4. **What if I am in a crisis?**
-   Call your local emergency number straight away, or go to the nearest hospital. We are not an emergency service and cannot send help to you.
+   Call your local emergency number straight away, or go to the nearest hospital. Local emergency services can reach you fastest.
 
 ---
 
@@ -2010,7 +2010,7 @@ Affirmative counselling means therapy in which your sexual orientation and gende
 
 ### Our position
 
-The Indian Psychiatric Society stated in 2018 that homosexuality is not a mental illness. In 2022 the National Medical Commission declared so-called conversion therapy professional misconduct, following a direction from the Madras High Court. Conversion therapy is harmful, and we do not offer it in any form.
+The Indian Psychiatric Society stated in 2018 that homosexuality is not a mental illness. In 2022 the National Medical Commission declared so-called conversion therapy professional misconduct, following a direction from the Madras High Court. Conversion therapy is harmful. Every session here is affirming.
 
 ### FAQs
 

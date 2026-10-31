@@ -55,11 +55,11 @@ Having a disturbing thought does not mean you want it or will act on it. In OCD,
 
 Therapy is done at a pace you agree to. Nothing is forced.
 
-Psychologists do not prescribe medicine. Talk therapy helps many people on its own. When medicine may also help, Dr. Desai will tell you and suggest a psychiatrist, and with your consent she can work alongside them. Please do not stop or change any prescribed medicine without speaking to the doctor who prescribed it.
+Talk therapy helps many people on its own. When medicine may also help, Dr. Desai will tell you and suggest a psychiatrist, and with your consent she can work alongside them. Please do not stop or change any prescribed medicine without speaking to the doctor who prescribed it.
 
 ### When to get urgent help
 
-> **If you are in danger right now.** If you have hurt yourself, are thinking of ending your life, or feel you may act on thoughts of harming yourself or someone else, please do not wait for an appointment. Call **112**, go to the nearest hospital emergency department, or call **Tele-MANAS on 14416** or 1-800-891-4416. Tele-MANAS is the Government of India's free mental health helpline, open 24 hours, in many Indian languages. The Mental Health is not an emergency service and cannot respond to messages at all hours.
+> **If you are in danger right now.** If you have hurt yourself, are thinking of ending your life, or feel you may act on thoughts of harming yourself or someone else, please do not wait for an appointment. Call **112**, go to the nearest hospital emergency department, or call **Tele-MANAS on 14416** or 1-800-891-4416. Tele-MANAS is the Government of India's free mental health helpline, open 24 hours, in many Indian languages. Messages to The Mental Health are answered during clinic hours.
 
 ### FAQs
 

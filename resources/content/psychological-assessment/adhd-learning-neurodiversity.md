@@ -60,11 +60,11 @@ In adults:
 4. **Feedback session** and written report with recommendations.
 5. **Next steps:** therapy, parent guidance, school strategies, or a psychiatrist or developmental paediatrician for a medical opinion, where needed.
 
-Dr. Desai chooses standardised assessments based on the question you need answered, and explains the results in plain words. Her reports help families, schools and individuals plan support. Official disability certificates are issued by government medical boards.
+Dr. Desai chooses standardised assessments based on the question you need answered, and explains the results in plain words. Her reports help families, schools and individuals plan support, and can support applications to government medical boards for certificates.
 
-### What we do not do
+### Working with your child’s doctors and school
 
-ADHD medicine is prescribed by psychiatrists or paediatricians, not psychologists. Official certificates for board exam accommodations or disability benefits come from government hospitals and medical boards.
+When medicine may help, Dr. Desai shares her findings, with your consent, with your child’s psychiatrist or paediatrician. Her report can support your application for board exam accommodations, which are certified by government hospitals and medical boards.
 
 ### FAQs
 

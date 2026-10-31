@@ -26,7 +26,7 @@ What makes it different (facts only, no comparisons):
 
 Used word for word in About, `llms.txt`, `entity-facts.md` and the Google profile description.
 
-> The Mental Health is a psychology practice at 17, Shraddha SBI Staff Gulmohar CHS, Gulmohar Road, Shimpoli, Borivali West, Mumbai 400092, led by Dr. Mithila Desai, PhD, a clinical psychologist registered with the Rehabilitation Council of India `[CONFIRM: RCI CRR number]`. The practice offers individual therapy, child and teen therapy, couples and family counselling, psychological assessment, online therapy, and wellbeing programmes for schools and workplaces. Dr. Desai is a psychologist, not a medical doctor, and does not prescribe medicine. When medicine may help, she suggests a psychiatrist and can work alongside them with the client's consent.
+> The Mental Health is a psychology practice at 17, Shraddha SBI Staff Gulmohar CHS, Gulmohar Road, Shimpoli, Borivali West, Mumbai 400092, led by Dr. Mithila Desai, PhD, a clinical psychologist registered with the Rehabilitation Council of India `[CONFIRM: RCI CRR number]`. The practice offers individual therapy, child and teen therapy, couples and family counselling, psychological assessment, online therapy, and wellbeing programmes for schools and workplaces. Dr. Desai's care is talking therapy and psychological assessment. When medicine may help, she suggests a psychiatrist and works alongside them with the client's consent.
 
 ### What the site must never say about her
 - "Doctor" in the medical sense, "MD", "physician", "Maharashtra Medical Council" or any medical registration.
@@ -171,9 +171,9 @@ On `/get-help-now/` and `/self-harm-and-suicidal-thoughts/` the bar shows **Call
 - Call +91 87796 51309 · WhatsApp `[CONFIRM]` · email (obfuscated) `[CONFIRM: one email]`
 - "See us on Google Maps" link
 - Columns: Therapy · Concerns · Assessments · For organisations · Client information (Our team, Plan your first session, FAQs, Health Library, Contact, Get help now) · Legal (7) + Cookie settings
-- Crisis line (always): "The Mental Health is not an emergency service. If you are in danger, call 112 or Tele-MANAS 14416."
+- Crisis line (always): "Need urgent help? Call 112 or Tele-MANAS 14416 (free, 24 hours)."
 - Social: Instagram only
-- Bottom: "© [year] The Mental Health, Borivali West, Mumbai. This website is run by `[CONFIRM: legal entity, records only]` for the practice of Dr. Mithila Desai, clinical psychologist, RCI CRR No. `[CONFIRM]`. The information here is for general education and does not replace a session with a qualified professional."
+- Bottom: "© [year] The Mental Health, Borivali West, Mumbai. This website is run by `[CONFIRM: legal entity, records only]` for the practice of Dr. Mithila Desai, clinical psychologist, RCI CRR No. `[CONFIRM]`. The information here is for general education. For advice about your own situation, book a session."
 
 ---
 
@@ -182,23 +182,23 @@ On `/get-help-now/` and `/self-harm-and-suicidal-thoughts/` the bar shows **Call
 **Utility bar alert:** Need help now? Tele-MANAS 14416 · Emergency 112
 
 **Crisis callout (every concern page, Home, Contact, Plan your visit, every Health Library post):**
-> **If you are in danger right now.** If you have hurt yourself, are thinking of ending your life, or feel you may act on thoughts of harming yourself or someone else, please do not wait for an appointment. Call **112**, go to the nearest hospital emergency department, or call **Tele-MANAS on 14416** or 1-800-891-4416. Tele-MANAS is the Government of India's free mental health helpline, open 24 hours, in many Indian languages. The Mental Health is not an emergency service and cannot respond to messages at all hours.
+> **If you are in danger right now.** If you have hurt yourself, are thinking of ending your life, or feel you may act on thoughts of harming yourself or someone else, please do not wait for an appointment. Call **112**, go to the nearest hospital emergency department, or call **Tele-MANAS on 14416** or 1-800-891-4416. Tele-MANAS is the Government of India's free mental health helpline, open 24 hours, in many Indian languages. Messages to The Mental Health are answered during clinic hours.
 
 **Short crisis line (footer, forms, thank-you page):**
-> Not an emergency service. In danger? Call 112 or Tele-MANAS 14416 (free, 24 hours).
+> Need urgent help? Call 112 or Tele-MANAS 14416 (free, 24 hours).
 
 **Reviewer box (psychologist version):**
 > Clinically reviewed by **Dr. Mithila Desai**, PhD, clinical psychologist · Rehabilitation Council of India CRR No. `[CONFIRM]` · Last reviewed [date set at sign-off]
-> This page gives general information about psychological care at The Mental Health. It is not a diagnosis and does not replace a session. Read our [editorial policy](/editorial-policy/).
+> This page gives general information about psychological care at The Mental Health. For advice about your own situation, book a session with Dr. Desai. Read our [editorial policy](/editorial-policy/).
 
 **Medicine line (used wherever medicine comes up):**
-> Psychologists do not prescribe medicine. Talk therapy helps many people on its own. When medicine may also help, Dr. Desai will tell you and suggest a psychiatrist, and with your consent she can work alongside them. Please do not stop or change any prescribed medicine without speaking to the doctor who prescribed it.
+> Talk therapy helps many people on its own. When medicine may also help, Dr. Desai will tell you and suggest a psychiatrist, and with your consent she can work alongside them. Please do not stop or change any prescribed medicine without speaking to the doctor who prescribed it.
 
 **Approach line (generic and true; replaces any protocol detail):**
 > Dr. Desai decides how to work with you after she has understood your concerns, your history and your goals. She draws on established talking therapies such as `[CONFIRM: approaches she uses, in plain words; sources mention CBT, REBT, mindfulness and acceptance-based work]`, and explains each step as you go.
 
 **Assessment line:**
-> Dr. Desai chooses standardised assessments based on the question you need answered, and explains the results in plain words. Her reports help families, schools and individuals plan support. Official disability certificates are issued by government medical boards.
+> Dr. Desai chooses standardised assessments based on the question you need answered, and explains the results in plain words. Her reports help families, schools and individuals plan support, and can support applications to government medical boards for certificates.
 
 **Confidentiality line:**
 > What you say in a session stays private. The only exceptions are when someone's life or safety is at serious risk, when a child may be at risk of harm, or when the law requires disclosure. Dr. Desai will explain this at the first session.
@@ -207,7 +207,7 @@ On `/get-help-now/` and `/self-harm-and-suicidal-thoughts/` the bar shows **Call
 > Ready to talk to *someone*?
 > Book a session, call +91 87796 51309 or message us on WhatsApp. We reply to booking requests within `[CONFIRM: reply time, e.g. the same working day]`.
 > [Book a session] [Call] [WhatsApp]
-> Small line: Not an emergency service. In danger? Call 112 or Tele-MANAS 14416.
+> Small line: Need urgent help? Call 112 or Tele-MANAS 14416.
 
 **Form consent line (checkbox, unticked):**
 > I agree that The Mental Health may use these details to contact me about my appointment, as explained in the [Privacy Policy](/privacy-policy/).

@@ -29,7 +29,7 @@ Affirmative counselling means therapy in which your sexual orientation and gende
 ### At a glance
 
 - **Who:** LGBTQIA+ individuals, couples, and families who want to understand and support a loved one
-- **What we do not do:** any attempt to change someone's orientation or gender identity
+- **Affirming, always:** your orientation and gender identity are respected as they are
 - **Confidential:** nothing is shared with family without your consent
 - **Common topics:** coming out, family pressure, marriage pressure, relationships, discrimination, anxiety, low mood
 
@@ -45,7 +45,7 @@ Affirmative counselling means therapy in which your sexual orientation and gende
 
 ### Our position
 
-The Indian Psychiatric Society stated in 2018 that homosexuality is not a mental illness. In 2022 the National Medical Commission declared so-called conversion therapy professional misconduct, following a direction from the Madras High Court. Conversion therapy is harmful, and we do not offer it in any form.
+The Indian Psychiatric Society stated in 2018 that homosexuality is not a mental illness. In 2022 the National Medical Commission declared so-called conversion therapy professional misconduct, following a direction from the Madras High Court. Conversion therapy is harmful. Every session here is affirming.
 
 ### FAQs
 
@@ -56,7 +56,7 @@ The Indian Psychiatric Society stated in 2018 that homosexuality is not a mental
 
 ### When to get urgent help
 
-> **If you are in danger right now.** If you have hurt yourself, are thinking of ending your life, or feel you may act on thoughts of harming yourself or someone else, please do not wait for an appointment. Call **112**, go to the nearest hospital emergency department, or call **Tele-MANAS on 14416** or 1-800-891-4416. Tele-MANAS is the Government of India's free mental health helpline, open 24 hours, in many Indian languages. The Mental Health is not an emergency service and cannot respond to messages at all hours.
+> **If you are in danger right now.** If you have hurt yourself, are thinking of ending your life, or feel you may act on thoughts of harming yourself or someone else, please do not wait for an appointment. Call **112**, go to the nearest hospital emergency department, or call **Tele-MANAS on 14416** or 1-800-891-4416. Tele-MANAS is the Government of India's free mental health helpline, open 24 hours, in many Indian languages. Messages to The Mental Health are answered during clinic hours.
 
 Sources:
 - Indian Psychiatric Society, position statement on homosexuality, 2018

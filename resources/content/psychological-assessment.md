@@ -53,7 +53,7 @@ A psychological assessment uses conversation, history and standardised tests to 
 4. **Feedback.** A session to go through the findings, answer questions and plan support.
 5. **Report.** A written summary with practical recommendations.
 
-Dr. Desai chooses standardised assessments based on the question you need answered, and explains the results in plain words. Her reports help families, schools and individuals plan support. Official disability certificates are issued by government medical boards.
+Dr. Desai chooses standardised assessments based on the question you need answered, and explains the results in plain words. Her reports help families, schools and individuals plan support, and can support applications to government medical boards for certificates.
 
 ### How to prepare
 

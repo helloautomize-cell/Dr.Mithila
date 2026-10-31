@@ -352,7 +352,7 @@ export default function Home() {
               </h2>
             </div>
             <p className="lead">
-              Awards are not a promise of results. They reflect the care she has
+              These awards reflect the care she has
               brought to mental health in Mumbai for over three decades.
             </p>
           </div>
@@ -599,7 +599,7 @@ export default function Home() {
           <div className="faq">
             <details open>
               <summary>
-                Is Dr. Mithila Desai a psychiatrist?<i></i>
+                Is Dr. Mithila Desai a psychologist or a psychiatrist?<i></i>
               </summary>
               <p>
                 No. Dr. Desai is a clinical psychologist with a PhD. She helps
