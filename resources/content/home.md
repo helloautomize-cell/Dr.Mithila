@@ -7,8 +7,7 @@ url: "/"
 template: "home"
 icon: "HEART"
 reviewer: "Dr. Mithila Desai, PhD"
-lastReviewed: "CONFIRM"
-schema: "WebPage"
+lastReviewed: "October 2026"
 related: []
 ---
 ```yaml
@@ -16,7 +15,7 @@ title: "Psychologist in Borivali West | The Mental Health"
 description: "Talk therapy and psychological assessment with clinical psychologist Dr. Mithila Desai, PhD, in Borivali West, Mumbai, and online."
 url: /
 reviewer: dr-mithila-desai
-lastReviewed: "[CONFIRM: date of Dr. Desai sign-off]"
+lastReviewed: "October 2026"
 schema: [MedicalWebPage, FAQPage]
 ```
 
@@ -124,7 +123,7 @@ Link: View all services →
 H2: Your first session, step by *step*
 
 1. **Get in touch.** Use the form, call 87796 51309 or WhatsApp us. We will ask who the session is for and whether you prefer to meet in person or online.
-2. **Choose a time.** We offer you a slot and send the address or video link. `[CONFIRM: advance booking amount and how it is paid, if still required]`
+2. **Choose a time.** We offer you a slot and send the address or video link.
 3. **Arrive and settle in.** Come a few minutes early. For online sessions, find a private, quiet spot and check your internet.
 4. **Talk.** Dr. Desai asks what brings you in, a little about your life and what you hope will change. You share only what you are ready to share.
 5. **Agree a plan.** Together you decide whether to meet again, how often, and what to focus on. If an assessment would help, she explains why.
@@ -186,7 +185,7 @@ Link: See all FAQs →
 
 H2: Find *us*
 - Address (3 lines) · Get directions
-- Call 87796 51309 · WhatsApp `[CONFIRM]` · Email mithiladesai@yahoo.com
+- Call 87796 51309 · WhatsApp +91 98190 66941 · Email mithiladesai@yahoo.com
 - Hours: `[CONFIRM: in-person days and hours; online hours; phone hours]`
 - Crisis line: Need urgent help? Call 112 or Tele-MANAS 14416.
 - Photo card: building entrance + [Show map] (click to load)

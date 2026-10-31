@@ -7,8 +7,7 @@ url: "/plan-your-visit/"
 template: "sidebar"
 icon: "CAL"
 reviewer: "Dr. Mithila Desai, PhD"
-lastReviewed: "CONFIRM"
-schema: "MedicalWebPage"
+lastReviewed: "October 2026"
 related: []
 ---
 ```yaml
@@ -39,9 +38,8 @@ In person: Monday to Friday 9:30am to 7:00pm, Saturday 9:30am to 3:30pm.
 
 ### Booking
 
-- Online form, phone (87796 51309) or WhatsApp `[CONFIRM]`.
+- Online form, phone (87796 51309) or WhatsApp +91 98190 66941.
 - We reply within `[CONFIRM: reply time]` during working hours.
-- `[CONFIRM: advance payment to hold a slot, amount and how to pay; or "no advance needed"]`
 - To change or cancel, please tell us at least `[CONFIRM: hours]` before. See [Appointments, cancellation and refund](/appointments-cancellation-refund/).
 
 ### How long a session lasts
@@ -80,7 +78,7 @@ See [Online therapy](/online-therapy/).
 
 ### Payment
 
-`[CONFIRM: payment methods (cash, UPI, card, bank transfer); receipts]`. Fees are not shown on the website. Please ask when you book. Sessions are paid one at a time `[CONFIRM]`.
+Fees are not shown on the website. Please ask when you book.
 
 ### When to get urgent help instead
 

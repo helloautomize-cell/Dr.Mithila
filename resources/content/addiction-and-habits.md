@@ -7,8 +7,7 @@ url: "/addiction-and-habits/"
 template: "sidebar"
 icon: "LOOP"
 reviewer: "Dr. Mithila Desai, PhD"
-lastReviewed: "CONFIRM"
-schema: "MedicalWebPage"
+lastReviewed: "October 2026"
 related: []
 ---
 ```yaml
@@ -18,7 +17,7 @@ url: /addiction-and-habits/
 h1: "Help with habits, addiction and *dependence*"
 badge: habits
 reviewer: dr-mithila-desai
-lastReviewed: "[CONFIRM]"
+lastReviewed: "October 2026"
 about: { type: MedicalCondition, name: "Substance use disorder" }
 related: [/stress-and-burnout/, /depression/, /family-counselling/]
 ```

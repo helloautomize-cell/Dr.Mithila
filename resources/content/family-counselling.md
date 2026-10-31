@@ -7,8 +7,7 @@ url: "/family-counselling/"
 template: "sidebar"
 icon: "FAMILY"
 reviewer: "Dr. Mithila Desai, PhD"
-lastReviewed: "CONFIRM"
-schema: "MedicalWebPage"
+lastReviewed: "October 2026"
 related: []
 ---
 ```yaml
@@ -18,7 +17,7 @@ url: /family-counselling/
 h1: "Family counselling and parenting *support*"
 badge: family
 reviewer: dr-mithila-desai
-lastReviewed: "[CONFIRM]"
+lastReviewed: "October 2026"
 about: { type: MedicalTherapy, name: "Family therapy" }
 related: [/child-and-teen-therapy/, /couples-counselling/, /grief-and-loss/]
 ```

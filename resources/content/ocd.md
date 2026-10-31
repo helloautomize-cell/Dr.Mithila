@@ -7,8 +7,7 @@ url: "/ocd/"
 template: "sidebar"
 icon: "LOOP"
 reviewer: "Dr. Mithila Desai, PhD"
-lastReviewed: "CONFIRM"
-schema: "MedicalWebPage"
+lastReviewed: "October 2026"
 related: []
 ---
 ```yaml
@@ -18,7 +17,7 @@ url: /ocd/
 h1: "Help for *OCD*"
 badge: ocd
 reviewer: dr-mithila-desai
-lastReviewed: "[CONFIRM]"
+lastReviewed: "October 2026"
 about: { type: MedicalCondition, name: "Obsessive compulsive disorder", alternateName: ["OCD"] }
 related: [/anxiety/, /individual-therapy/, /child-and-teen-therapy/]
 posts: [ocd-therapy-what-it-involves]

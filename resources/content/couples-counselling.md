@@ -7,8 +7,7 @@ url: "/couples-counselling/"
 template: "sidebar"
 icon: "RINGS"
 reviewer: "Dr. Mithila Desai, PhD"
-lastReviewed: "CONFIRM"
-schema: "MedicalWebPage"
+lastReviewed: "October 2026"
 related: []
 ---
 ```yaml
@@ -18,7 +17,7 @@ url: /couples-counselling/
 h1: "Couples and marriage *counselling*"
 badge: couples
 reviewer: dr-mithila-desai
-lastReviewed: "[CONFIRM]"
+lastReviewed: "October 2026"
 about: { type: MedicalTherapy, name: "Couples therapy" }
 related: [/family-counselling/, /individual-therapy/, /stress-and-burnout/, /online-therapy/]
 posts: [individual-therapy-vs-couples-counselling, marriage-counselling-first-session]

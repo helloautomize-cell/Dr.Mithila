@@ -7,8 +7,7 @@ url: "/career-guidance/"
 template: "sidebar"
 icon: "COMPASS"
 reviewer: "Dr. Mithila Desai, PhD"
-lastReviewed: "CONFIRM"
-schema: "MedicalWebPage"
+lastReviewed: "October 2026"
 related: []
 ---
 ```yaml
@@ -18,7 +17,7 @@ url: /career-guidance/
 h1: "Career guidance and aptitude *testing*"
 badge: career
 reviewer: dr-mithila-desai
-lastReviewed: "[CONFIRM]"
+lastReviewed: "October 2026"
 related: [/psychological-assessment/, /stress-and-burnout/, /schools-and-colleges/]
 ```
 

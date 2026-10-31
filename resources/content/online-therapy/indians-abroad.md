@@ -7,8 +7,7 @@ url: "/online-therapy/indians-abroad/"
 template: "sidebar"
 icon: "GLOBE"
 reviewer: "Dr. Mithila Desai, PhD"
-lastReviewed: "CONFIRM"
-schema: "MedicalWebPage"
+lastReviewed: "October 2026"
 related: []
 ---
 ```yaml
@@ -18,7 +17,7 @@ url: /online-therapy/indians-abroad/
 h1: "Online therapy for Indians *abroad*"
 badge: abroad
 reviewer: dr-mithila-desai
-lastReviewed: "[CONFIRM]"
+lastReviewed: "October 2026"
 related: [/online-therapy/, /individual-therapy/, /couples-counselling/]
 posts: [online-counselling-for-nris]
 ```
@@ -32,7 +31,6 @@ Many Indians living abroad prefer a therapist who understands their language, fa
 - **Who:** adults and couples living outside India
 - **How:** video sessions at an agreed time `[CONFIRM: platform]`
 - **Time zones:** `[CONFIRM: early morning or late evening India time slots]`
-- **Payment:** `[CONFIRM: international payment method]`
 - **Registration:** Dr. Desai is registered in India; see the note below
 - **Emergencies:** please use local emergency services where you live
 

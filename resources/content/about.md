@@ -7,8 +7,7 @@ url: "/about/"
 template: "default"
 icon: "HEART"
 reviewer: "Dr. Mithila Desai, PhD"
-lastReviewed: "CONFIRM"
-schema: "WebPage"
+lastReviewed: "October 2026"
 related: []
 ---
 ```yaml

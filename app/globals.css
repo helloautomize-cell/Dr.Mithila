@@ -1701,6 +1701,18 @@ textarea:focus {
   body {
     padding-bottom: 84px;
   }
+  footer {
+    position: relative;
+  }
+  footer::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    height: 96px;
+    background: var(--espresso);
+  }
   .crisis {
     font-size: 12.5px;
   }

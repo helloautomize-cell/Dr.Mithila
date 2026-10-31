@@ -7,8 +7,7 @@ url: "/individual-therapy/"
 template: "sidebar"
 icon: "PERSON"
 reviewer: "Dr. Mithila Desai, PhD"
-lastReviewed: "CONFIRM"
-schema: "MedicalWebPage"
+lastReviewed: "October 2026"
 related: []
 ---
 ```yaml
@@ -18,7 +17,7 @@ url: /individual-therapy/
 h1: "Individual therapy for *adults*"
 badge: individual
 reviewer: dr-mithila-desai
-lastReviewed: "[CONFIRM: sign-off date]"
+lastReviewed: "October 2026"
 about: { type: MedicalTherapy, name: "Psychotherapy" }
 related: [/anxiety/, /depression/, /stress-and-burnout/, /online-therapy/]
 posts: [first-therapy-session, signs-you-need-a-psychologist]

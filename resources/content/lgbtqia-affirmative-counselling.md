@@ -7,8 +7,7 @@ url: "/lgbtqia-affirmative-counselling/"
 template: "sidebar"
 icon: "HEART"
 reviewer: "Dr. Mithila Desai, PhD"
-lastReviewed: "CONFIRM"
-schema: "MedicalWebPage"
+lastReviewed: "October 2026"
 related: []
 ---
 ```yaml
@@ -18,7 +17,7 @@ url: /lgbtqia-affirmative-counselling/
 h1: "LGBTQIA+ affirmative *counselling*"
 badge: affirm
 reviewer: dr-mithila-desai
-lastReviewed: "[CONFIRM]"
+lastReviewed: "October 2026"
 related: [/individual-therapy/, /couples-counselling/, /family-counselling/, /online-therapy/]
 ```
 

@@ -7,8 +7,7 @@ url: "/stress-and-burnout/"
 template: "sidebar"
 icon: "FLAME"
 reviewer: "Dr. Mithila Desai, PhD"
-lastReviewed: "CONFIRM"
-schema: "MedicalWebPage"
+lastReviewed: "October 2026"
 related: []
 ---
 ```yaml
@@ -18,7 +17,7 @@ url: /stress-and-burnout/
 h1: "Help for stress, anger and *burnout*"
 badge: stress
 reviewer: dr-mithila-desai
-lastReviewed: "[CONFIRM]"
+lastReviewed: "October 2026"
 about: { type: MedicalCondition, name: "Occupational burnout" }
 related: [/anxiety/, /depression/, /sleep-problems/, /workplace-wellbeing/]
 posts: [workplace-burnout-signs]

@@ -7,8 +7,7 @@ url: "/psychological-assessment/adhd-learning-neurodiversity/"
 template: "sidebar"
 icon: "COMPASS"
 reviewer: "Dr. Mithila Desai, PhD"
-lastReviewed: "CONFIRM"
-schema: "MedicalWebPage"
+lastReviewed: "October 2026"
 related: []
 ---
 ```yaml
@@ -18,7 +17,7 @@ url: /psychological-assessment/adhd-learning-neurodiversity/
 h1: "ADHD, learning and neurodiversity *assessment*"
 badge: neurodiversity
 reviewer: dr-mithila-desai
-lastReviewed: "[CONFIRM]"
+lastReviewed: "October 2026"
 about: { type: MedicalCondition, name: "Attention deficit hyperactivity disorder", alternateName: ["ADHD"] }
 related: [/psychological-assessment/, /child-and-teen-therapy/, /schools-and-colleges/]
 posts: [child-therapy-borivali]

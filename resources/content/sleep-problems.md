@@ -7,8 +7,7 @@ url: "/sleep-problems/"
 template: "sidebar"
 icon: "MOON"
 reviewer: "Dr. Mithila Desai, PhD"
-lastReviewed: "CONFIRM"
-schema: "MedicalWebPage"
+lastReviewed: "October 2026"
 related: []
 ---
 ```yaml
@@ -18,7 +17,7 @@ url: /sleep-problems/
 h1: "Help with sleep *problems*"
 badge: sleep
 reviewer: dr-mithila-desai
-lastReviewed: "[CONFIRM]"
+lastReviewed: "October 2026"
 about: { type: MedicalCondition, name: "Insomnia" }
 related: [/anxiety/, /depression/, /stress-and-burnout/]
 ```

@@ -7,8 +7,7 @@ url: "/trauma/"
 template: "sidebar"
 icon: "SHIELD"
 reviewer: "Dr. Mithila Desai, PhD"
-lastReviewed: "CONFIRM"
-schema: "MedicalWebPage"
+lastReviewed: "October 2026"
 related: []
 ---
 ```yaml
@@ -18,7 +17,7 @@ url: /trauma/
 h1: "Help after trauma and difficult *experiences*"
 badge: trauma
 reviewer: dr-mithila-desai
-lastReviewed: "[CONFIRM]"
+lastReviewed: "October 2026"
 about: { type: MedicalCondition, name: "Post-traumatic stress disorder", alternateName: ["PTSD", "Trauma"] }
 related: [/anxiety/, /depression/, /individual-therapy/, /child-and-teen-therapy/]
 ```

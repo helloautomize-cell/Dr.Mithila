@@ -7,8 +7,7 @@ url: "/contact/"
 template: "sidebar"
 icon: "CHAT"
 reviewer: "Dr. Mithila Desai, PhD"
-lastReviewed: "CONFIRM"
-schema: "MedicalWebPage"
+lastReviewed: "October 2026"
 related: []
 ---
 ```yaml
@@ -29,7 +28,7 @@ Intro: Use the form, call or send a WhatsApp message to book a session with Dr. 
 ### Contact cards
 
 - **Call:** 87796 51309 · Mon to Fri 9:30am to 7:00pm, Sat 9:30am to 3:30pm
-- **WhatsApp:** `[CONFIRM]`
+- **WhatsApp:** +91 98190 66941
 - **Email:** mithiladesai@yahoo.com
 - **Address:** 17, Shraddha SBI Staff Gulmohar CHS, Gulmohar Road, Shimpoli, Borivali West, Mumbai 400092, opposite Banana Leaf Restaurant · [Get directions]
 - **Hours:** Monday to Friday 9:30am to 7:00pm, Saturday 9:30am to 3:30pm

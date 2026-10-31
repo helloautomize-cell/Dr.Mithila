@@ -7,8 +7,7 @@ url: "/faqs/"
 template: "default"
 icon: "CHAT"
 reviewer: "Dr. Mithila Desai, PhD"
-lastReviewed: "CONFIRM"
-schema: "WebPage"
+lastReviewed: "October 2026"
 related: []
 ---
 ```yaml
@@ -40,7 +39,7 @@ Intro: Short answers to the questions we hear most. If yours is not here, call o
 <div class="faq">
 <details><summary>How long is a session, and how often should I come?<i></i></summary><p>Most sessions last about `[CONFIRM: minutes]`. Many people start weekly and space sessions out as things improve. The right frequency depends on your concerns, your time and your budget, and Dr. Desai will discuss it with you.</p></details>
 <details><summary>Do you have a Sunday or evening session?<i></i></summary><p>`[CONFIRM: Sunday rule; old site said "urgent appointments only" on Sunday]`</p></details>
-<details><summary>What are your fees?<i></i></summary><p>We do not list fees on the website. Please ask when you call or message to book, and we will tell you the fee for the type of session you need before you confirm. `[CONFIRM: payment methods]`</p></details>
+<details><summary>What are your fees?<i></i></summary><p>We do not list fees on the website. Please ask when you call or message to book, and we will tell you the fee for the type of session you need before you confirm.</p></details>
 <details><summary>Is therapy covered by health insurance?<i></i></summary><p>`[CONFIRM: usually not for outpatient therapy; can you give a receipt for reimbursement?]`</p></details>
 <details><summary>How do I cancel or move a session?<i></i></summary><p>Please call or WhatsApp us at least `[CONFIRM: hours]` before. See our [appointments, cancellation and refund](/appointments-cancellation-refund/) page.</p></details>
 </div>

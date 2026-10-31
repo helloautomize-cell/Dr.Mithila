@@ -7,8 +7,7 @@ url: "/online-therapy/"
 template: "sidebar"
 icon: "GLOBE"
 reviewer: "Dr. Mithila Desai, PhD"
-lastReviewed: "CONFIRM"
-schema: "MedicalWebPage"
+lastReviewed: "October 2026"
 related: []
 ---
 ```yaml
@@ -18,7 +17,7 @@ url: /online-therapy/
 h1: "Online therapy by *video*"
 badge: online
 reviewer: dr-mithila-desai
-lastReviewed: "[CONFIRM]"
+lastReviewed: "October 2026"
 about: { type: MedicalTherapy, name: "Online psychotherapy" }
 related: [/online-therapy/indians-abroad/, /individual-therapy/, /anxiety/, /couples-counselling/]
 posts: [how-online-therapy-works, online-vs-offline-therapy]
@@ -75,7 +74,7 @@ In-person or emergency care is better if you are at high risk of harming yoursel
 <details><summary>Does online therapy really work?<i></i></summary><p>For many common concerns, including anxiety, depression and stress, studies show video therapy can work about as well as meeting in person. What matters most is the relationship with your therapist and your regular attendance. Some people find it easier to open up from home.</p></details>
 <details><summary>What happens if the internet cuts out?<i></i></summary><p>Dr. Desai will call you back on the link, or on your phone if the video fails. Agree on this at the first session. If you are cut off during a difficult moment, she will try to reach you.</p></details>
 <details><summary>Can couples have online sessions?<i></i></summary><p>Yes, from the same room or, if needed, from two different places. Both partners need privacy and headphones if apart.</p></details>
-<details><summary>Is online therapy cheaper?<i></i></summary><p>`[CONFIRM: same fee or different]`. We do not list fees on the website; please ask when you book.</p></details>
+<details><summary>Is online therapy cheaper?<i></i></summary><p>We do not list fees on the website; please ask when you book.</p></details>
 <details><summary>Can I do online sessions from my office?<i></i></summary><p>Only if you have a private room where you cannot be overheard. Many people prefer an early morning or evening slot at home `[CONFIRM: such slots exist]`.</p></details>
 </div>
 

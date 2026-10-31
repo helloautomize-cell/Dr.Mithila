@@ -7,8 +7,7 @@ url: "/workplace-wellbeing/"
 template: "sidebar"
 icon: "FAMILY"
 reviewer: "Dr. Mithila Desai, PhD"
-lastReviewed: "CONFIRM"
-schema: "MedicalWebPage"
+lastReviewed: "October 2026"
 related: []
 ---
 ```yaml
@@ -18,7 +17,7 @@ url: /workplace-wellbeing/
 h1: "Workplace wellbeing and employee *counselling*"
 badge: workplace
 reviewer: dr-mithila-desai
-lastReviewed: "[CONFIRM]"
+lastReviewed: "October 2026"
 related: [/stress-and-burnout/, /online-therapy/, /schools-and-colleges/]
 posts: [corporate-wellness-eap, workplace-burnout-signs]
 ```

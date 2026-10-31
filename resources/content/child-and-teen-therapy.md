@@ -7,8 +7,7 @@ url: "/child-and-teen-therapy/"
 template: "sidebar"
 icon: "CHILD"
 reviewer: "Dr. Mithila Desai, PhD"
-lastReviewed: "CONFIRM"
-schema: "MedicalWebPage"
+lastReviewed: "October 2026"
 related: []
 ---
 ```yaml
@@ -18,7 +17,7 @@ url: /child-and-teen-therapy/
 h1: "Therapy for children and *teenagers*"
 badge: child-teen
 reviewer: dr-mithila-desai
-lastReviewed: "[CONFIRM]"
+lastReviewed: "October 2026"
 about: { type: MedicalTherapy, name: "Child and adolescent psychotherapy" }
 related: [/psychological-assessment/adhd-learning-neurodiversity/, /anxiety/, /family-counselling/, /schools-and-colleges/]
 posts: [child-therapy-borivali]

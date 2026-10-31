@@ -7,8 +7,7 @@ url: "/grief-and-loss/"
 template: "sidebar"
 icon: "LEAF"
 reviewer: "Dr. Mithila Desai, PhD"
-lastReviewed: "CONFIRM"
-schema: "MedicalWebPage"
+lastReviewed: "October 2026"
 related: []
 ---
 ```yaml
@@ -18,7 +17,7 @@ url: /grief-and-loss/
 h1: "Support through grief and *loss*"
 badge: grief
 reviewer: dr-mithila-desai
-lastReviewed: "[CONFIRM]"
+lastReviewed: "October 2026"
 related: [/depression/, /family-counselling/, /individual-therapy/]
 ```
 

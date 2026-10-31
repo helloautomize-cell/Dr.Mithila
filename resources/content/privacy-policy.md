@@ -7,8 +7,7 @@ url: "/privacy-policy/"
 template: "default"
 icon: "LOCK"
 reviewer: "Dr. Mithila Desai, PhD"
-lastReviewed: "CONFIRM"
-schema: "WebPage"
+lastReviewed: "October 2026"
 related: []
 ---
 ```yaml
@@ -72,7 +71,7 @@ What you share in sessions is confidential. We share information only:
 - **to protect a child**, as required under the Protection of Children from Sexual Offences Act, 2012 and other law;
 - **when the law requires it**, such as a court order.
 
-Service providers who help us run the practice and the website may handle limited data on our behalf: messaging and email (WhatsApp, email), video calls `[CONFIRM: platform]`, secure cloud storage, website hosting, a form email service, a spam check service, payment `[CONFIRM]`, and, with consent, analytics. Some may store data outside India under their own security terms and in line with Indian law.
+Service providers who help us run the practice and the website may handle limited data on our behalf: messaging and email (WhatsApp, email), video calls `[CONFIRM: platform]`, secure cloud storage, website hosting, a form email service, a spam check service, and, with consent, analytics. Some may store data outside India under their own security terms and in line with Indian law.
 
 Organisations that arrange sessions for employees or students receive only anonymous, grouped information, never names or session content.
 

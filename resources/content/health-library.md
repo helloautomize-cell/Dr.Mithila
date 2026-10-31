@@ -7,8 +7,7 @@ url: "/health-library/"
 template: "default"
 icon: "CLIP"
 reviewer: "Dr. Mithila Desai, PhD"
-lastReviewed: "CONFIRM"
-schema: "WebPage"
+lastReviewed: "October 2026"
 related: []
 ---
 ```yaml

@@ -7,8 +7,7 @@ url: "/self-harm-and-suicidal-thoughts/"
 template: "sidebar"
 icon: "HEART"
 reviewer: "Dr. Mithila Desai, PhD"
-lastReviewed: "CONFIRM"
-schema: "MedicalWebPage"
+lastReviewed: "October 2026"
 related: []
 ---
 ```yaml
@@ -18,7 +17,7 @@ url: /self-harm-and-suicidal-thoughts/
 h1: "Help with self-harm and suicidal *thoughts*"
 badge: support
 reviewer: dr-mithila-desai
-lastReviewed: "[CONFIRM]"
+lastReviewed: "October 2026"
 related: [/get-help-now/, /depression/, /trauma/, /child-and-teen-therapy/]
 ```
 

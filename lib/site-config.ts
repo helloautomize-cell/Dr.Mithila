@@ -14,7 +14,7 @@ export const site = {
   instagram: "https://www.instagram.com/dr.mithiladesai/",
   instagramHandle: "@dr.mithiladesai",
   email: "mithiladesai@yahoo.com",
-  whatsapp: "919167766941", // CONFIRM number; old site used +91 91677 66941
+  whatsapp: "919819066941", // +91 98190 66941, confirmed by client
   hours: "Mon to Fri 9:30am to 7:00pm · Sat 9:30am to 3:30pm",
   mapsUrl: "https://maps.app.goo.gl/Eem6wa6ysR3Swfs27",
 } as const;

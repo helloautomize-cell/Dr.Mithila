@@ -7,8 +7,7 @@ url: "/services/"
 template: "default"
 icon: "COMPASS"
 reviewer: "Dr. Mithila Desai, PhD"
-lastReviewed: "CONFIRM"
-schema: "WebPage"
+lastReviewed: "October 2026"
 related: []
 ---
 ```yaml

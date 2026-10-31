@@ -7,8 +7,7 @@ url: "/self-esteem-and-body-image/"
 template: "sidebar"
 icon: "MIRROR"
 reviewer: "Dr. Mithila Desai, PhD"
-lastReviewed: "CONFIRM"
-schema: "MedicalWebPage"
+lastReviewed: "October 2026"
 related: []
 ---
 ```yaml
@@ -18,7 +17,7 @@ url: /self-esteem-and-body-image/
 h1: "Help with self-esteem and body *image*"
 badge: self-esteem
 reviewer: dr-mithila-desai
-lastReviewed: "[CONFIRM]"
+lastReviewed: "October 2026"
 related: [/depression/, /anxiety/, /individual-therapy/, /child-and-teen-therapy/]
 ```
 

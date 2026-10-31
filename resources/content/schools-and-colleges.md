@@ -7,8 +7,7 @@ url: "/schools-and-colleges/"
 template: "sidebar"
 icon: "CAP"
 reviewer: "Dr. Mithila Desai, PhD"
-lastReviewed: "CONFIRM"
-schema: "MedicalWebPage"
+lastReviewed: "October 2026"
 related: []
 ---
 ```yaml
@@ -18,7 +17,7 @@ url: /schools-and-colleges/
 h1: "Mental health support for schools and *colleges*"
 badge: schools
 reviewer: dr-mithila-desai
-lastReviewed: "[CONFIRM]"
+lastReviewed: "October 2026"
 related: [/child-and-teen-therapy/, /psychological-assessment/adhd-learning-neurodiversity/, /career-guidance/]
 ```
 

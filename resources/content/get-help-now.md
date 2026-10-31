@@ -7,8 +7,7 @@ url: "/get-help-now/"
 template: "crisis"
 icon: "HEART"
 reviewer: "Dr. Mithila Desai, PhD"
-lastReviewed: "CONFIRM"
-schema: "WebPage"
+lastReviewed: "October 2026"
 related: []
 ---
 ```yaml

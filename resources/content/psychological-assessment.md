@@ -7,8 +7,7 @@ url: "/psychological-assessment/"
 template: "sidebar"
 icon: "CLIP"
 reviewer: "Dr. Mithila Desai, PhD"
-lastReviewed: "CONFIRM"
-schema: "MedicalWebPage"
+lastReviewed: "October 2026"
 related: []
 ---
 ```yaml
@@ -18,7 +17,7 @@ url: /psychological-assessment/
 h1: "Psychological *assessment*"
 badge: assessment
 reviewer: dr-mithila-desai
-lastReviewed: "[CONFIRM]"
+lastReviewed: "October 2026"
 about: { type: MedicalTest, name: "Psychological assessment" }
 related: [/psychological-assessment/adhd-learning-neurodiversity/, /career-guidance/, /child-and-teen-therapy/]
 ```

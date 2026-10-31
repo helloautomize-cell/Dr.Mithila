@@ -7,8 +7,7 @@ url: "/appointments-cancellation-refund/"
 template: "default"
 icon: "CAL"
 reviewer: "Dr. Mithila Desai, PhD"
-lastReviewed: "CONFIRM"
-schema: "WebPage"
+lastReviewed: "October 2026"
 related: []
 ---
 ```yaml

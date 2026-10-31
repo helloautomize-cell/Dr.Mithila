@@ -455,7 +455,7 @@ export function FaqSplit({
               {reviewer === true ? (
                 <>
                   Written and reviewed by <b>Dr. Mithila Desai</b>, clinical
-                  psychologist · Last reviewed <Confirm>date</Confirm>
+                  psychologist · Last reviewed October 2026
                 </>
               ) : (
                 reviewer

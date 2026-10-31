@@ -7,8 +7,7 @@ url: "/dr-mithila-desai/"
 template: "sidebar"
 icon: "USER"
 reviewer: "Dr. Mithila Desai, PhD"
-lastReviewed: "CONFIRM"
-schema: "MedicalWebPage"
+lastReviewed: "October 2026"
 related: []
 ---
 ```yaml

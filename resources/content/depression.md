@@ -7,8 +7,7 @@ url: "/depression/"
 template: "sidebar"
 icon: "CLOUD"
 reviewer: "Dr. Mithila Desai, PhD"
-lastReviewed: "CONFIRM"
-schema: "MedicalWebPage"
+lastReviewed: "October 2026"
 related: []
 ---
 ```yaml
@@ -18,7 +17,7 @@ url: /depression/
 h1: "Help for depression and low *mood*"
 badge: depression
 reviewer: dr-mithila-desai
-lastReviewed: "[CONFIRM]"
+lastReviewed: "October 2026"
 about: { type: MedicalCondition, name: "Depression", alternateName: ["Low mood", "Udaasi", "Avsaad"] }
 related: [/individual-therapy/, /grief-and-loss/, /self-harm-and-suicidal-thoughts/, /sleep-problems/]
 posts: [when-someone-you-love-is-depressed, signs-you-need-a-psychologist]

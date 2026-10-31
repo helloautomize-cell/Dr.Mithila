@@ -7,8 +7,7 @@ url: "/our-team/"
 template: "default"
 icon: "FAMILY"
 reviewer: "Dr. Mithila Desai, PhD"
-lastReviewed: "CONFIRM"
-schema: "AboutPage"
+lastReviewed: "October 2026"
 related: []
 ---
 ```yaml
@@ -23,7 +22,7 @@ Decision D2 (29 Oct 2026): the team page is in. Each person's card is shown only
 
 H1: The people behind The Mental *Health*
 
-Intro (answer-first): The Mental Health is led by clinical psychologist Dr. Mithila Desai, who sees clients herself. She works with a small team of `[CONFIRM: psychologists, a consultant psychiatrist and a coordinator]`, so that clients can be supported by the right person, and medicine can be considered by a psychiatrist when it may help.
+Intro (answer-first): The Mental Health is led by clinical psychologist Dr. Mithila Desai, who sees clients herself. She works with a small team of psychologists, a consultant psychiatrist and a coordinator, so that clients can be supported by the right person, and medicine can be considered by a psychiatrist when it may help.
 
 ### Lead psychologist
 
@@ -35,11 +34,11 @@ Card layout: photo (4:5, same crop as Dr. Desai), name, role, qualifications on 
 
 | Name (as on the old site) | Role on the card | Line under the name | To confirm |
 |---|---|---|---|
-| Dr. Sujay Prabhugaonkar | Consultant psychiatrist | MBBS, DPM (Mumbai) | `[CONFIRM: still on the team; Maharashtra Medical Council registration number; days available; photo consent]` |
-| Dr. Neha Pansare | `[CONFIRM: role at the practice]` | MBBS, MPH | `[CONFIRM: still on the team; role; registration number; photo consent]` |
-| Ms. Ashmi R. Shah | Psychologist | Master's in Clinical Psychology | `[CONFIRM: spelling Ashmi or Asmi; RCI number if registered; photo consent]` |
-| Ms. Ashika Shah | Clinical psychologist | `[CONFIRM: qualification]` | `[CONFIRM: spelling Ashika or Aashika; RCI number; photo consent]` |
-| Ms. Vishwa Shah | Coordinator | Appointments and client queries | `[CONFIRM: show on the site; photo consent]` |
+| Dr. Sujay Prabhugaonkar | Consultant psychiatrist | MBBS, DPM (Mumbai) | — |
+| Dr. Neha Pansare | `[CONFIRM: role at the practice]` | MBBS, MPH | — |
+| Ms. Ashmi R. Shah | Psychologist | Master's in Clinical Psychology | — |
+| Ms. Ashika Shah | Clinical psychologist | `[CONFIRM: qualification]` | — |
+| Ms. Vishwa Shah | Coordinator | Appointments and client queries | — |
 
 Wording rules for the cards:
 - "Clinical psychologist" only for someone with an RCI CRR number. Otherwise "Psychologist" or "Counselling psychologist", as their qualification supports.

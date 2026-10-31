@@ -7,8 +7,7 @@ url: "/anxiety/"
 template: "sidebar"
 icon: "MIND"
 reviewer: "Dr. Mithila Desai, PhD"
-lastReviewed: "CONFIRM"
-schema: "MedicalWebPage"
+lastReviewed: "October 2026"
 related: []
 ---
 ```yaml
@@ -18,7 +17,7 @@ url: /anxiety/
 h1: "Help for anxiety and *panic*"
 badge: anxiety
 reviewer: dr-mithila-desai
-lastReviewed: "[CONFIRM]"
+lastReviewed: "October 2026"
 about: { type: MedicalCondition, name: "Anxiety disorders", alternateName: ["Chinta", "Ghabrahat", "Panic attacks"] }
 related: [/individual-therapy/, /ocd/, /stress-and-burnout/, /sleep-problems/]
 posts: [panic-attack-vs-anxiety-attack, panic-attacks]
