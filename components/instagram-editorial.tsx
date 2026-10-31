@@ -101,10 +101,10 @@ function PostCard({ post }: { post: Post }) {
     >
       <div className="hd">
         <TMHImage
-          name="dr-mithila-desai/dr-desk"
+          name="dr-mithila-desai/portrait"
           alt=""
           sizes="28px"
-          objectPosition="55% 15%"
+          objectPosition="50% 22%"
         />
         <b>{HANDLE}</b>
         <span>
@@ -141,10 +141,10 @@ export function InstagramEditorial() {
         <i className="tree" />
         <div className="pf">
           <TMHImage
-            name="dr-mithila-desai/dr-desk"
+            name="dr-mithila-desai/portrait"
             alt="Dr. Mithila Desai"
             sizes="52px"
-            objectPosition="55% 15%"
+            objectPosition="50% 22%"
           />
           <div>
             <b>{site.instagramHandle}</b>

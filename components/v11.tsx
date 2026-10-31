@@ -445,7 +445,12 @@ export function FaqSplit({
         </div>
         {reviewer ? (
           <div className="xrev">
-            <TMHImage name="dr-mithila-desai/dr-desk" alt="" sizes="84px" />
+            <TMHImage
+              name="dr-mithila-desai/portrait"
+              alt=""
+              sizes="84px"
+              objectPosition="50% 22%"
+            />
             <span>
               {reviewer === true ? (
                 <>

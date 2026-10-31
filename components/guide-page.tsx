@@ -188,10 +188,10 @@ export function GuidePage({ guide }: { guide: Guide }) {
             <div className="ameta">
               <div className="au">
                 <TMHImage
-                  name="dr-mithila-desai/dr-desk"
+                  name="dr-mithila-desai/portrait"
                   alt=""
                   sizes="48px"
-                  objectPosition="55% 15%"
+                  objectPosition="50% 22%"
                 />
                 <span>
                   <b>Dr. Mithila Desai, PhD</b>
@@ -303,10 +303,10 @@ export function GuidePage({ guide }: { guide: Guide }) {
 
             <div className="arevw">
               <TMHImage
-                name="dr-mithila-desai/dr-desk"
+                name="dr-mithila-desai/portrait"
                 alt="Dr. Mithila Desai"
                 sizes="72px"
-                objectPosition="55% 15%"
+                objectPosition="50% 22%"
               />
               <div>
                 <b>

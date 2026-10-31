@@ -41,10 +41,10 @@ export function GuideCard({ guide }: { guide: Guide }) {
         <span className="gc-x">{guide.inBrief.summary}</span>
         <span className="ft">
           <TMHImage
-            name="dr-mithila-desai/dr-desk"
+            name="dr-mithila-desai/portrait"
             alt=""
             sizes="30px"
-            objectPosition="55% 15%"
+            objectPosition="50% 22%"
           />
           <span>
             <b>Dr. Mithila Desai</b>
