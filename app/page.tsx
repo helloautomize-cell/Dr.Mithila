@@ -1,26 +1,39 @@
 import Link from "next/link";
+import dynamic from "next/dynamic";
 import { Eyebrow } from "@/components/eyebrow";
 import { BookButton } from "@/components/book-button";
 import { GhostButton } from "@/components/ghost-button";
 import { WordReveal } from "@/components/word-reveal";
 import { CharReveal } from "@/components/char-reveal";
 import { CredentialPanel } from "@/components/credential-panel";
-import { OrbitExplorer } from "@/components/orbit-explorer";
 import { PhotoCollage35 } from "@/components/photo-collage-35";
-import { WaterfallTimeline } from "@/components/waterfall-timeline";
-import { AudiencePicker } from "@/components/audience-picker";
-import { JourneyScroller } from "@/components/journey-scroller";
 import { TeamSection } from "@/components/team-section";
 import { WhyBento } from "@/components/why-bento";
-import { PracticeGallery } from "@/components/practice-gallery";
 import { AwardCard } from "@/components/award-card";
 import { MapIllustration } from "@/components/map-illustration";
+import { InstagramEditorial } from "@/components/instagram-editorial";
 import { TMHImage } from "@/components/tmh-image";
 import { Reveal } from "@/components/reveal";
 import { Confirm } from "@/components/confirm";
 import { Icon, IconTile, type IconName } from "@/lib/icons";
 import { getImage } from "@/lib/images";
 import { site } from "@/lib/site-config";
+
+const OrbitExplorer = dynamic(() =>
+  import("@/components/orbit-explorer").then((m) => m.OrbitExplorer),
+);
+const WaterfallTimeline = dynamic(() =>
+  import("@/components/waterfall-timeline").then((m) => m.WaterfallTimeline),
+);
+const AudiencePicker = dynamic(() =>
+  import("@/components/audience-picker").then((m) => m.AudiencePicker),
+);
+const JourneyScroller = dynamic(() =>
+  import("@/components/journey-scroller").then((m) => m.JourneyScroller),
+);
+const PracticeGallery = dynamic(() =>
+  import("@/components/practice-gallery").then((m) => m.PracticeGallery),
+);
 
 const MILESTONES = [
   {
@@ -429,7 +442,7 @@ export default function Home() {
                   {heading === "Concerns" ? "What we help with" : heading}
                 </h3>
                 <p>{sub}</p>
-                {links.map(([label, note, href]) => (
+                {links.slice(0, 2).map(([label, note, href]) => (
                   <a key={href} href={href}>
                     <span
                       style={{
@@ -487,15 +500,9 @@ export default function Home() {
             A quiet room off <em>Gulmohar</em> Road.
           </h2>
           <div className="vb">
-            <a
-              className="maplink"
-              href={site.mapsUrl}
-              target="_blank"
-              rel="noopener"
-              aria-label="Tap to open in Google Maps"
-            >
+            <div className="maplink">
               <MapIllustration />
-            </a>
+            </div>
             <div className="vcard">
               <div>
                 <span className="ico">
@@ -570,29 +577,7 @@ export default function Home() {
               </a>
             </p>
           </div>
-          <div className="ig">
-            <div className="qt">
-              <p>
-                &ldquo;Beauty has always been more than skin deep; it begins in
-                the mind.&rdquo;
-              </p>
-              <small>On receiving the ELLE India award, 2026</small>
-            </div>
-            <a href={site.instagram}>
-              <TMHImage name="dr-mithila-desai/elle-2026" sizes="310px" />
-            </a>
-            <div className="qt d">
-              <p>&ldquo;Healing is the most beautiful journey.&rdquo;</p>
-              <small>Instagram, 2026</small>
-            </div>
-            <a href={site.instagram}>
-              <TMHImage
-                name="dr-mithila-desai/award-2023"
-                sizes="310px"
-                objectPosition="30% 20%"
-              />
-            </a>
-          </div>
+          <InstagramEditorial />
         </div>
       </section>
 

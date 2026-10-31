@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { Icon, type IconName } from "@/lib/icons";
 
 export interface OrbitItem {
@@ -106,13 +106,26 @@ function Brain() {
 export function OrbitExplorer({ items = ITEMS }: { items?: OrbitItem[] }) {
   const [cur, setCur] = useState(0);
   const [interacted, setInteracted] = useState(false);
+  const wrapRef = useRef<HTMLDivElement>(null);
+  const [inView, setInView] = useState(false);
 
   useEffect(() => {
-    if (interacted) return;
+    const el = wrapRef.current;
+    if (!el || typeof IntersectionObserver === "undefined") return;
+    const io = new IntersectionObserver(
+      (es) => es.forEach((e) => setInView(e.isIntersecting)),
+      { rootMargin: "100px" },
+    );
+    io.observe(el);
+    return () => io.disconnect();
+  }, []);
+
+  useEffect(() => {
+    if (interacted || !inView) return;
     if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
     const t = setInterval(() => setCur((c) => (c + 1) % items.length), 4000);
     return () => clearInterval(t);
-  }, [interacted, items.length]);
+  }, [interacted, inView, items.length]);
 
   const pick = (i: number) => {
     setCur(i);
@@ -145,7 +158,7 @@ export function OrbitExplorer({ items = ITEMS }: { items?: OrbitItem[] }) {
   );
 
   return (
-    <div className="orbg">
+    <div className="orbg" ref={wrapRef}>
       <div className="ocol l">{items.slice(0, 3).map(itemButton)}</div>
       <div className={`oring l${cur}`}>
         <div className="halo" aria-hidden="true" />
