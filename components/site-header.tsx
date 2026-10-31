@@ -164,7 +164,13 @@ export function SiteHeader() {
                   key={l.label}
                   href={l.href}
                   data-p={l.href}
-                  className={pathname === l.href ? "on" : undefined}
+                  className={
+                    pathname === l.href ||
+                    (l.href === "/health-library/" &&
+                      pathname.startsWith("/health-library/"))
+                      ? "on"
+                      : undefined
+                  }
                   style={
                     l.label === "Get help now"
                       ? { color: "var(--alert)" }

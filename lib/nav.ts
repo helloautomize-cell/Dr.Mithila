@@ -141,6 +141,7 @@ export const MAIN_NAV: NavLink[] = [
   { label: "How We Help", href: "/services/" },
   { label: "Our Team", href: "/our-team/" },
   { label: "Your First Session", href: "/plan-your-visit/" },
+  { label: "Health Library", href: "/health-library/" },
   { label: "Get Help Now", href: "/get-help-now/" },
 ];
 

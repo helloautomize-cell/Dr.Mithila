@@ -27,6 +27,20 @@ import {
 import { TherapyPath, PathPhoto } from "@/components/v11-live";
 import { TREATMENT_DATA } from "@/lib/treatment";
 import { MobileActionBar } from "@/components/mobile-action-bar";
+import { GuideCard } from "@/components/guide-card";
+import {
+  FeelGrid,
+  Warn,
+  DoList,
+  Steps,
+  MidCta,
+  Crisis,
+} from "@/components/guide-mdx";
+import {
+  TrustStrip,
+  StartHereRow,
+} from "@/components/health-library";
+import { getGuide, startHereGuides } from "@/lib/health-library";
 import { Confirm } from "@/components/confirm";
 import { Icon, IconTile, iconNames } from "@/lib/icons";
 import { site } from "@/lib/site-config";
@@ -634,6 +648,87 @@ export default function StyleguidePage() {
               </div>
               <MobileActionBar forceCrisis />
             </div>
+          </div>
+        </section>
+
+        {/* ---------- Health library ---------- */}
+        <section className="sg-sec wrap">
+          <Label>
+            Health library · trust strip, guide card, in-article components
+          </Label>
+          <p className="lead" style={{ margin: "0 0 26px" }}>
+            Real data from the library:{" "}
+            <Link className="link" href="/health-library/">
+              index
+            </Link>{" "}
+            and{" "}
+            <Link className="link" href="/health-library/panic-attacks/">
+              panic guide
+            </Link>
+            .
+          </p>
+          <div className="demo-band" style={{ padding: 0, background: "none" }}>
+            <TrustStrip />
+          </div>
+          <div
+            className="lgrid"
+            style={{ marginTop: 26, gridTemplateColumns: "repeat(2,1fr)" }}
+          >
+            {(() => {
+              const g = getGuide("panic-attacks");
+              return g ? <GuideCard guide={g} /> : null;
+            })()}
+            <div className="demo-band">
+              <div className="abody" style={{ maxWidth: "100%" }}>
+                <FeelGrid
+                  body={["A pounding heart", "Breathlessness"]}
+                  mind={["Fear of losing control"]}
+                />
+              </div>
+            </div>
+          </div>
+          <div className="demo-band" style={{ marginTop: 22 }}>
+            <div className="abody" style={{ maxWidth: "100%" }}>
+              <Warn
+                label="Important:"
+                text="chest pain and breathlessness can also have physical causes. New or severe symptoms need a medical check first."
+              />
+              <DoList
+                items={[
+                  {
+                    icon: "LEAF",
+                    t: "Breathe out slowly",
+                    d: "Longer out-breath than in-breath, for a few minutes.",
+                  },
+                  {
+                    icon: "CHAT",
+                    t: "Name what is happening",
+                    d: "This is panic; it will peak and it will pass.",
+                  },
+                ]}
+                breathe
+              />
+              <Steps
+                items={[
+                  {
+                    icon: "MIND",
+                    t: "Understanding your panic",
+                    d: "What sets it off and what keeps it going.",
+                  },
+                  {
+                    icon: "SPROUT",
+                    t: "Facing fears gradually",
+                    d: "Small, agreed steps back into avoided places.",
+                  },
+                ]}
+              />
+              <MidCta />
+              <Crisis />
+            </div>
+          </div>
+          <div style={{ marginTop: 22 }}>
+            <Label>StartHereRow · real guides</Label>
+            <StartHereRow guides={startHereGuides()} />
           </div>
         </section>
       </main>
