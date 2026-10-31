@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import {
   Figtree,
   Instrument_Serif,
@@ -49,6 +49,8 @@ export const metadata: Metadata = {
       ? { index: true, follow: true }
       : { index: false, follow: false },
 };
+
+export const viewport: Viewport = { themeColor: "#723E22" };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
