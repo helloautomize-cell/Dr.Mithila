@@ -1,10 +1,14 @@
 "use client";
 
-import { useEffect, useRef, type ReactNode } from "react";
+import { useEffect, useRef, useState, type ReactNode } from "react";
 
 /*
  * IntersectionObserver reveal: .rv fades/rises in once when 15% visible.
  * Content stays visible without JS (the .rv styles are the only gate).
+ * The "in" class is React state, not DOM mutation: classList edits from a
+ * sibling component (AnimGate) could land before hydration finished and
+ * trip the server/client attribute check. data-rv marks ownership so
+ * AnimGate leaves these elements alone.
  */
 export function Reveal({
   children,
@@ -20,19 +24,20 @@ export function Reveal({
   as?: "div" | "article" | "figure" | "section";
 }) {
   const ref = useRef<HTMLDivElement>(null);
+  const [inView, setInView] = useState(false);
 
   useEffect(() => {
     const el = ref.current;
-    if (!el) return;
+    if (!el || inView) return;
     if (el.getBoundingClientRect().top < innerHeight) {
-      el.classList.add("in");
+      setInView(true);
       return;
     }
     const io = new IntersectionObserver(
       (es) =>
         es.forEach((e) => {
           if (e.isIntersecting) {
-            e.target.classList.add("in");
+            setInView(true);
             io.unobserve(e.target);
           }
         }),
@@ -40,13 +45,14 @@ export function Reveal({
     );
     io.observe(el);
     return () => io.disconnect();
-  }, []);
+  }, [inView]);
 
   const Tag = as;
   return (
     <Tag
       ref={ref}
-      className={className ? `rv ${className}` : "rv"}
+      data-rv=""
+      className={`rv${inView ? " in" : ""}${className ? ` ${className}` : ""}`}
       tabIndex={tabIndex}
       style={delay ? { transitionDelay: `${delay}s` } : undefined}
     >

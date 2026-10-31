@@ -9,6 +9,8 @@ import { TreatmentPage } from "@/components/treatment-page";
 import { TREATMENT_DATA } from "@/lib/treatment";
 import { MORE_TREATMENT } from "@/lib/treatment-more";
 import { DoctorPage, ServicesPageV11, TeamPage } from "@/components/pages-v11";
+import { BookingForm } from "@/components/booking-form";
+import { LeadEvent } from "@/components/lead-event";
 import { TherapyPath } from "@/components/v11-live";
 import type { ImageName } from "@/lib/images";
 import { allPosts, type PageContent } from "@/lib/content";
@@ -336,6 +338,26 @@ function PostPage({ page }: { page: PageContent }) {
   );
 }
 
+function ContactPage({ page }: { page: PageContent }) {
+  const [before, after = ""] = page.html.split("<!--book-->");
+  return (
+    <main>
+      <Hero page={page} />
+      <section className="sec g" style={{ paddingTop: 0 }}>
+        <div className="wrap side">
+          <div>
+            <Body html={before} />
+            <BookingForm />
+            <Body html={after} />
+            <HelpCallout />
+          </div>
+          <Aside />
+        </div>
+      </section>
+    </main>
+  );
+}
+
 export function PageTemplate({ page }: { page: PageContent }) {
   if (page.template === "post") return <PostPage page={page} />;
   const treatment = TREATMENT_DATA[page.url] ?? MORE_TREATMENT[page.url];
@@ -345,6 +367,7 @@ export function PageTemplate({ page }: { page: PageContent }) {
   if (page.url === "/our-team/") return <TeamPage />;
   if (page.url === "/dr-mithila-desai/") return <DoctorPage />;
   if (page.url === "/plan-your-visit/") return <VisitPage page={page} />;
+  if (page.url === "/contact/") return <ContactPage page={page} />;
   const inner = <Body html={page.html} />;
   if (page.template === "crisis")
     return (
@@ -379,6 +402,7 @@ export function PageTemplate({ page }: { page: PageContent }) {
       <section className="sec g" style={{ paddingTop: 0 }}>
         <div className="wrap">{inner}</div>
       </section>
+      {page.url === "/thank-you/" ? <LeadEvent /> : null}
     </main>
   );
 }

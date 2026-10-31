@@ -32,9 +32,7 @@ export function SiteFooter() {
                 See us on Google Maps
               </a>
             </li>
-            <li>
-              Hours <Confirm />
-            </li>
+            <li>{site.hours}</li>
           </ul>
         </div>
         <div>
@@ -44,10 +42,16 @@ export function SiteFooter() {
               <a href={`tel:${site.phoneTel}`}>+91 {site.phoneDisplay}</a>
             </li>
             <li>
-              WhatsApp <Confirm>number</Confirm>
+              <a
+                href={`https://wa.me/${site.whatsapp}`}
+                target="_blank"
+                rel="noopener"
+              >
+                WhatsApp
+              </a>
             </li>
             <li>
-              Email <Confirm>one email</Confirm>
+              <a href={`mailto:${site.email}`}>{site.email}</a>
             </li>
             <li>
               <Link href="/contact/#book">Book a session</Link>
@@ -81,14 +85,15 @@ export function SiteFooter() {
         </div>
         <div className="base">
           <span>
-            © 2026 The Mental Health · Earlier known as Power of Mind · Not an
-            emergency service. In danger? Call {crisis.emergency} or Tele-MANAS{" "}
-            {crisis.telemanas}.
+            © 2026 The Mental Health · Earlier known as Power of Mind · Need
+            urgent help? Call {crisis.emergency} or Tele-MANAS{" "}
+            {crisis.telemanas} (free, 24 hours).
           </span>
           <span>
             Run by <Confirm>legal entity</Confirm> for the practice of Dr.
-            Mithila Desai, Clinical Psychologist, RCI CRR No. <Confirm /> · For
-            general education, not a substitute for a session.
+            Mithila Desai, Clinical Psychologist, RCI CRR No. <Confirm /> · The
+            information here is for general education. For advice about your
+            own situation, <Link href="/contact/#book">book a session</Link>.
           </span>
         </div>
       </div>

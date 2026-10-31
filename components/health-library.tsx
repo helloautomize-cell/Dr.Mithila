@@ -6,13 +6,7 @@ import { GhostButton } from "@/components/ghost-button";
 import { Confirm } from "@/components/confirm";
 import { Reveal } from "@/components/reveal";
 import { LibrarySearch } from "@/components/library-browser";
-import {
-  LIB_BASE,
-  topic,
-  fmtDate,
-  type Guide,
-} from "@/lib/health-library";
-import { site } from "@/lib/site-config";
+import { LIB_BASE, topic, type Guide } from "@/lib/health-library";
 import type { ImageName } from "@/lib/images";
 
 /* ---------- index hero: search + featured guide card ---------- */
@@ -43,7 +37,7 @@ export function LibraryHero({
           <p className="lead">
             Plain-language guides on mental health, therapy and wellbeing,
             written or reviewed by clinical psychologist Dr. Mithila Desai.
-            They are for general information and do not replace a session.
+            For advice about your own situation, book a session.
           </p>
           <LibrarySearch />
         </div>
@@ -80,7 +74,7 @@ export function LibraryHero({
                 </div>
               </div>
             </Link>
-            <div className="xfl b">
+            <div className="xfl b" suppressHydrationWarning>
               <span className="xi">
                 <Icon name="SHIELD" />
               </span>
@@ -325,7 +319,7 @@ export function EndBand({
             <p className="cr">
               <Icon name="TEL" />
               <span>
-                <b>Not an emergency service.</b> {line}
+                <b>Need urgent help?</b> {line}
               </span>
             </p>
           </div>

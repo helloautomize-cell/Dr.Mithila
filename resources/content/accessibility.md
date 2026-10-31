@@ -40,6 +40,6 @@ We want everyone to be able to use this website, including people who use screen
 We test regularly. If something does not work for you, please tell us.
 
 ### Contact
-Email `[CONFIRM]` or call +91 87796 51309. We aim to reply within `[CONFIRM]` working days.
+Email mithiladesai@yahoo.com or call +91 87796 51309. We aim to reply within `[CONFIRM]` working days.
 
 ---

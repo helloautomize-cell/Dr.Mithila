@@ -100,7 +100,7 @@ export function DoctorPage() {
                 objectPosition="50% 20%"
               />
             </div>
-            <div className="xfl b">
+            <div className="xfl b" suppressHydrationWarning>
               <span className="xi">
                 <Icon name="AWARD" />
               </span>

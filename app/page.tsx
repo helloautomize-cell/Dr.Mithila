@@ -52,7 +52,7 @@ const MILESTONES = [
     children: (
       <>
         She began seeing clients in Mumbai, with one belief that still shapes
-        every session: people heal when they feel heard. <Confirm>year</Confirm>
+        every session: people heal when they feel heard.
       </>
     ),
   },
@@ -166,6 +166,8 @@ const CONCERN_PILLS: [string, string][] = [
 
 const portrait = getImage("dr-mithila-desai/portrait");
 
+export const instant = false;
+
 export default function Home() {
   return (
     <main>
@@ -217,14 +219,14 @@ export default function Home() {
               />
               <span className="sig">Since 1989 · Mumbai</span>
             </div>
-            <div className="float f1">
+            <div className="float f1" suppressHydrationWarning>
               <span style={{ display: "flex", gap: 10, alignItems: "center" }}>
                 <i className="dot" aria-hidden="true" />
                 <b>Dr. Mithila Desai, PhD</b>
               </span>
               <span className="muted">Clinical Psychologist</span>
             </div>
-            <div className="float f2">
+            <div className="float f2" suppressHydrationWarning>
               <b>ELLE India 2026</b>
               <span className="muted">Mental Health Expert of the Year</span>
             </div>
@@ -258,9 +260,7 @@ export default function Home() {
         <div className="wrap big35">
           <PhotoCollage35 />
           <Reveal>
-            <Eyebrow>
-              Since 1989 <Confirm>year</Confirm>
-            </Eyebrow>
+            <Eyebrow>Since 1989</Eyebrow>
             <p className="state" style={{ marginTop: 22 }}>
               Thirty-five years of sitting with people in <em>Mumbai</em>,
               through exams, marriages, losses and new beginnings.

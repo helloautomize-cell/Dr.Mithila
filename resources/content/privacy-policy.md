@@ -105,7 +105,7 @@ If a data breach affects you, we will inform you and the Data Protection Board a
 
 ### 12. Privacy contact and complaints
 Privacy contact: Dr. Mithila Desai `[CONFIRM]`
-Email: `[CONFIRM]` · Phone: +91 87796 51309
+Email: mithiladesai@yahoo.com · Phone: +91 87796 51309
 We aim to acknowledge requests within `[CONFIRM: e.g. 2 working days]` and resolve them within `[CONFIRM: e.g. 15 days]`.
 
 ### 13. Changes

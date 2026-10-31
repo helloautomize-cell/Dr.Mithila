@@ -120,17 +120,35 @@ function firstParagraph(md: string): string {
         !s.startsWith("*") &&
         !SPEC_LINE.test(s),
     );
-  return (p ?? "").replace(/\[|\]|`|\*|\(.*?\)/g, "").slice(0, 158);
+  const t = (p ?? "")
+    .replace(/`?\[CONFIRM[^\]]*\]`?/g, "")
+    .replace(/\[|\]|`|\*|\(.*?\)/g, "")
+    .replace(/\s{2,}/g, " ")
+    .trim();
+  if (t.length <= 170) return t;
+  const cut = t.slice(0, 158);
+  return `${cut.slice(0, cut.lastIndexOf(" "))}…`;
+}
+
+/* The spec docs carry a fenced ```yaml block with the real title/description. */
+function yamlBlockField(md: string, key: string): string {
+  const block = md.match(/```ya?ml\s+([\s\S]*?)```/);
+  const line = block?.[1].match(
+    new RegExp(`^${key}:\\s*["']?(.*?)["']?\\s*$`, "m"),
+  );
+  return line?.[1].trim() ?? "";
 }
 
 /* The generator-derived description sometimes caught a spec block
-   (yaml/title lines) — re-derive from cleaned content when it looks off. */
-function fixDescription(desc: string, cleaned: string): string {
+   (yaml/title lines) — prefer the fenced yaml description, else re-derive
+   from cleaned content. */
+function fixDescription(desc: string, cleaned: string, raw: string): string {
   const bad =
     /^\s*(yaml|title:|description:|url:|template:|reviewer:|schema:|H1\s*:)/i.test(
       desc,
     ) || desc.includes("title:") || SPEC_LINE.test(desc.trim());
-  return bad ? firstParagraph(cleaned) : desc;
+  if (!bad) return desc;
+  return yamlBlockField(raw, "description") || firstParagraph(cleaned);
 }
 
 function postProcess(html: string): string {
@@ -148,7 +166,7 @@ export function loadContent(): Map<string, PageContent> {
     const { data, content } = matter(readFileSync(file, "utf8"));
     const fm = frontmatterSchema.parse({ ...data });
     const cleaned = cleanSpec(content);
-    fm.description = fixDescription(fm.description, cleaned);
+    fm.description = fixDescription(fm.description, cleaned, content);
     const rel = path
       .relative(DIR, file)
       .replaceAll("\\", "/")

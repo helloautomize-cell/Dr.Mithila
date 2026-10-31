@@ -53,7 +53,7 @@ export function TrustRow({ items }: { items: TrustItem[] }) {
 
 export function FloatingCard({ f }: { f: FloatCard }) {
   return (
-    <div className={`xfl ${f.pos}`}>
+    <div className={`xfl ${f.pos}`} suppressHydrationWarning>
       {f.img ? (
         <TMHImage name={f.img} alt="" sizes="84px" />
       ) : (
@@ -1025,9 +1025,9 @@ export function AreasOfCareBento() {
         </div>
         <div className="cta">
           <BookButton href="/contact/#book" label="Book a session" />
-          <a className="ghost" href="/plan-your-visit/">
+          <Link className="ghost" href="/plan-your-visit/">
             How the first session works
-          </a>
+          </Link>
         </div>
       </Reveal>
     </div>

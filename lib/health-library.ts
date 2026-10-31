@@ -3,7 +3,6 @@ import path from "node:path";
 import matter from "gray-matter";
 import { marked } from "marked";
 import { z } from "zod";
-import type { IconName } from "@/lib/icons";
 import {
   LIB_BASE,
   TOPICS,

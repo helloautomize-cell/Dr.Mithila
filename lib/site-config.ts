@@ -13,7 +13,7 @@ export const site = {
     "Inside Dr. Navalkar's Orthocare & Multi-speciality Clinic building, room C-2. Opposite Banana Leaf Restaurant.",
   instagram: "https://www.instagram.com/dr.mithiladesai/",
   instagramHandle: "@dr.mithiladesai",
-  email: "", // CONFIRM
+  email: "mithiladesai@yahoo.com",
   whatsapp: "919167766941", // CONFIRM number; old site used +91 91677 66941
   hours: "Mon to Fri 9:30am to 7:00pm · Sat 9:30am to 3:30pm",
   mapsUrl: "https://maps.app.goo.gl/Eem6wa6ysR3Swfs27",

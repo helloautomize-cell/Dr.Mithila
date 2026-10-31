@@ -29,7 +29,6 @@ import {
   type BodySegment,
 } from "@/lib/health-library";
 import { SERVICES } from "@/lib/services";
-import { site } from "@/lib/site-config";
 import type { ImageName } from "@/lib/images";
 
 const BASE = "https://www.thementalhealth.in";
@@ -363,12 +362,12 @@ export function GuidePage({ guide }: { guide: Guide }) {
               <div>
                 <b>Talk to Dr. Desai about {t.label.toLowerCase()}</b>
                 <p>In person in Borivali West, or online.</p>
-                <a className="btn" href="/contact/#book">
+                <Link className="btn" href="/contact/#book">
                   <span className="i">
                     <Icon name="CAL" />
                   </span>
                   <span className="t">Book a session</span>
-                </a>
+                </Link>
               </div>
             </div>
             <div className="sos">
@@ -444,7 +443,7 @@ export function GuidePage({ guide }: { guide: Guide }) {
       <EndBand
         quote={
           <>
-            You don't have to work it out <em>alone</em>.
+            You don&rsquo;t have to work it out <em>alone</em>.
           </>
         }
         line="Thinking of harming yourself? Please don't wait for an appointment. Call Tele-MANAS 14416 or 112."

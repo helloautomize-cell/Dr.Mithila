@@ -12,6 +12,8 @@ import { SiteFooter } from "@/components/site-footer";
 import { MobileActionBar } from "@/components/mobile-action-bar";
 import { CookieBanner } from "@/components/cookie-banner";
 import { Breadcrumbs } from "@/components/breadcrumbs";
+import { Analytics } from "@/components/analytics";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 const figtree = Figtree({
   variable: "--font-figtree",
@@ -42,13 +44,17 @@ export const metadata: Metadata = {
   },
   description:
     "Talking therapy and psychological assessment with Dr. Mithila Desai in Borivali West, Mumbai, and online.",
-  robots: { index: false, follow: false },
+  robots:
+    process.env.SITE_INDEXABLE === "true"
+      ? { index: true, follow: true }
+      : { index: false, follow: false },
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html
       lang="en"
+      data-scroll-behavior="smooth"
       className={`${figtree.variable} ${instrumentSerif.variable} ${notoSansDevanagari.variable} h-full antialiased`}
     >
       <body>
@@ -61,6 +67,8 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
           <SiteFooter />
           <MobileActionBar />
           <CookieBanner />
+          <Analytics />
+          <SpeedInsights />
         </div>
       </body>
     </html>

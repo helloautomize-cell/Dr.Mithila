@@ -1,9 +1,10 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import { Reveal } from "@/components/reveal";
 import { Icon } from "@/lib/icons";
 import { CONSENT_EVENT, getConsent } from "@/lib/consent";
+import { track } from "@/lib/analytics";
 
 const EMBED_SRC =
   "https://www.google.com/maps?q=" +
@@ -19,26 +20,34 @@ const EMBED_SRC =
 export function MapIllustration() {
   const [live, setLive] = useState(false);
   const host = useRef<HTMLDivElement>(null);
+  const goLive = useCallback(() => {
+    setLive(true);
+    track("map_load");
+  }, []);
 
   useEffect(() => {
-    if (getConsent()?.analytics) setLive(true);
+    let raf = 0;
+    if (getConsent()?.analytics) raf = requestAnimationFrame(goLive);
     const onConsent = (e: Event) => {
-      if ((e as CustomEvent).detail?.analytics) setLive(true);
+      if ((e as CustomEvent).detail?.analytics) goLive();
     };
     window.addEventListener(CONSENT_EVENT, onConsent);
-    return () => window.removeEventListener(CONSENT_EVENT, onConsent);
-  }, []);
+    return () => {
+      cancelAnimationFrame(raf);
+      window.removeEventListener(CONSENT_EVENT, onConsent);
+    };
+  }, [goLive]);
 
   useEffect(() => {
     const el = host.current;
     if (!el || live) return;
     const io = new IntersectionObserver(
-      (es) => es.forEach((e) => e.isIntersecting && setLive(true)),
+      (es) => es.forEach((e) => e.isIntersecting && goLive()),
       { rootMargin: "600px 0px" }
     );
     io.observe(el);
     return () => io.disconnect();
-  }, [live]);
+  }, [live, goLive]);
 
   return (
     <div ref={host}>
@@ -86,7 +95,7 @@ export function MapIllustration() {
             <button
               type="button"
               className="mapload"
-              onClick={() => setLive(true)}
+              onClick={goLive}
               aria-label="Load the live Google map"
             >
               <span className="pin">

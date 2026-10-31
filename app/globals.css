@@ -3121,25 +3121,25 @@ textarea:focus {
   gap: 0;
 }
 .list li {
-  display: grid;
-  grid-template-columns: 28px 1fr;
-  gap: 14px;
-  padding: 15px 0;
+  position: relative;
+  padding: 15px 0 15px 42px;
   border-top: 1px solid var(--line);
 }
-/* CONFIRM chip after the text sits in column 2 */
+/* CONFIRM chip after the text sits on its own line */
 .list li > .cf:last-child {
-  grid-column: 2;
-  justify-self: start;
+  display: block;
+  width: fit-content;
+  margin-top: 8px;
 }
 .list li::before {
   content: "";
+  position: absolute;
+  left: 10px;
+  top: 26px;
   width: 8px;
   height: 8px;
   border-radius: 50%;
   background: var(--honey);
-  margin-top: 10px;
-  justify-self: center;
 }
 .dark .list li {
   border-color: var(--dark-line);
@@ -3925,8 +3925,10 @@ select {
   display: none;
 }
 /* 35 collage */
-.big35 {
-  grid-template-columns: minmax(280px, 460px) 1fr;
+@media (min-width: 761px) {
+  .big35 {
+    grid-template-columns: minmax(280px, 460px) 1fr;
+  }
 }
 .col35 {
   position: relative;
@@ -4230,6 +4232,7 @@ select {
   .jtrack {
     position: relative;
     padding-left: 26px;
+    padding-right: max(16px, env(safe-area-inset-right, 0px));
   }
   .jtrack::before {
     content: "";
@@ -5010,7 +5013,7 @@ select {
 }
 
 /* larger hit area for the inline crisis link (keeps the strip one line) */
-.crisis a {
+.crisis .alertline a {
   padding: 6px 4px;
   margin: -6px -4px;
 }
@@ -6406,7 +6409,7 @@ footer .fh{display:block;margin-bottom:14px;font-weight:600}
 
 /* related + end band */
 .xrel{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
-.xrel a{display:flex;flex-direction:column;gap:16px;padding:22px;border-radius:24px;background:#fff;border:1px solid var(--line);transition:transform .5s var(--ease),box-shadow .5s,border-color .4s}
+.xrel a{display:flex;flex-direction:column;gap:16px;padding:22px;border-radius:24px;background:#fff;border:1px solid var(--line);min-width:0;transition:transform .5s var(--ease),box-shadow .5s,border-color .4s}
 .xrel a:hover{transform:translateY(-4px);box-shadow:var(--shadow);border-color:transparent}
 .xrel a:hover .xi{background:var(--walnut);color:#fff;transform:rotate(-8deg)}
 .xrel b{font-size:18px;font-weight:500;letter-spacing:-.015em}
@@ -6593,7 +6596,9 @@ footer .fh{display:block;margin-bottom:14px;font-weight:600}
  .xfq .card{position:relative;top:0}
  .xend{grid-template-columns:1fr}.xend .im{min-height:260px;order:-1}.xend .im::before{background:linear-gradient(0deg,var(--espresso),transparent 50%)}
  .xways{grid-template-columns:1fr}
- .xtri,.xroles{grid-template-columns:1fr}
+ .xtri,.xroles{grid-template-columns:minmax(0,1fr)}
+ .xtri article,.xroles article{min-width:0}
+ .xroles .who{flex-wrap:wrap}
  .xflow4{grid-template-columns:1fr 1fr;row-gap:36px}.xflow4::before{display:none}
  .xab .col .a{width:85%}.xab .col .q{position:relative;width:auto;margin:-60px 0 0 22%;bottom:0}
  .xmos{justify-self:start}
@@ -6961,3 +6966,121 @@ footer .fh{display:block;margin-bottom:14px;font-weight:600}
 .toast{position:fixed;left:50%;bottom:110px;transform:translate(-50%,20px);opacity:0;background:var(--espresso);color:#fff;padding:12px 20px;border-radius:999px;font-size:14px;z-index:70;transition:all .4s var(--ease);pointer-events:none}
 .toast.on{opacity:1;transform:translate(-50%,0)}
 @media(prefers-reduced-motion:reduce){.acov .cv2{stroke-dashoffset:0;animation:none}.acov .ar2,.acov .pk2{opacity:1;animation:none}}
+/*x*/
+/*y*/
+/*z*/
+/*w*/
+
+/* ---------- booking form (phase 6) ---------- */
+.flab {
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  margin: 22px 0 8px;
+}
+.ch label {
+  position: relative;
+  display: inline-block;
+}
+.ch label input {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  min-height: 0;
+  padding: 0;
+  opacity: 0;
+  cursor: pointer;
+}
+.ch label span {
+  display: inline-block;
+  font: 500 15px var(--sans);
+  padding: 12px 18px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--clay-50);
+  min-height: 46px;
+  color: var(--ink);
+  transition:
+    background 0.25s var(--ease),
+    color 0.25s var(--ease),
+    border-color 0.25s var(--ease);
+}
+.ch label input:checked + span {
+  background: var(--espresso);
+  color: #fff;
+  border-color: var(--espresso);
+}
+.ch label input:focus-visible + span {
+  outline: 2px solid var(--walnut);
+  outline-offset: 2px;
+}
+.guardian {
+  display: none;
+  border-left: 3px solid var(--honey);
+  padding-left: 18px;
+  margin-top: 4px;
+}
+form:has(input[name="who"][value="My child under 12"]:checked) .guardian,
+form:has(input[name="who"][value="My teenager 12 to 17"]:checked) .guardian,
+form[data-u18] .guardian {
+  display: block;
+}
+.hp {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+.ferr {
+  margin-top: 22px;
+  border: 1px solid #ebc9c6;
+  background: var(--alert-50);
+  color: var(--alert);
+  border-radius: 14px;
+  padding: 14px 18px;
+  font-size: 14.5px;
+}
+.ferr:focus {
+  outline: 2px solid var(--alert);
+  outline-offset: 2px;
+}
+.ferr ul {
+  margin: 8px 0 0;
+  padding-left: 18px;
+}
+.ferr .falt {
+  margin: 10px 0 0;
+  color: var(--ink-2);
+}
+.ferr .falt a {
+  color: var(--walnut);
+}
+.fmsg {
+  display: block;
+  color: var(--alert);
+  font-size: 13px;
+  font-weight: 500;
+  margin-top: 6px;
+}
+input[aria-invalid="true"],
+select[aria-invalid="true"],
+textarea[aria-invalid="true"] {
+  border-color: var(--alert);
+  background: #fff;
+}
+.chk input[aria-invalid="true"] {
+  outline: 2px solid var(--alert);
+  outline-offset: 1px;
+}
+form .btn {
+  margin-top: 26px;
+  border: 0;
+  cursor: pointer;
+}
+form .btn[disabled] {
+  opacity: 0.6;
+  cursor: wait;
+}

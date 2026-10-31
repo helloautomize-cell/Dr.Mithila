@@ -31,7 +31,7 @@ export function AnimGate() {
     const seen = new WeakSet<Element>();
     const watch = (root: ParentNode) =>
       root
-        .querySelectorAll(`${ANIMATED}, .rv:not(.in)`)
+        .querySelectorAll(`${ANIMATED}, .rv:not(.in):not([data-rv])`)
         .forEach((el) => {
           if (!seen.has(el)) {
             seen.add(el);
@@ -46,7 +46,7 @@ export function AnimGate() {
         m.addedNodes.forEach((n) => {
           if (n instanceof Element) {
             watch(n);
-            if (n.matches(`${ANIMATED}, .rv:not(.in)`)) {
+            if (n.matches(`${ANIMATED}, .rv:not(.in):not([data-rv])`)) {
               seen.add(n);
               io.observe(n);
             }

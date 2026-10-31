@@ -36,7 +36,7 @@ Each page shows "Last reviewed" with the date Dr. Desai last checked it. We aim 
 We may use AI tools to help draft text, check readability or create illustrations. A person checks every piece, and Dr. Desai approves all clinical content. We never use AI to create images of real clients or to alter Dr. Desai's appearance without her written approval. Illustrations of people are not photos of real clients.
 
 ### Corrections
-If you see an error, please email `[CONFIRM]`. We correct confirmed errors promptly and update the review date.
+If you see an error, please email mithiladesai@yahoo.com. We correct confirmed errors promptly and update the review date.
 
 ### Independence
 We do not accept advertising or sponsorship, and we do not promote products or medicines.

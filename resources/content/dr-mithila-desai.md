@@ -29,7 +29,7 @@ Key facts glass card:
 - PhD `[CONFIRM: subject, university, year]`
 - `[CONFIRM: master's degree, university, year]`
 - Rehabilitation Council of India, CRR No. `[CONFIRM]`
-- In practice since `[CONFIRM]`
+- In practice since 1989
 - Languages: English, Hindi `[CONFIRM]`
 - Sessions: in person in Borivali West, and online
 
@@ -37,7 +37,7 @@ Buttons: [Book with Dr. Desai] [Call 87796 51309]
 
 ### About
 
-Dr. Mithila Desai is a clinical psychologist in Borivali West, Mumbai. She holds a PhD `[CONFIRM]` and has worked in psychology since `[CONFIRM: year]`. She sees adults, teenagers, children, couples and families for talking therapy and psychological assessment, in person and online.
+Dr. Mithila Desai is a clinical psychologist in Borivali West, Mumbai. She holds a PhD `[CONFIRM]` and has worked in psychology since 1989. She sees adults, teenagers, children, couples and families for talking therapy and psychological assessment, in person and online.
 
 Alongside her clinical work, she has worked with schools for many years, supporting students, parents and teachers, and has provided counselling to employees through workplace employee assistance programmes `[CONFIRM: wording; corporate partners are not named]`. She has also trained psychology students `[CONFIRM]`.
 
@@ -60,7 +60,7 @@ Quoted principle (from her Practo profile, `[CONFIRM: approve as her words]`):
 
 ### Registration
 
-Rehabilitation Council of India, Central Rehabilitation Register No. `[CONFIRM]`, registered as a clinical psychologist since `[CONFIRM: year]`.
+Rehabilitation Council of India, Central Rehabilitation Register No. `[CONFIRM]`, registered as a clinical psychologist since 1989.
 
 ### Roles and work
 

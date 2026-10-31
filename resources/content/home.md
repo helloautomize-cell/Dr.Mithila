@@ -62,7 +62,7 @@ Intro: Starting therapy can feel like a big step. We keep it simple: one experie
 
 Cards (6):
 1. **One psychologist who knows your story.** Dr. Mithila Desai sees you herself, from the first session to the last, so you do not repeat your story to someone new each time.
-2. **Many years of practice.** Dr. Desai has worked as a clinical psychologist since `[CONFIRM: start year]`, with adults, children, couples, families, schools and workplaces.
+2. **Many years of practice.** Dr. Desai has worked as a clinical psychologist since 1989, with adults, children, couples, families, schools and workplaces.
 3. **Therapy and assessment together.** If a question needs testing, such as attention, learning or career aptitude, it can be done here and explained in plain words.
 4. **Private and unhurried.** Sessions are confidential and planned around your concerns. You decide what to share and when.
 5. **In person or online.** Meet in Borivali West or join from home by video, in India or abroad.
@@ -72,9 +72,9 @@ Cards (6):
 
 H2: Psychology care in *Borivali West*
 
-Photo labels (off faces): "In Borivali West since `[CONFIRM: year]`" · "In person and online"
+Photo labels (off faces): "In Borivali West since 1989" · "In person and online"
 
-Paragraph: The Mental Health is the psychology practice of Dr. Mithila Desai, a clinical psychologist with a PhD `[CONFIRM: subject and university]`. She started her practice in Mumbai in `[CONFIRM: year; old site says 1989]` and has since worked with individuals, couples and families, with children and teenagers and their schools, and with employees through workplace wellbeing programmes. The practice is on Gulmohar Road, Shimpoli, opposite Banana Leaf Restaurant.
+Paragraph: The Mental Health is the psychology practice of Dr. Mithila Desai, a clinical psychologist with a PhD `[CONFIRM: subject and university]`. She started her practice in Mumbai in 1989 and has since worked with individuals, couples and families, with children and teenagers and their schools, and with employees through workplace wellbeing programmes. The practice is on Gulmohar Road, Shimpoli, opposite Banana Leaf Restaurant.
 
 Rows:
 - (individual badge) **Therapy** · For adults, teenagers, children, couples and families
@@ -146,7 +146,7 @@ Card:
 - **Dr. Mithila Desai**
 - PhD `[CONFIRM: subject, university]` · `[CONFIRM: master's degree, university]`
 - Clinical psychologist · RCI CRR No. `[CONFIRM]`
-- Chips: `[CONFIRM: X]`+ years · English · Hindi `[CONFIRM: Marathi, Gujarati]`
+- Chips: 37+ years · English · Hindi `[CONFIRM: Marathi, Gujarati]`
 - Short bio: Works with adults, teenagers, children, couples and families, and has run counselling and wellbeing programmes for schools and workplaces for many years.
 - Buttons: [Book with Dr. Desai] [View profile]
 
@@ -186,7 +186,7 @@ Link: See all FAQs →
 
 H2: Find *us*
 - Address (3 lines) · Get directions
-- Call 87796 51309 · WhatsApp `[CONFIRM]` · Email `[CONFIRM]`
+- Call 87796 51309 · WhatsApp `[CONFIRM]` · Email mithiladesai@yahoo.com
 - Hours: `[CONFIRM: in-person days and hours; online hours; phone hours]`
 - Crisis line: Need urgent help? Call 112 or Tele-MANAS 14416.
 - Photo card: building entrance + [Show map] (click to load)

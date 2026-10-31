@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useMemo, useState } from "react";
+import Link from "next/link";
 import { useSearchParams } from "next/navigation";
 import { Icon, type IconName } from "@/lib/icons";
 import { GuideCard } from "@/components/guide-card";
@@ -254,6 +255,7 @@ export function TopicBento({
             className="rv"
             type="button"
             onClick={() => pick(t.slug)}
+            suppressHydrationWarning
           >
             <span className="n">
               {t.count}
@@ -267,16 +269,16 @@ export function TopicBento({
           </button>
         ),
       )}
-      <a className="ask rv" href="/contact/#book">
+      <Link className="ask rv" href="/contact/#book" suppressHydrationWarning>
         <span className="xi">
           <Icon name="CHAT" />
         </span>
-        <b>Can't find your question?</b>
+        <b>Can&rsquo;t find your question?</b>
         <small>Every story is different. Ask Dr. Desai in a session.</small>
         <span className="go">
           Book a session <Icon name="ARR" />
         </span>
-      </a>
+      </Link>
     </div>
   );
 }

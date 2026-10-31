@@ -1,5 +1,6 @@
 import Link from "next/link";
 import type { Metadata } from "next";
+import { notFound } from "next/navigation";
 import { Eyebrow } from "@/components/eyebrow";
 import { BookButton } from "@/components/book-button";
 import { GhostButton } from "@/components/ghost-button";
@@ -143,6 +144,7 @@ function Label({ children }: { children: string }) {
 }
 
 export default function StyleguidePage() {
+  if (process.env.NODE_ENV === "production") notFound();
   return (
     <>
       <main className="g">

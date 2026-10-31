@@ -20,7 +20,6 @@ import {
   featuredGuide,
   startHereGuides,
   topicCounts,
-  topic,
 } from "@/lib/health-library";
 import { SERVICES } from "@/lib/services";
 import { schemaScript } from "@/components/page-templates";
@@ -185,7 +184,7 @@ export default function HealthLibraryPage() {
             Some questions need a <em>conversation</em>.
           </>
         }
-        line="In danger? Call 112 or Tele-MANAS 14416 (free, 24 hours)."
+        line="Call 112 or Tele-MANAS 14416 (free, 24 hours)."
         image="clinic/clinic-nook"
         alt="A calm corner of the therapy room"
       />

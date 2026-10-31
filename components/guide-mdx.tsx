@@ -1,6 +1,8 @@
+import Link from "next/link";
 import { Icon, type IconName } from "@/lib/icons";
 import { TMHImage } from "@/components/tmh-image";
 import { Confirm } from "@/components/confirm";
+import { Reveal } from "@/components/reveal";
 
 /*
  * Components allowed inside guide .mdx bodies (schema section 4).
@@ -10,7 +12,7 @@ import { Confirm } from "@/components/confirm";
 export function FeelGrid({ body, mind }: { body: string[]; mind: string[] }) {
   return (
     <div className="afeel">
-      <div className="rv">
+      <Reveal>
         <h3>
           <span className="xi">
             <Icon name="HEART" />
@@ -22,8 +24,8 @@ export function FeelGrid({ body, mind }: { body: string[]; mind: string[] }) {
             <li key={s}>{s}</li>
           ))}
         </ul>
-      </div>
-      <div className="rv">
+      </Reveal>
+      <Reveal>
         <h3>
           <span className="xi">
             <Icon name="MIND" />
@@ -35,7 +37,7 @@ export function FeelGrid({ body, mind }: { body: string[]; mind: string[] }) {
             <li key={s}>{s}</li>
           ))}
         </ul>
-      </div>
+      </Reveal>
     </div>
   );
 }
@@ -113,7 +115,7 @@ export function Steps({
 }) {
   return (
     <div className="asteps" id="asteps">
-      {items.map((s, i) => (
+      {items.map((s) => (
         <div key={s.t}>
           <span className="xi">
             <Icon name={s.icon as IconName} />
@@ -182,9 +184,9 @@ export function AssessmentLine() {
         Before therapy begins, Dr. Desai takes time to understand your
         concerns, history and goals, so the plan that follows fits you rather
         than a template. Where useful, she may also suggest a{" "}
-        <a className="in" href="/psychological-assessment/">
+        <Link className="in" href="/psychological-assessment/">
           psychological assessment
-        </a>{" "}
+        </Link>{" "}
         for a clearer picture.
       </span>
     </div>
@@ -193,7 +195,7 @@ export function AssessmentLine() {
 
 export function MidCta() {
   return (
-    <div className="amid rv">
+    <Reveal className="amid">
       <TMHImage
         name="dr-mithila-desai/dr-online"
         alt="Dr. Desai in an online session"
@@ -202,14 +204,14 @@ export function MidCta() {
       <div>
         <b>Panic is something you can work on.</b>
         <p>Meet Dr. Desai in Borivali West, or online from home.</p>
-        <a className="btn" href="/contact/#book">
+        <Link className="btn" href="/contact/#book">
           <span className="i">
             <Icon name="CAL" />
           </span>
           <span className="t">Book a session</span>
-        </a>
+        </Link>
       </div>
-    </div>
+    </Reveal>
   );
 }
 
@@ -225,7 +227,7 @@ export function Crisis() {
         do not wait for an appointment. Call <b>112</b>, go to the nearest
         hospital emergency department, or call <b>Tele-MANAS on 14416</b> or
         1-800-891-4416. Tele-MANAS is the Government of India&apos;s free
-        mental health helpline, open 24 hours, in many Indian languages. The
+        mental health helpline, open 24 hours, in many Indian languages.
         Messages to The Mental Health are answered during clinic hours.
       </p>
       <div className="nums2">

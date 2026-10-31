@@ -42,6 +42,6 @@ Based on the Mental Healthcare Act, 2017, the Charter of Patients' Rights (Minis
 7. Pay fees as agreed.
 
 ### Complaints
-Speak to Dr. Desai directly, or email `[CONFIRM]`. We aim to acknowledge within `[CONFIRM]` working days and respond fully within `[CONFIRM]` days. If you are not satisfied, you may contact the Rehabilitation Council of India.
+Speak to Dr. Desai directly, or email mithiladesai@yahoo.com. We aim to acknowledge within `[CONFIRM]` working days and respond fully within `[CONFIRM]` days. If you are not satisfied, you may contact the Rehabilitation Council of India.
 
 ---

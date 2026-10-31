@@ -41,9 +41,9 @@ Dr. Desai chose psychology in the 1980s, at a time when few people in Mumbai spo
 
 ### What we do
 
-Glass cards linking to: Individual therapy · Child and teen therapy · Couples counselling · Family counselling · Online therapy · Psychological assessment · Career guidance · Workplace wellbeing · Schools and colleges
+[Individual therapy](/individual-therapy/) · [Child and teen therapy](/child-and-teen-therapy/) · [Couples counselling](/couples-counselling/) · [Family counselling](/family-counselling/) · [Online therapy](/online-therapy/) · [Psychological assessment](/psychological-assessment/) · [Career guidance](/career-guidance/) · [Workplace wellbeing](/workplace-wellbeing/) · [Schools and colleges](/schools-and-colleges/)
 
-Link: Meet our team →
+[Meet our team →](/our-team/)
 
 ### Our name
 
@@ -60,7 +60,7 @@ Some directory listings still show our earlier name, Dr Mithila Desai's Power Of
 
 - **Practice:** The Mental Health, Borivali West, Mumbai
 - **Led by:** Dr. Mithila Desai, PhD, clinical psychologist, RCI CRR No. `[CONFIRM]`
-- **Practising since:** `[CONFIRM]`
+- **Practising since:** 1989
 - **Sessions:** in person and online by video
 - **Languages:** English, Hindi `[CONFIRM: others]`
 - **Who we see:** children `[CONFIRM: from what age]`, teenagers, adults, couples, families, older adults
